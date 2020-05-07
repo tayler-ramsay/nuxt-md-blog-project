@@ -1,12 +1,56 @@
 <template>
-  <div class="container font-sans text-black">
-    <div class="flex justify-between">
-      <h1><nuxt-link to="/">Versatile Blog</nuxt-link></h1>
-      <div class="flex">
-        <div class="mr-6 text-xl"><nuxt-link to="/about">About</nuxt-link></div>
-        <div><nuxt-link to="/team">Team</nuxt-link></div>
-      </div>
-    </div>
-    <nuxt />
+  <div>
+    <Navigation v-if="!mobileView" />
+    <NavigationMobile v-if="mobileView" />
+    <Nuxt />
+    <Footer />
   </div>
 </template>
+
+<script>
+import Navigation from '@/components/Navigation.vue'
+import NavigationMobile from '@/components/NavigationMobile.vue'
+import Footer from '@/components/Footer.vue'
+export default {
+  components: {
+    Navigation,
+    NavigationMobile,
+    Footer
+  },
+  data() {
+    return {
+      mobileView: false
+    }
+  },
+  created() {
+    this.handelView()
+    // eslint-disable-next-line nuxt/no-globals-in-created
+    window.addEventListener('resize', this.handelView)
+  },
+  methods: {
+    handelView() {
+      this.mobileView = window.innerWidth <= 990
+    }
+  }
+}
+</script>
+
+<style>
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+html {
+  overflow-x: hidden;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(1, 65, 128, 1) 0%,
+    rgba(0, 156, 218, 1) 100%
+  );
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div><h1 class="text-white">About</h1></div>
+  <div><h1 class="text-white">Omnichannel</h1></div>
 </template>
 
 <script>
