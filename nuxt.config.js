@@ -77,7 +77,7 @@ export default async () => {
     ],
     webfontloader: {
       google: {
-        families: ['Inter:100,300,700,900'] //
+        families: ['Inter:100,300,600,700,800,900'] //
       }
     },
     generate: {

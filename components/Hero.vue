@@ -2,7 +2,7 @@
   <div>
     <div
       id="main"
-      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-64 max-h-full h-screen relative"
+      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-32 max-h-full h-screen relative"
     >
       <img
         id="triangle-top"
@@ -31,23 +31,23 @@
           Financing options wherever a buying decision is made.
         </h1>
       </div>
-      <div class="flex justify-between max-w-2xl  my-10  mb-16 space-x-4">
+      <div class="flex justify-between max-w-2xl  my-10  mb-16 space-x-12">
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+20</h2>
+          <h2 class="font-hairline text-5xl md:text-7xl">+20%</h2>
           <p>Increase in Application volume</p>
         </div>
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+30</h2>
+          <h2 class="font-hairline text-5xl md:text-7xl">+30%</h2>
           <p>Increase in average Sales Ticket</p>
         </div>
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+40</h2>
+          <h2 class="font-hairline text-5xl md:text-7xl">+40%</h2>
           <p>Improvement in Approval Rate</p>
         </div>
       </div>
       <div class="flex">
         <button
-          class="mr-8 bg-white rounded-sm text-blue font-semibold py-2 px-10 border-2"
+          class="mr-8 bg-white rounded-sm text-blue font-semibold py-2 px-10 "
         >
           Learn More
         </button>

@@ -53,4 +53,24 @@ body {
     rgba(0, 156, 218, 1) 100%
   );
 }
+
+.grad {
+  background: linear-gradient(
+    45deg,
+    rgba(1, 65, 128, 1) 0%,
+    rgba(0, 156, 218, 1) 100%
+  );
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 600ms;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 </style>

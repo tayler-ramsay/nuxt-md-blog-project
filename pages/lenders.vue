@@ -1,9 +1,16 @@
 <template>
-  <div><h1 class="text-white">Lender</h1></div>
+  <div class="bg-white">
+    <LenderHero class="" />
+  </div>
 </template>
 
 <script>
-export default {}
+import LenderHero from '@/components/LenderHero.vue'
+export default {
+  components: {
+    LenderHero
+  }
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
