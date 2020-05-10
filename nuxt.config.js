@@ -48,7 +48,8 @@ export default async () => {
      */
     plugins: [
       { src: '~/plugins/vue-scroll-reveal', ssr: false },
-      { src: '~/plugins/vue-unicons', ssr: false }
+      { src: '~/plugins/vue-unicons', ssr: false },
+      { src: '~/plugins/vue-tabs', ssr: false }
     ],
 
     tailwindcss: {
@@ -71,9 +72,10 @@ export default async () => {
      ** Nuxt.js modules
      */
     modules: [
+      ['nuxt-buefy',{materialDesignIcons:false}],
+      'nuxt-webfontloader',
       // Doc: https://axios.nuxtjs.org/usage
-      '@nuxtjs/axios',
-      'nuxt-webfontloader'
+      '@nuxtjs/axios'
     ],
     webfontloader: {
       google: {
