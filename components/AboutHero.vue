@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-local">
+  <div class="bg-white">
     <div
-      class=" flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
+      class=" flex flex-col lg:flex-row justify-evenly items-center bg-local py-24"
     >
       <div class="max-w-sm">
         <div class="flex">
           <img class="h-10" src="~/static/icons/logo-ko.png" alt="" />
-          <p class="text-blue-light text-2xl">We Are</p>
+          <p class="text-white text-2xl">We Are</p>
         </div>
         <h1
           class="text-6xl font-semibold text-blue-light max-w-sm leading-12 mb-10"
@@ -14,7 +14,7 @@
           Relentless Innovation.
         </h1>
       </div>
-      <div class="max-w-sm">
+      <div class="max-w-sm lg:pl-10">
         <p class="font-semibold text-sm text-blue-light">
           Our approach is simple.
         </p>
@@ -61,15 +61,11 @@ hr {
   );
 }
 .bg-local {
-  background-image: linear-gradient(
-      100deg,
-      rgba(1, 65, 128, 1) 0%,
-      rgba(0, 156, 218, 0.7) 100%
-    ),
-    url('../static/shake.jpg');
+  background: black;
+  background-image: url('../static/bulb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -300px;
+  background-position: 0px -350px;
   color: white;
 }
 </style>
