@@ -13,12 +13,12 @@
         <nuxt-link :to="'./omnichannel'" class="font-medium m-3"
           >Omnichannel</nuxt-link
         >
-        <nuxt-link :to="'./lenders'" class="font-medium m-3"
-          >for Lenders</nuxt-link
-        >
         <nuxt-link :to="'./news'" class="font-medium m-3"
           >In The News
         </nuxt-link>
+        <nuxt-link :to="'./lender'" class="font-medium m-3"
+          >For Lenders</nuxt-link
+        >
         <nuxt-link :to="'./about'" class="font-medium m-3"
           >About Versatile</nuxt-link
         >
@@ -31,21 +31,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      links: [
-        'Home',
-        'Omnichannel',
-        'For Lenders',
-        'In The News',
-        'About Versatile',
-        'Contact'
-      ]
-    }
-  }
-}
-</script>
+<script></script>
 
 <style></style>

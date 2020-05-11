@@ -1,5 +1,4 @@
 <template>
-  <!-- :style="{ backgroundImage: `url('${backgroundUrl}')` }" -->
   <div class="bg-local bg-contain lg:py-24">
     <div
       class="flex flex-col lg:flex-row justify-evenly px-10 items-center pt-32 lg:pb-32"

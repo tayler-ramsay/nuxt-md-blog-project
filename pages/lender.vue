@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <h1>Cascade</h1>
-    <Card />
-  </div>
+  <div><LenderHero class="" /></div>
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
+import LenderHero from '@/components/LenderHero.vue'
 export default {
   components: {
-    Card
+    LenderHero
   }
 }
 </script>
