@@ -7,7 +7,7 @@
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p class="text-blue-light flex-grow text-2xl w-full my-10">
+        <p class="text-blue-light flex-grow text-3xl w-full pt-10">
           How we do it
         </p>
         <client-only>
@@ -110,21 +110,23 @@ export default {
           ]
         },
         {
-          title: 'Data & Analytics',
+          title: 'Consumer Engagement Points',
           description: {
-            title: 'Dashboards & Reports',
+            title: 'Available anywhere',
             p: [
-              'Gain insight and visibility into the performance of the financing program at a store, region, and corporate level, with tools to measure by lender, channel, geography and even sales associate. Detailed and customizable reports ensure stakeholders are briefed on key performance metrics on a monthly, weekly, or daily basis. '
+              'Any device with a browser can be leveraged to provide a seamless application experience, including in-store tablets and point of sales systems. Our suite of contactless self-service technologies, including Snap Sign™ and text-to-apply, enable customers to apply directly on their mobile phone.'
+              // ' about our platform and devices here.'
             ]
           },
           link: '',
           open: false,
-          img: 'data',
+          img: 'consumer',
           list: [
-            'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
-            'Detailed dashboards & reports enable retailers to benchmark performance, optimize their program, and react to problems immediately.'
+            'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made, in-store and online.',
+            'In-store devices like kiosks, tablets, and point of sales systems can be leveraged to provide customers with financing throughout the sales process.'
           ]
         },
+
         {
           title: 'Integration & Customization',
           description: {
@@ -142,20 +144,19 @@ export default {
           ]
         },
         {
-          title: 'Consumer Engagement Points',
+          title: 'Data & Analytics',
           description: {
-            title: 'Available anywhere',
+            title: 'Dashboards & Reports',
             p: [
-              'Any device with a browser can be leveraged to provide a seamless application experience, including in-store tablets and point of sales systems. Our suite of contactless self-service technologies, including Snap Sign™ and text-to-apply, enable customers to apply directly on their mobile phone.'
-              // ' about our platform and devices here.'
+              'Gain insight and visibility into the performance of the financing program at a store, region, and corporate level, with tools to measure by lender, channel, geography and even sales associate. Detailed and customizable reports ensure stakeholders are briefed on key performance metrics on a monthly, weekly, or daily basis. '
             ]
           },
           link: '',
           open: false,
-          img: 'consumer',
+          img: 'data',
           list: [
-            'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made, in-store and online.',
-            'In-store devices like kiosks, tablets, and point of sales systems can be leveraged to provide customers with financing throughout the sales process.'
+            'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
+            'Detailed dashboards & reports enable retailers to benchmark performance, optimize their program, and react to problems immediately.'
           ]
         }
       ]

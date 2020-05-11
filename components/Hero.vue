@@ -23,9 +23,10 @@
         srcset=""
         class=" z-0 invisible  lg:visible"
       />
-      <div class="max-w-4xl">
+      <div class="max-w-5xl">
         <p class="text-xl md:text-2xl">
-          Versatile Credit | A Technology Platform for Omnichannel Financing
+          Versatile Omnichannel | The Leading Technology Platform for
+          Omnichannel Financing
         </p>
         <h1 class="text-3xl  md:text-5xl font-bold">
           Financing options wherever a buying decision is made.
@@ -56,6 +57,9 @@
           class="mr-6 rounded-sm text-white font-semibold p-3  hover:underline"
           >Book a demo</a
         >
+      </div>
+      <div class="text-2xl text-white font-light m-auto">
+        <p>Anyone - Anywhere - On Any Device</p>
       </div>
     </div>
   </div>

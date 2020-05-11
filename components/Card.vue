@@ -1,7 +1,7 @@
 <template>
   <div class="card-height">
     <div
-      class="relative w-full  bg-white  overflow-hidden cursor-pointer  card-height card max-w-lg m-auto"
+      class="relative w-full  bg-white  overflow-hidden card-height card max-w-lg m-auto"
       :class="{ open: item.open }"
       :style="styleObject"
     >

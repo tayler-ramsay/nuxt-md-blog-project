@@ -22,7 +22,9 @@
           <p></p>
           <p class=" text-large">
             <unicon class="pr-4 h-5" name="fast-mail" fill="#B2D237"></unicon>
-            <a href="" class="text-green">hello@versatilecredit.com</a>
+            <a href="mailto: contact@versatilecredit.com" class="text-green"
+              >contact@versatilecredit.com</a
+            >
           </p>
           <hr />
           <h3 class="font-semibold ">
@@ -53,7 +55,7 @@
     <div
       class="bg-black text-base font-medium flex flex-col-reverse lg:flex-row justify-between lg:px-24 py-5 text-white items-center"
     >
-      <div>2020 VERSTILE CREDIT | Privacy Policy | Sitemap</div>
+      <div>&#169;2020 VERSTILE CREDIT | Privacy Policy | Sitemap</div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
           class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center "

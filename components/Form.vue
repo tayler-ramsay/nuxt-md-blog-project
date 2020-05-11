@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col lg:max-w-1/2  bg-black px-5 lg:px-10 py-10">
     <h1 class="font-semibold text-green text-4xl">CONTACT US</h1>
-    <form action="" method="post" class="flex flex-col space-y-5">
+    <p class="text-blue-light mb-10">
+      <span class="text-white pr-2">*</span>required
+    </p>
+    <form action="" method="post" class="flex flex-col space-y-3">
       <label for="name" class="text-white">Full Name*</label>
       <input id="name" type="text" class="h-12 bg-slate mt-2" />
       <label for="email" class="text-white">Email*</label>
@@ -18,15 +21,9 @@
         <div />
       </div>
       <label for="message" class="text-white">Message*</label>
-      <input
-        id="message"
-        type="textarea"
-        class="h-48 bg-slate"
-        rows="4"
-        cols="50"
-      />
+      <textarea id="message" type="textarea" class="bg-slate" rows="10" />
       <button
-        class="bg-black text-white font-semibold border-2 border-green w-24 py-1 "
+        class="bg-black text-white font-semibold border-2 border-green w-24 py-1"
       >
         Submit
       </button>
@@ -38,4 +35,22 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+input {
+  color: #b2d237;
+  padding: 1em;
+}
+
+textarea {
+  display: block;
+  color: #b2d237;
+}
+
+//  black: '#242B34',
+//   green: '#B2D237',
+//   slate: '#3E4A59',
+//   blue: {
+//     light: '#009CDA',
+//     default: '#014180'
+//   }
+</style>
