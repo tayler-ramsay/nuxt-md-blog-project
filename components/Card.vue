@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div
-          class=" text-right absolute bottom-0 px-3 py-32 text-blue-light w-full  pointer-events-none flex justify-end"
+          class=" text-right absolute bottom-0 px-3 text-blue-light w-full  pointer-events-none flex justify-end"
         >
           <div class="more">
             {{ item.link }}
@@ -45,9 +45,9 @@
         <hr class="p-2 border-blue" />
         <h3 class="text-blue text-2xl mb-3 flex justify-between">
           {{ item.description.title }}
-          <unicon name="times-square" fill="#B2D237" class="p-4"></unicon>
+          <!-- <unicon name="times-square" fill="#B2D237" class="p-4"></unicon> -->
         </h3>
-        <p v-for="p in paragraph" :key="p.id" class="mb-3">
+        <p v-for="p in paragraph" :key="p.id" class="mb-3 py-4">
           {{ p }}
         </p>
       </div>
@@ -107,7 +107,7 @@ export default {
 
 <style>
 .card-height {
-  height: 550px;
+  /* height: 550px; */
 }
 .card {
   padding: 1.4rem;

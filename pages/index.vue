@@ -3,7 +3,7 @@
     <Hero />
     <div class="bg-white">
       <div class="client-logos "></div>
-      <!-- <section
+      <section
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
@@ -20,8 +20,8 @@
             class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10 "
           ></Card>
         </client-only>
-      </section> -->
-      <section class="py-24">
+      </section>
+      <!-- <section class="py-24">
         <h1 class="text-3xl text-blue-light text-center">How we do it</h1>
         <b-tabs
           v-model="activeTab"
@@ -75,17 +75,17 @@
             </div>
           </b-tab-item>
         </b-tabs>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
 <script>
-// import Card from '@/components/Card.vue'
+import Card from '@/components/Card.vue'
 import Hero from '@/components/Hero.vue'
 
 export default {
   components: {
-    // Card,
+    Card,
     Hero
   },
   data: () => {
@@ -102,7 +102,7 @@ export default {
             ]
           },
           img: 'cascade',
-          link: 'Learn More',
+          link: '',
           open: false,
           list: [
             'Fast, secure, and seamless application experience.',
@@ -117,7 +117,7 @@ export default {
               'Gain insight and visibility into the performance of the financing program at a store, region, and corporate level, with tools to measure by lender, channel, geography and even sales associate. Detailed and customizable reports ensure stakeholders are briefed on key performance metrics on a monthly, weekly, or daily basis. '
             ]
           },
-          link: 'Learn More',
+          link: '',
           open: false,
           img: 'data',
           list: [
@@ -133,7 +133,7 @@ export default {
               'There are higher rates of success when Versatile adapts the platform to work within a retailer’s existing sales processes, integrating with the tools and resources their customers and associates are already familiar with.  Retailers can represent their brand consistently throughout the application experience on a variety of devices and platforms, in-store and out-of-store.'
             ]
           },
-          link: 'Learn More',
+          link: '',
           open: false,
           img: 'custom',
           list: [
@@ -146,11 +146,11 @@ export default {
           description: {
             title: 'Available anywhere',
             p: [
-              'Any device with a browser can be leveraged to provide a seamless application experience, including in-store tablets and point of sales systems. Our suite of contactless self-service technologies, including Snap Sign™ and text-to-apply, enable customers to apply directly on their mobile phone.',
-              'Learn more about our platform and devices here.'
+              'Any device with a browser can be leveraged to provide a seamless application experience, including in-store tablets and point of sales systems. Our suite of contactless self-service technologies, including Snap Sign™ and text-to-apply, enable customers to apply directly on their mobile phone.'
+              // ' about our platform and devices here.'
             ]
           },
-          link: 'Learn More',
+          link: '',
           open: false,
           img: 'consumer',
           list: [

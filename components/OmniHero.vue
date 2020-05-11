@@ -22,7 +22,9 @@
         <hr class="w-20 mt-10 bg-blue-light" />
       </div>
     </div>
-    <div class="flex px-16 justify-evenly grad pt-20 flex-col lg:flex-row">
+    <div
+      class="flex px-16 justify-evenly grad pt-20 flex-col lg:flex-row py-24"
+    >
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Seamless Experience</h3>
         <p class="font-normal max-w-lg text-base pb-20">
