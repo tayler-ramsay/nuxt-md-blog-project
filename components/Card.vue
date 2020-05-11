@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full card-height">
+  <div class="card-height">
     <div
       class="relative w-full  bg-white  overflow-hidden cursor-pointer  card-height card max-w-lg m-auto"
       :class="{ open: item.open }"
@@ -28,9 +28,9 @@
         <div
           class=" text-right absolute bottom-0 px-3 text-blue-light w-full  pointer-events-none flex justify-end"
         >
-          <div class="more">
+          <!-- <div class="more">
             {{ item.link }}
-          </div>
+          </div> -->
           <div class="scroll-arrow items-center">
             <span>Scroll</span>
             <unicon
