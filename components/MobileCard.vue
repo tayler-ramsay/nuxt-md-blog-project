@@ -16,7 +16,7 @@
           <ul class=" leading-8 list-outside">
             <li v-for="n in list" :key="n.id" class="flex mb-5">
               <img
-                src="../assets/checkmark.png"
+                src="../static/checkmark.png"
                 alt=""
                 class="h-6 pr-4 mb-10"
               />

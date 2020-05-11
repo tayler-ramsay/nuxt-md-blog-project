@@ -4,7 +4,7 @@
   >
     <div class="card-wrapper max-w-5xl m-auto flex flex-col lg:flex-row px-8 ">
       <div class="bio-image mx-20">
-        <img src="../assets/bioPics/waterfall-icon.svg" alt="" srcset="" />
+        <img src="~/static/bioPics/logo-ko.png" alt="" srcset="" />
       </div>
       <div class="bio-card  pt-20 text-left relative">
         <p class="text-blue-light">{{ bio.name }}</p>

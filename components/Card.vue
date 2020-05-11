@@ -24,10 +24,6 @@
               {{ n }}
             </li>
           </ul>
-          <!-- <img
-            :src="require(`../assets/cards/${item.img}.svg`)"
-            :alt="item.img"
-          /> -->
         </div>
         <div
           class=" text-right absolute bottom-0 px-3 py-32 text-blue-light w-full  pointer-events-none flex justify-end"

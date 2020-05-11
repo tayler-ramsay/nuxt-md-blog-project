@@ -5,7 +5,7 @@
     >
       <div class="max-w-6xl">
         <div class="flex">
-          <img class="h-5" src="../assets/icons/logo-ko.png" alt="" />
+          <img class="h-5" src="~/static/icons/logo-ko.png" alt="" />
           <p class="text-blue-light text-lg">Partner with Us</p>
         </div>
         <h1

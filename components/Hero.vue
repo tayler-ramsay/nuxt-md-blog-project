@@ -6,19 +6,19 @@
     >
       <img
         id="triangle-top"
-        src="../assets/triangle-light.png"
+        src="../static/triangle-light.png"
         alt=""
         srcset=""
       />
       <img
         id="triangle-middle"
-        src="../assets/triangle-default.png"
+        src="../static/triangle-default.png"
         alt=""
         srcset=""
       />
       <img
         id="logo-ko"
-        src="../assets/logo-ko.png"
+        src="../static/logo-ko.png"
         alt=""
         srcset=""
         class=" z-0 invisible  lg:visible"

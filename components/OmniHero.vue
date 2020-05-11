@@ -4,10 +4,7 @@
       class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
     >
       <div class="max-w-xl">
-        <div class="flex">
-          <!-- <img class="h-10" src="../assets/icons/logo-ko.png" alt="" /> -->
-          <!-- <p class="text-blue-light text-2xl">We Are</p> -->
-        </div>
+        <div class="flex"></div>
         <h1
           class="text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
         >

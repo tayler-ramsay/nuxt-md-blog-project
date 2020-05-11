@@ -5,7 +5,7 @@
     >
       <div class="max-w-sm">
         <div class="flex">
-          <img class="h-10" src="../assets/icons/logo-ko.png" alt="" />
+          <img class="h-10" src="~/static/icons/logo-ko.png" alt="" />
           <p class="text-blue-light text-2xl">We Are</p>
         </div>
         <h1

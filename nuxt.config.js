@@ -72,7 +72,7 @@ export default async () => {
      ** Nuxt.js modules
      */
     modules: [
-      ['nuxt-buefy',{materialDesignIcons:false}],
+      ['nuxt-buefy', { css: false }],
       'nuxt-webfontloader',
       // Doc: https://axios.nuxtjs.org/usage
       '@nuxtjs/axios'
