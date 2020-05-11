@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="bg-local">
     <div
-      class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
+      class=" flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
     >
       <div class="max-w-sm">
         <div class="flex">
@@ -59,5 +59,17 @@ hr {
     rgba(1, 65, 128, 1) 0%,
     rgba(0, 156, 218, 1) 100%
   );
+}
+.bg-local {
+  background-image: linear-gradient(
+      100deg,
+      rgba(1, 65, 128, 1) 0%,
+      rgba(0, 156, 218, 0.7) 100%
+    ),
+    url('../static/shake.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -300px;
+  color: white;
 }
 </style>
