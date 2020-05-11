@@ -1,16 +1,16 @@
 <template>
   <div>
     <PartnersHero />
-    <div class="grid bg-white flex-col py-15">
+    <div class="grid bg-white flex-col py-15 ">
       <h1 class="text-blue text-center p-10 text-2xl font-semibold">
         Prime Lenders
       </h1>
-      <div class="prime flex justify-center flex-wrap">
+      <div class="prime flex justify-center  flex-wrap">
         <ul class="flex justify-between flex-wrap ">
           <li
             v-for="(lender, i) in lenders.prime"
             :key="i"
-            class="max-w-sm p-12 m-auto lg:m-0"
+            class="max-w-sm p-12 m-auto "
           >
             <img
               :src="require(`~/static/lenders/prime/partner-${lender.img}.png`)"
@@ -25,7 +25,7 @@
         Secondary Lenders
       </h1>
       <div class="prime flex justify-center flex-wrap">
-        <ul class="flex justify-between flex-wrap">
+        <ul class="flex justify-between lg:justify-start flex-wrap">
           <li
             v-for="(lender, n) in lenders.secondary"
             :key="n"
@@ -45,8 +45,8 @@
       <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
         No Credit
       </h1>
-      <div class="prime flex justify-center flex-wrap">
-        <ul class="flex justify-between flex-wrap">
+      <div class="prime flex justify-center  flex-wrap">
+        <ul class="flex justify-between lg:justify-start  flex-wrap">
           <li
             v-for="(lender, n) in lenders.noCredit"
             :key="n"
