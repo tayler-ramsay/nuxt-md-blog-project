@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div
-      class=" flex flex-col lg:flex-row justify-evenly items-center bg-local py-24"
+      class=" flex flex-col lg:flex-row justify-evenly items-center bg-local lg:py-32 py-24 pt-32"
     >
       <div class="max-w-sm">
         <div class="flex">
@@ -26,7 +26,7 @@
         <hr class="w-20 mt-10 bg-blue-light" />
       </div>
     </div>
-    <div class="flex px-16 justify-evenly grad pt-20 flex-col lg:flex-row ">
+    <div class="flex px-16 justify-evenly grad pt-20 flex-col lg:flex-row py-5">
       <div class="font-semibold text-white text-3xl max-w-sm">
         <h3 class="mb-5">30 Years of Experience</h3>
         <p class="font-normal max-w-lg text-base pb-20">
