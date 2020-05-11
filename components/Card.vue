@@ -4,8 +4,8 @@
       class="relative w-full  bg-white  overflow-hidden cursor-pointer  card-height card max-w-lg m-auto"
       :class="{ open: item.open }"
       :style="styleObject"
-      @click="handleView($event)"
     >
+      <!-- @click="handleView($event)" -->
       <div class="relative bg-white">
         <div
           class=" bg-cover bg-center  w-full pointer-events-none card-height"
