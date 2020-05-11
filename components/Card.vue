@@ -1,7 +1,7 @@
 <template>
   <div class="w-full card-height">
     <div
-      class="relative w-full  bg-white  overflow-hidden cursor-pointer  card-height card max-w-md m-auto"
+      class="relative w-full  bg-white  overflow-hidden cursor-pointer  card-height card max-w-lg m-auto"
       :class="{ open: item.open }"
       :style="styleObject"
       @click="handleView($event)"
@@ -43,7 +43,7 @@
       </div>
       <div class="description  pointer-events-none mt-5 ">
         <hr class="p-2 border-blue" />
-        <h3 class="text-blue text-2xl mb-3 flex justify-between">
+        <h3 class="text-blue text-2xl mb-3 flex justify-between pt-5">
           {{ item.description.title }}
           <!-- <unicon name="times-square" fill="#B2D237" class="p-4"></unicon> -->
         </h3>
