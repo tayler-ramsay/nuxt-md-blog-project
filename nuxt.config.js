@@ -18,7 +18,7 @@ async function getDynamicPaths(urlFilepathTable) {
 
 export default async () => {
   return {
-    mode: 'spa',
+    mode: 'ssr',
     /*
      ** Headers of the page
      */

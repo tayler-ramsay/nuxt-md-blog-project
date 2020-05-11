@@ -58,8 +58,8 @@ export default {
               'Retailers can leverage existing tablets and point of sales systems to allow customers to apply in-store. Dedicated kiosks are available in standing and tabletop form factors with custom graphic and wrapping options. Engaging with customers throughout the consultation and check-out process can ensure customers are getting the best opportunities for financing.'
             ]
           },
-          img: 'waterfall-icon',
-          link: 'Learn More',
+          img: 'store',
+          link: '',
           open: false,
           list: [
             'From free-standing kiosks to tablets and mobile phones, a wide array of options are available for in-store applications.',
@@ -76,9 +76,9 @@ export default {
             ]
           },
 
-          link: 'Learn More',
+          link: '',
           open: false,
-          img: 'waterfall-icon',
+          img: 'ecomm',
 
           list: [
             'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
@@ -94,9 +94,9 @@ export default {
             ]
           },
 
-          link: 'Learn More',
+          link: '',
           open: false,
-          img: 'waterfall-icon',
+          img: 'mobile',
 
           list: [
             'Safeguard concerns of personal health by using Versatile Contactless technology.',
@@ -112,9 +112,9 @@ export default {
             ]
           },
 
-          link: 'Learn More',
+          link: '',
           open: false,
-          img: 'waterfall-icon',
+          img: 'home',
 
           list: [
             'Take advantage of rapidly growing opportunities for financing remotely.  Great for out-of-store, consultative sales.',

@@ -5,7 +5,6 @@
       :class="{ open: item.open }"
       :style="styleObject"
     >
-      <!-- @click="handleView($event)" -->
       <div class="relative bg-white">
         <div
           class=" bg-cover bg-center  w-full pointer-events-none card-height"
@@ -42,6 +41,11 @@
         </div>
       </div>
       <div class="description  pointer-events-none mt-5 ">
+        <img
+          :src="require(`~/static/icons/${item.img}.png`)"
+          alt=""
+          class="p-10"
+        />
         <hr class="p-2 border-blue" />
         <h3 class="text-blue text-2xl mb-3 flex justify-between pt-5">
           {{ item.description.title }}
@@ -80,27 +84,25 @@ export default {
     }
   },
   methods: {
-    handleView(el) {
-      this.item.open = !this.item.open
-      const viewPortOffset = el.target.getBoundingClientRect()
-      if (this.item.open) {
-        document.body.style.top = `-${window.scrollY}px`
-
-        // document.body.style.position = 'fixed'
-
-        this.styleObject.transform = `translate(${viewPortOffset -
-          viewPortOffset}px, ${viewPortOffset.top * -1}px )`
-      } else {
-        this.styleObject = {
-          transform: 'translate(0px,0px)'
-        }
-        const scrollY = document.body.style.top
-        document.body.style.position = ''
-        document.body.style.top = ''
-        window.scrollTo(0, parseInt(scrollY) * -1)
-        el.target.scrollTop = 0
-      }
-    }
+    // handleView(el) {
+    //   this.item.open = !this.item.open
+    //   const viewPortOffset = el.target.getBoundingClientRect()
+    //   if (this.item.open) {
+    //     document.body.style.top = `-${window.scrollY}px`
+    //     // document.body.style.position = 'fixed'
+    //     this.styleObject.transform = `translate(${viewPortOffset -
+    //       viewPortOffset}px, ${viewPortOffset.top * -1}px )`
+    //   } else {
+    //     this.styleObject = {
+    //       transform: 'translate(0px,0px)'
+    //     }
+    //     const scrollY = document.body.style.top
+    //     document.body.style.position = ''
+    //     document.body.style.top = ''
+    //     window.scrollTo(0, parseInt(scrollY) * -1)
+    //     el.target.scrollTop = 0
+    //   }
+    // }
   }
 }
 </script>

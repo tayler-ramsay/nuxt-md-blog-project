@@ -22,7 +22,7 @@ export default {
       mobileView: false
     }
   },
-  created() {
+  mounted() {
     this.handelView()
     // eslint-disable-next-line nuxt/no-globals-in-created
     window.addEventListener('resize', this.handelView)
