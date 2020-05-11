@@ -3,7 +3,10 @@
     id="navigation"
     class="bg-black flex justify-between items-center text-white py-6 px-10"
   >
-    <nuxt-link class="brand-logo" :to="'./'">Versatile Credit</nuxt-link>
+    <nuxt-link class="brand-logo" :to="'./'">
+      <img src="../static/logo-white.png" alt=""
+    /></nuxt-link>
+
     <ul class="flex justify-end  items-center">
       <li>
         <nuxt-link :to="'./'" class="font-medium m-3">Home</nuxt-link>
