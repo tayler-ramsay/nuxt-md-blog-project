@@ -8,7 +8,7 @@
         <h1
           class="text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
         >
-          Instant Decisions. Anywhere.
+          Versatile Omnichannel
         </h1>
       </div>
       <div class="max-w-sm">

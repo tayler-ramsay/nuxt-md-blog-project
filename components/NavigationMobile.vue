@@ -5,7 +5,9 @@
       id="navigation"
       class="bg-black flex justify-between items-center text-white py-6 px-3"
     >
-      <div class="text-white">Versatile</div>
+      <nuxt-link class="brand-logo" :to="'./'">
+        <img src="../static/logo-white.png" alt=""
+      /></nuxt-link>
       <div class="nav-icon">
         <i
           v-if="!showNav"
@@ -63,7 +65,7 @@ export default {
           colorBottom: '#242B34'
         },
         {
-          title: 'Omnichannel',
+          title: 'Technology',
           icon: 'fas fa-comment-dots fa-fw',
           colorTop: '#242B34',
           colorBottom: '#242B34'

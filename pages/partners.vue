@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class=" bg-white ">
     <PartnersHero />
-    <div class="grid bg-white flex-col py-15 ">
+    <div class="grid flex-col py-15 max-w-3/4 m-auto">
       <h1 class="text-blue text-center p-10 text-2xl font-semibold">
-        Prime Lenders
+        Prime Credit
       </h1>
-      <div class="prime flex justify-center  flex-wrap">
-        <ul class="flex justify-between flex-wrap ">
+      <div class="primes flex flex-wrap justify-center">
+        <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between">
           <li
             v-for="(lender, i) in lenders.prime"
             :key="i"
-            class="max-w-sm p-12 m-auto "
+            class=" border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="require(`~/static/lenders/prime/partner-${lender.img}.png`)"
@@ -21,15 +21,16 @@
           </li>
         </ul>
       </div>
-      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
-        Secondary Lenders
+
+      <h1 class="text-blue-light text-center p-10 text-2xl font-semibold ">
+        Near-Prime Credit
       </h1>
-      <div class="prime flex justify-center flex-wrap">
-        <ul class="flex justify-between lg:justify-start flex-wrap">
+      <div class="primes flex flex-wrap justify-center">
+        <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between">
           <li
             v-for="(lender, n) in lenders.secondary"
             :key="n"
-            class="max-w-sm p-24  m-auto lg:m-0"
+            class="  border-8 border-blue-light w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="
@@ -42,15 +43,16 @@
           </li>
         </ul>
       </div>
-      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
-        No Credit
+
+      <h1 class="text-green text-center p-10 text-2xl font-semibold ">
+        No-Credit-Needed
       </h1>
-      <div class="prime flex justify-center  flex-wrap">
-        <ul class="flex justify-between lg:justify-start  flex-wrap">
+      <div class="primes flex flex-wrap justify-center">
+        <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between">
           <li
             v-for="(lender, n) in lenders.noCredit"
             :key="n"
-            class="max-w-sm p-24  m-auto lg:m-0"
+            class="  border-8 border-green w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="

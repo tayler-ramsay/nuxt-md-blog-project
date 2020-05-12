@@ -31,21 +31,32 @@
             RECOMMENDED FROM OUR <span class="text-green">[BLOG]</span>
           </h3>
           <article class=" space-y-1">
-            <h4 class="text-xl text-green">This is a heading from our blog</h4>
+            <h4 class="text-xl text-green">
+              The Benefit of “Contactless” Self-Service
+            </h4>
             <p class="">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV
-              ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick
-              quartz, vex nymphs. Waltz, bad nymph, for nymphs…
+              Many states throughout the country have issued “Stay at Home”
+              orders in response to the COVID-19 outbreak, and as the vast
+              majority of our fellow citizens comply, that has motivated forward
+              thinking retailers to re-evaluate their in-store experiences and
+              interactions between customers, employees, and their physical
+              storefronts.…
             </p>
           </article>
           <article class=" space-y-1">
-            <h4 class="text-xl text-green">This is a heading from our blog</h4>
+            <h4 class="text-xl text-green">
+              Offer a Consistent, Omnichannel Financing Experience While
+              Ensuring Business Continuity
+            </h4>
             <p>
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV
-              ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick
-              Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk
-              TV quiz. How quickly daft jumping zebras vex. Two driven jocks
-              help fax my big quiz. Quick, Baz…
+              Recent events have led to unexpected business interruptions for
+              many retailers. Consumers are staying at home, driving traffic
+              away from physical brick-and-mortar locations to eCommerce sites,
+              where growth rates are already rising by nearly 52% this year,
+              according to Quantum Metric. This has led retailers to explore
+              options to provide consumers with consistent shopping experiences
+              both in-store and online, as well as ways to ensure the business
+              continuity of their financing programs.…
             </p>
           </article>
         </div>
@@ -58,37 +69,30 @@
       <div>&#169;2020 VERSTILE CREDIT | Privacy Policy | Sitemap</div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
-          class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center "
+          class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center"
         >
-          <unicon
-            class=""
-            name="facebook-f"
-            fill="#242B34"
-            width="40px"
-            height="40px"
-          ></unicon>
+          <a href="https://www.linkedin.com/company/versatile-credit/">
+            <unicon
+              class=""
+              name="linkedin"
+              fill="#242B34"
+              width="40px"
+              height="40px"
+            ></unicon>
+          </a>
         </div>
         <div
           class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center"
         >
-          <unicon
-            class=""
-            name="linkedin"
-            fill="#242B34"
-            width="40px"
-            height="40px"
-          ></unicon>
-        </div>
-        <div
-          class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center"
-        >
-          <unicon
-            class=""
-            name="twitter"
-            fill="#242B34"
-            width="40px"
-            height="40px"
-          ></unicon>
+          <a href="https://twitter.com/versatilecredit">
+            <unicon
+              class=""
+              name="twitter"
+              fill="#242B34"
+              width="40px"
+              height="40px"
+            ></unicon>
+          </a>
         </div>
       </div>
     </div>

@@ -11,10 +11,10 @@
       <li>
         <nuxt-link :to="'./'" class="font-medium m-3">Home</nuxt-link>
         <nuxt-link :to="'./omnichannel'" class="font-medium m-3"
-          >Omnichannel</nuxt-link
+          >Technology</nuxt-link
         >
-        <nuxt-link :to="'./news'" class="font-medium m-3"
-          >In The News
+        <nuxt-link :to="'./partners'" class="font-medium m-3"
+          >Build Your Solution
         </nuxt-link>
         <nuxt-link :to="'./lender'" class="font-medium m-3"
           >For Lenders</nuxt-link
