@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10">
+  <div class="pb-48 lg:pb-0">
     <div
       id="main"
       class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-32 max-h-full h-screen relative "
@@ -24,41 +24,45 @@
         class=" z-0 invisible  lg:visible"
       />
       <div class="max-w-5xl">
-        <p class="text-xl md:text-2xl">
+        <p class="text-md md:text-2xl pb-4 font-base">
           Versatile Omnichannel | The Leading Technology Platform for
           Omnichannel Financing
         </p>
-        <h1 class="text-3xl  md:text-5xl font-bold">
+        <h1 class="text-2xl  md:text-5xl font-bold leading-8 md:leading-12">
           Financing options wherever a buying decision is made.
         </h1>
       </div>
-      <div class="flex justify-between max-w-2xl  my-10  mb-16 space-x-12">
+      <div
+        class="flex flex-col lg:flex-row justify-between max-w-2xl  my-10  mb-16 lg:mb-32  space-y-12 md:space-y-0 md:space-x-12"
+      >
         <div>
-          <h2 class="font-hairline text-2xl md:text-7xl">+20%</h2>
-          <p>Increase in Application volume</p>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+20%</h2>
+          <p class="text-xl">Increase in Application volume</p>
         </div>
         <div>
-          <h2 class="font-hairline text-2xl md:text-7xl">+30%</h2>
-          <p>Increase in average Sales Ticket</p>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+30%</h2>
+          <p class="text-xl">Increase in average Sales Ticket</p>
         </div>
         <div>
-          <h2 class="font-hairline text-2xl md:text-7xl">+40%</h2>
-          <p>Improvement in Approval Rate</p>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+40%</h2>
+          <p class="text-xl">Improvement in Approval Rate</p>
         </div>
       </div>
-      <div class="flex">
+      <div class="flex justify-between md:justify-start">
         <button
-          class="mr-8 bg-white rounded-sm text-blue font-semibold py-2 px-10 "
+          class="bg-white rounded-sm text-blue font-semibold py-2 px-2 mr-32"
         >
           Learn More
         </button>
         <a
           href=""
-          class="mr-6 rounded-sm text-white font-semibold p-3  hover:underline"
+          class="rounded-sm text-white font-semibold p-3  hover:underline"
           >Book a demo</a
         >
       </div>
-      <div class="text-lg text-white font-light m-auto my-10">
+      <div
+        class="text-lg lg:text-2xl text-blue font-bold m-auto my-10 mt-32 lg:mt-16"
+      >
         <p>Anyone - Anywhere - On Any Device</p>
       </div>
     </div>

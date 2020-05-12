@@ -1,13 +1,13 @@
 <template>
   <div class="container max-w-full">
     <Hero />
-    <div class="bg-white">
+    <div class="bg-white px-5">
       <div class="client-logos "></div>
       <section
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p class="text-blue-light flex-grow text-3xl w-full pt-10 pl-4">
+        <p class="text-blue-light flex-grow text-3xl w-full pt-10 mb-5">
           How we do it
         </p>
         <client-only>
@@ -17,7 +17,7 @@
             :item="card"
             :list="card.list"
             :paragraph="card.description.p"
-            class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10 pl-4"
+            class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10"
           ></Card>
         </client-only>
       </section>

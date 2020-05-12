@@ -9,7 +9,7 @@
         <div
           class=" bg-cover bg-center  w-full pointer-events-none card-height"
         >
-          <h1 class="font-semibold text-blue text-4xl mb-5">
+          <h1 class="font-semibold text-blue text-3xl mb-5">
             {{ item.title }}
           </h1>
           <ul class=" leading-8 list-outside">
@@ -40,23 +40,22 @@
           </div>
         </div>
       </div>
-      <div class="description  pointer-events-none mt-5 ">
+      <div class="pointer-events-none mt-5 ">
         <img
           :src="require(`~/static/icons/${item.img}.png`)"
           alt=""
           class="p-10"
         />
         <hr class="p-2 border-blue" />
-        <h3 class="text-blue text-2xl mb-3 flex justify-between pt-5">
+        <h3 class="text-blue text-2xl mb-3 flex justify-between pt-5 leading-8">
           {{ item.description.title }}
           <!-- <unicon name="times-square" fill="#B2D237" class="p-4"></unicon> -->
         </h3>
-        <p v-for="p in paragraph" :key="p.id" class="mb-3 py-4">
+        <p v-for="p in paragraph" :key="p.id" class="mb-3 py-4 w-full">
           {{ p }}
         </p>
       </div>
     </div>
-    <div class="screen"></div>
   </div>
 </template>
 
@@ -112,9 +111,6 @@ export default {
   /* height: 550px; */
 }
 .card {
-  padding: 1.4rem;
-  z-index: 0;
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.45, 1.3);
 }
 
 .scroll-arrow {
