@@ -22,7 +22,7 @@
         </ul>
       </div>
 
-      <h1 class="text-blue-light text-center p-10 text-2xl font-semibold ">
+      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
         Near-Prime Credit
       </h1>
       <div class="primes flex flex-wrap justify-center">
@@ -30,7 +30,7 @@
           <li
             v-for="(lender, n) in lenders.secondary"
             :key="n"
-            class="  border-8 border-blue-light w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class="  border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="
@@ -44,7 +44,7 @@
         </ul>
       </div>
 
-      <h1 class="text-green text-center p-10 text-2xl font-semibold ">
+      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
         No-Credit-Needed
       </h1>
       <div class="primes flex flex-wrap justify-center">
@@ -52,7 +52,7 @@
           <li
             v-for="(lender, n) in lenders.noCredit"
             :key="n"
-            class="  border-8 border-green w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class="  border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="
