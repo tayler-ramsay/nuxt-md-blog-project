@@ -9,10 +9,14 @@
       <input id="name" type="text" class="h-12 bg-slate mt-2" />
       <label for="email" class="text-white">Email*</label>
       <input id="email" type="text" class="h-12 bg-slate" />
-      <div class="flex flex-row max-w-full">
+      <div class="flex flex-col lg:flex-row max-w-full">
         <div class="flex flex-col w-full">
           <label for="company" class="text-white mb-5">Company</label>
-          <input id="company" type="text" class="h-12 bg-slate flex-1 mr-5" />
+          <input
+            id="company"
+            type="text"
+            class="h-12 bg-slate flex-1 lg:mr-5"
+          />
         </div>
         <div class="flex flex-col max-w-full">
           <label for="phone" class="text-white mb-5">Phone*</label>

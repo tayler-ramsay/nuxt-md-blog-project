@@ -7,7 +7,7 @@
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p class="text-blue-light flex-grow text-3xl w-full pt-10">
+        <p class="text-blue-light flex-grow text-3xl w-full pt-10 pl-4">
           How we do it
         </p>
         <client-only>
@@ -17,7 +17,7 @@
             :item="card"
             :list="card.list"
             :paragraph="card.description.p"
-            class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10 "
+            class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10 pl-4"
           ></Card>
         </client-only>
       </section>

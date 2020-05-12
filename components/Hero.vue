@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="pb-10">
     <div
       id="main"
-      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-32 max-h-full h-screen relative"
+      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-32 max-h-full h-screen relative "
     >
       <img
         id="triangle-top"
@@ -34,15 +34,15 @@
       </div>
       <div class="flex justify-between max-w-2xl  my-10  mb-16 space-x-12">
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+20%</h2>
+          <h2 class="font-hairline text-2xl md:text-7xl">+20%</h2>
           <p>Increase in Application volume</p>
         </div>
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+30%</h2>
+          <h2 class="font-hairline text-2xl md:text-7xl">+30%</h2>
           <p>Increase in average Sales Ticket</p>
         </div>
         <div>
-          <h2 class="font-hairline text-5xl md:text-7xl">+40%</h2>
+          <h2 class="font-hairline text-2xl md:text-7xl">+40%</h2>
           <p>Improvement in Approval Rate</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
           >Book a demo</a
         >
       </div>
-      <div class="text-2xl text-white font-light m-auto">
+      <div class="text-lg text-white font-light m-auto my-10">
         <p>Anyone - Anywhere - On Any Device</p>
       </div>
     </div>
