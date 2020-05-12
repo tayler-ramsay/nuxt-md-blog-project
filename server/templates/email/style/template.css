@@ -1,0 +1,178 @@
+.template-container {
+  font-family: Helvetica, serif;
+  background: #f1f1f1;
+  /*padding: 20px 0;*/
+}
+
+.template {
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.template .table {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.template .table thead tr {
+  background: #F2F2F2;
+  color: #707070;
+}
+
+.template .table th, .template .table td {
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.template a {
+  color: #79bb47;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.template .template-title, .template .template-subtitle {
+  text-align: center;
+}
+
+.template-subtitle {
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.template-title {
+  margin-bottom: 0;
+}
+
+.template-content {
+  margin-top: 40px;
+}
+
+.template .template-body {
+  background-color: #fff;
+  color: #404040;
+}
+
+.template .template-footer {
+  /*background-color: #f1f1f1;*/
+  padding-top: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #e1e1e1;
+  font-size: 11px;
+  color: #666
+}
+
+.template .data-block {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px
+}
+
+.template .data-block h2 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.template .data-block p {
+  font-size: 13px;
+  padding: 5px;
+  margin: 0
+}
+
+.template .data-block p.short-width {
+  max-width: 300px;
+}
+
+.template .data-block label {
+  display: inline-block;
+  width: 150px
+}
+
+.template .data-block span {
+  /*width: 150px;*/
+  display: inline-block;
+}
+
+.template .profile-info {
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.template .profile-info td:first-child {
+  color: #666;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  text-align: right;
+  padding: 6px 10px 6px 0;
+}
+
+.template .profile-info td:last-child {
+  padding: 6px 4px 6px 6px;
+  border-top: 1px dotted #D5E4F1;
+}
+
+.template pre {
+  font-size: 11px;
+}
+
+.template-icon {
+  width: 120px;
+  height: 121px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.template-top-logo {
+  background: url(https://static.versatilecredit.com/content/commerce/email/group/versatile/logo.png) no-repeat bottom;
+  background-size: contain;
+  padding-top: 20px;
+  width: 250px;
+  height: 41px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.copy {
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.copy a {
+  color: #666;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.template a.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #fff;
+  background: #79bb47 none;
+  border: 1px solid #79bb47;
+}
