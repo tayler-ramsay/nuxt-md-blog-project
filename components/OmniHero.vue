@@ -42,11 +42,11 @@
         </p>
       </div>
       <div class="font-semibold text-white text-2xl max-w-sm">
-        <h3 class="mb-5">Subject Matter Expertise</h3>
+        <h3 class="mb-5">Customized and Branded</h3>
         <p class="font-normal max-w-sm text-base pb-20">
-          We leverage our subject matter expertise and help customize our
-          deployments to work alongside retailers’ business processes so that
-          credit utilization is optimized.
+          Retailers can customize the look, feel and experience to ensure a
+          consistent brand is represented on a variety of devices and engagement
+          points..
         </p>
       </div>
     </div>

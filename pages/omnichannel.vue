@@ -1,22 +1,6 @@
 <template>
   <div class="bg-white">
     <OmniHero class="mb-10" />
-    <!-- <section
-      v-scroll-reveal
-      class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
-    >
-      <client-only>
-        <Card
-          v-for="(card, index) in cards"
-          :key="index"
-          :item="card"
-          :list="card.list"
-          :paragraph="card.description.p"
-          class=" lg:flex-1 lg:min-w-1/2  max-w-lg  mb-10 "
-        ></Card>
-      </client-only>
-    </section> -->
-
     <section class="py-24">
       <h1 class="text-3xl text-blue-light text-center">How we do it</h1>
       <client-only>
@@ -33,6 +17,9 @@
             class="flex flex-col lg:flex-row items-center"
           >
             <div>
+              <h1 class="font-semibold text-blue text-4xl py-5">
+                {{ card.description.title }}
+              </h1>
               <ul>
                 <li
                   v-for="n in card.list"
@@ -51,9 +38,6 @@
                   </span>
                 </li>
               </ul>
-              <h1 class="font-semibold text-blue text-4xl py-5">
-                {{ card.description.title }}
-              </h1>
               <p
                 v-for="(p, e) in card.description.p"
                 :key="e"

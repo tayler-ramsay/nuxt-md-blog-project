@@ -26,18 +26,12 @@
             class="app-container"
             :style="{ '--i': i }"
           >
-            <div
-              class="app-card"
-              :style="{
-                background:
-                  'linear-gradient(to bottom, ' +
-                  app.colorTop +
-                  ', ' +
-                  app.colorBottom +
-                  ')'
-              }"
-            >
-              <i :class="app.icon"></i>
+            <div class="app-card">
+              <img
+                :src="require(`~/static/icons/nav-${app.icon}.png`)"
+                alt=""
+                class="app-icon"
+              />
               <div class="app-title">
                 {{ app.title }}
               </div>
@@ -60,39 +54,27 @@ export default {
       apps: [
         {
           title: 'Home',
-          icon: 'fas fa-igloo fa-fw',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          icon: 'home'
         },
         {
           title: 'Technology',
-          icon: 'fas fa-comment-dots fa-fw',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          icon: 'tech'
         },
         {
           title: 'For Lender',
-          icon: 'fas fa-comment-dots fa-fw',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          icon: 'lender'
         },
         {
-          title: 'News',
-          icon: 'fas fa-comment-dots fa-fw',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          title: 'Build Your Solution',
+          icon: 'build'
         },
         {
-          title: 'Versatile',
-          icon: '',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          title: 'About Versatile',
+          icon: 'versatile'
         },
         {
           title: 'Contact',
-          icon: 'fas fa-comment-dots fa-fw',
-          colorTop: '#242B34',
-          colorBottom: '#242B34'
+          icon: 'contact'
         }
       ]
     }
@@ -187,9 +169,11 @@ export default {
 
 .app-container > .app-card {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #242b34;
   width: 4em;
   height: 4em;
   border-radius: 1px;
@@ -198,8 +182,9 @@ export default {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.app-container > .app-card > i {
-  color: #fff;
+.app-container > .app-card > img {
+  width: 2em;
+  padding-bottom: 0.3em;
 }
 .app-container > .app-card > i:hover {
   transform: scale(1.1);
@@ -208,7 +193,12 @@ export default {
 .app-container > .app-card > .app-title {
   color: #fff;
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0.8em;
 }
 
 .fade-enter-active,
