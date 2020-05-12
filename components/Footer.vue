@@ -7,7 +7,7 @@
           class="bg-green flex-1 learn px-3 md:px-24 py-10 space-y-5 text-white"
         >
           <h1 class="text-3xl md:text-7xl font-black leading-none max-w-xl">
-            WANT TO LEARN MORE
+            WANT TO LEARN MORE?
           </h1>
           <p class="text-blue-light font-bold text-2xl flex items-center">
             <unicon class="pr-4" name="phone" fill="#009CDA"></unicon

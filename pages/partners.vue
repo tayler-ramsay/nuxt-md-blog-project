@@ -2,15 +2,15 @@
   <div class=" bg-white ">
     <PartnersHero />
     <div class="grid flex-col py-15 max-w-3/4 m-auto">
-      <h1 class="text-blue text-center p-10 text-2xl font-semibold">
+      <h1 class="text-blue text-center p-10 text-3xl font-semibold">
         Prime Credit
       </h1>
       <div class="primes flex flex-wrap justify-center">
-        <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between">
+        <ul class="lg:flex max-w-6xl m-auto justify-center">
           <li
             v-for="(lender, i) in lenders.prime"
             :key="i"
-            class=" border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class=" w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="require(`~/static/lenders/prime/partner-${lender.img}.png`)"
@@ -22,7 +22,7 @@
         </ul>
       </div>
 
-      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
+      <h1 class="text-blue text-center p-10 text-3xl font-semibold ">
         Near-Prime Credit
       </h1>
       <div class="primes flex flex-wrap justify-center">
@@ -30,7 +30,7 @@
           <li
             v-for="(lender, n) in lenders.secondary"
             :key="n"
-            class="  border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class="  w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="
@@ -44,7 +44,7 @@
         </ul>
       </div>
 
-      <h1 class="text-blue text-center p-10 text-2xl font-semibold ">
+      <h1 class="text-blue text-center p-10 text-3xl font-semibold ">
         No-Credit-Needed
       </h1>
       <div class="primes flex flex-wrap justify-center">
@@ -52,7 +52,7 @@
           <li
             v-for="(lender, n) in lenders.noCredit"
             :key="n"
-            class="  border-8 border-blue w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class="  w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
           >
             <img
               :src="

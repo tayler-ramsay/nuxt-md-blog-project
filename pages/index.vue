@@ -1,15 +1,13 @@
 <template>
   <div class="container max-w-full">
     <Hero />
-    <div class="bg-white px-5">
+    <div class="bg-white px-5 pb-16">
       <div class="client-logos "></div>
       <section
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p
-          class="text-blue-light flex-grow text-3xl w-full pt-10 mb-5 lg:my-16"
-        >
+        <p class="text-blue-light flex-grow text-3xl w-full mt-10">
           How we do it
         </p>
         <client-only>
@@ -124,8 +122,8 @@ export default {
           open: false,
           img: 'consumer',
           list: [
-            'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made, in-store and online.',
-            'In-store devices like kiosks, tablets, and point of sales systems can be leveraged to provide customers with financing throughout the sales process.'
+            'Retailers can provide customers with comprehensive financing options whenever and whenever a buying decision is made.',
+            'Retailers can leverage in-store devices including kiosks, tablets, and point of sales systems to bring financing to the customer.'
           ]
         },
 
