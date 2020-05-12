@@ -1,6 +1,6 @@
 const emailClient = require('../adapter/smtp-email-client')
 const logger = require('../util/logger').forFile(__filename)
-const emailTo = process.env.EMAIL_CONTACT_RECIPIENT
+const emailTo = (process.env.EMAIL_CONTACT_RECIPIENT || '').split(',').filter((r) => !!r)
 
 module.exports.contactSubmit = async function (req, res) {
   const variables = {
