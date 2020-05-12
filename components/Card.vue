@@ -1,13 +1,13 @@
 <template>
   <div class="card-height">
     <div
-      class="relative w-full  bg-white  overflow-hidden card-height card max-w-lg m-auto"
+      class="relative w-full  bg-white  overflow-hidden card-height card max-w-lg m-auto mb-32"
       :class="{ open: item.open }"
       :style="styleObject"
     >
       <div class="relative bg-white">
         <div
-          class=" bg-cover bg-center  w-full pointer-events-none card-height"
+          class=" bg-cover bg-center  w-full pointer-events-none card-height "
         >
           <h1 class="font-semibold text-blue text-3xl mb-5">
             {{ item.title }}
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <div class="pointer-events-none mt-5 ">
+      <div class="pointer-events-none mt-5  max-w-sm">
         <img
           :src="require(`~/static/icons/${item.img}.png`)"
           alt=""

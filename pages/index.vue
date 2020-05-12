@@ -7,7 +7,9 @@
         v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p class="text-blue-light flex-grow text-3xl w-full pt-10 mb-5">
+        <p
+          class="text-blue-light flex-grow text-3xl w-full pt-10 mb-5 lg:my-16"
+        >
           How we do it
         </p>
         <client-only>
