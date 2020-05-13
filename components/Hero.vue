@@ -2,7 +2,7 @@
   <div class="pb-48 lg:pb-0">
     <div
       id="main"
-      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-48 md:pt-32 max-h-full h-screen relative "
+      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-32 md:pt-32 max-h-full h-screen relative "
     >
       <img
         id="triangle-top"
@@ -50,18 +50,18 @@
       </div>
       <div class="flex justify-between md:justify-start">
         <button
-          class="bg-white rounded-sm text-blue font-semibold py-2 px-2 mr-32"
+          class="bg-white rounded-sm text-blue font-semibold py-2 px-8 lg:mr-32"
         >
           Learn More
         </button>
         <a
           href=""
-          class="rounded-sm text-white font-semibold p-3  hover:underline"
+          class="rounded-sm text-white font-semibold p-3  hover:underline bg-green text-slate lg:text-white  lg:bg-transparent"
           >Book a demo</a
         >
       </div>
       <div
-        class="text-lg lg:text-2xl text-blue font-thin m-auto my-10 mt-32 lg:mt-16"
+        class="text-lg lg:text-2xl text-blue font-thin m-auto my-10 mt-16 lg:mt-16"
       >
         <p>Anyone | Anywhere | On Any Device</p>
       </div>

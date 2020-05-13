@@ -45,8 +45,8 @@
             </div>
           </nuxt-link>
         </transition-group>
-        <button class="text-white  bg-green book-btn font-semibold">
-          Book A Demo
+        <button class="text-white  bg-green book-btn font-semibold text-slate">
+          Contact
         </button>
       </div>
     </transition>

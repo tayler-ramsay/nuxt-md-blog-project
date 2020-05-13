@@ -11,7 +11,7 @@
           </h1>
           <p class="text-blue-light font-bold text-2xl flex items-center">
             <unicon class="pr-4" name="phone" fill="#009CDA"></unicon
-            >717.123.1234
+            ><a href="tel:18008511281">1-800-851-1281</a>
           </p>
           <p class=" text-large flex">
             <unicon class="pr-4 h-5" name="map-marker-alt" fill="#fff"></unicon>

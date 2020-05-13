@@ -1,14 +1,16 @@
 <template>
-  <div class="px-16">
-    <div class=" header h-64 mb-32">
-      <div class="flex items-end justify-start">
-        <h1 class="font-semibold text-blue text-2xl mb-5 p-4">
+  <div class="lg:px-16">
+    <div class=" header lg:h-64 lg:mb-32">
+      <div
+        class="flex  items-center lg:items-end justify-start flex-col lg:flex-row mb-10 px-5"
+      >
+        <h1 class="font-semibold text-blue text-2xl mb-10">
           {{ item.title }}
         </h1>
         <img
           :src="require(`~/static/icons/${item.img}.png`)"
           alt=""
-          class="p-10  w-48 -mx-8"
+          class="lg:w-48 lg:-mx-8 "
         />
       </div>
 
