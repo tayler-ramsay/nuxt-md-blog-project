@@ -1,17 +1,17 @@
 <template>
   <div>
     <AboutHero />
-    <LeaderProfile v-for="(bio, index) in bios" :key="index" :bio="bio" />
+    <!-- <LeaderProfile v-for="(bio, index) in bios" :key="index" :bio="bio" /> -->
   </div>
 </template>
 
 <script>
 import AboutHero from '@/components/AboutHero.vue'
-import LeaderProfile from '@/components/LeaderProfile.vue'
+// import LeaderProfile from '@/components/LeaderProfile.vue'
 export default {
   components: {
-    AboutHero,
-    LeaderProfile
+    AboutHero
+    // LeaderProfile
   },
   data() {
     return {

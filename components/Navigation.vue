@@ -22,7 +22,7 @@
         <nuxt-link :to="'/about'" class="font-medium m-3"
           >About Versatile</nuxt-link
         >
-        <nuxt-link :to="'/contact'" class="font-medium m-3">Contact</nuxt-link>
+        <nuxt-link :to="'/news'" class="font-medium m-3">News</nuxt-link>
       </li>
       <button class="font-semibold bg-green p-4 rounded-sm ml-3">
         Book a Demo

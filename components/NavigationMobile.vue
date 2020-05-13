@@ -1,32 +1,39 @@
-/* eslint-disable prettier/prettier */ /* eslint-disable prettier/prettier */
 <template>
   <div class="container absolute">
-    <div
-      id="navigation"
-      class="bg-black flex justify-between items-center text-white py-6 px-3"
-    >
-      <nuxt-link class="brand-logo" :to="'./'">
-        <img src="../static/logo-white.png" alt=""
-      /></nuxt-link>
-      <div class="nav-icon">
-        <i
-          v-if="!showNav"
-          class="fas fa-bars fa-fw text-green"
-          @click="showNavbar"
-        ></i>
-        <i v-else class="fas fa-times fa-fw text-green" @click="hideNavbar"></i>
+    <div class="relative">
+      <div
+        id="navigation"
+        class="bg-black flex justify-between items-center text-white py-6 px-3 "
+      >
+        <nuxt-link class="brand-logo" :to="'./'">
+          <img src="../static/logo-white.png" alt=""
+        /></nuxt-link>
+        <div class="nav-icon">
+          <i
+            v-if="!showNav"
+            class="fas fa-bars fa-fw text-green"
+            @click="showNavbar"
+          ></i>
+          <i
+            v-else
+            class="fas fa-times fa-fw text-green"
+            @click="hideNavbar"
+          ></i>
+        </div>
       </div>
     </div>
+
     <transition name="fade">
-      <div v-if="showNav" class="nav-container fixed">
+      <div v-if="showNav" class="nav-container">
         <transition-group class="app-wrapper" name="slide-in">
-          <div
+          <nuxt-link
             v-for="(app, i) in getApps"
             :key="`app${i}`"
             class="app-container"
             :style="{ '--i': i }"
+            :to="`/${app.route}`"
           >
-            <div class="app-card">
+            <div class="app-card" @click="hideNavbar">
               <img
                 :src="require(`~/static/icons/nav-${app.icon}.png`)"
                 alt=""
@@ -36,7 +43,7 @@
                 {{ app.title }}
               </div>
             </div>
-          </div>
+          </nuxt-link>
         </transition-group>
         <button class="text-white  bg-green book-btn font-semibold">
           Book A Demo
@@ -54,27 +61,33 @@ export default {
       apps: [
         {
           title: 'Home',
-          icon: 'home'
+          icon: 'home',
+          route: ''
         },
         {
           title: 'Technology',
-          icon: 'tech'
+          icon: 'tech',
+          route: 'omnichannel'
         },
         {
           title: 'For Lender',
-          icon: 'lender'
+          icon: 'lender',
+          route: 'lender'
         },
         {
           title: 'Build Your Solution',
-          icon: 'build'
+          icon: 'build',
+          route: 'partners'
         },
         {
           title: 'About Versatile',
-          icon: 'versatile'
+          icon: 'versatile',
+          route: 'about'
         },
         {
           title: 'Contact',
-          icon: 'contact'
+          icon: 'contact',
+          route: 'contact'
         }
       ]
     }
@@ -100,6 +113,13 @@ export default {
 </script>
 
 <style scoped>
+#navigation {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 2em;
+}
 .container {
   background-attachment: fixed;
   background-size: cover;
@@ -121,7 +141,7 @@ export default {
 }
 
 .nav-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -129,6 +149,7 @@ export default {
   min-height: 100vh;
   background: inherit;
   overflow-x: hidden;
+  margin-top: 3em;
 }
 .nav-container::before {
   content: '';
@@ -142,7 +163,7 @@ export default {
 
 .nav-container > .book-btn {
   position: absolute;
-  bottom: 80px;
+  bottom: 3em;
   z-index: 100;
   padding: 1rem;
   width: 100vw;
