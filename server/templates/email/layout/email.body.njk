@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel="stylesheet" href="server/templates/email/style/common.css" />
+    <link rel="stylesheet" href="server/templates/email/style/template.css" />
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+
+<div class="template-container">
+
+    <div class="template-top-logo"></div>
+
+    <div class="template">
+        <div class="template-body">
+            {% block content %}
+                <h1 class="template-title">Template Title</h1>
+                <h4 class="template-subtitle">This is a subtitle</h4>
+
+                <div class="template-content">
+                    This is the body.  <a href="#">This is a link.</a>
+
+                    <div class="data-block">
+                        <h2>Sample Data Block</h2>
+                        <p class="short-width"><label># Digesters</label><span class="pull-right">5</span></p>
+                        <p class="short-width"><label>Weight Processed</label><span class="pull-right">110 lbs</span></p>
+                    </div>
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Digester</th>
+                            <th>Type</th>
+                            <th>Created</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Location 1</td>
+                            <td>Machine 2</td>
+                            <td>Offline</td>
+                            <td>Now</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            {% endblock %}
+        </div>
+        <div class="template-footer">
+            <p>The contents of this email message and any attachments are intended solely for the addressee(s) and may contain confidential and/or privileged information and may be legally protected from disclosure.</p>
+            <p><a href="support@versatilets.com">support@versatilets.com</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

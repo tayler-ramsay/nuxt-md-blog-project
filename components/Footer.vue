@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex flex-col lg:flex-row">
-      <Form class=" md:flex-1" />
+      <ContactForm class=" md:flex-1" />
       <client-only>
         <div
           class="bg-green flex-1 learn px-3 md:px-24 py-10 space-y-5 text-white"
@@ -103,10 +103,10 @@
 </template>
 
 <script>
-import Form from '@/components/Form.vue'
+import ContactForm from '@/components/ContactForm.vue'
 export default {
   components: {
-    Form
+    ContactForm
   }
 }
 </script>

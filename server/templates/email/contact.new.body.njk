@@ -1,0 +1,36 @@
+{% extends './layout/email.body.njk' %}
+
+{% block content %}
+  <h2 class="template-title">New Website Contact Form Submission</h2>
+
+  <div class="template-content">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%;" style="margin-left: auto; margin-right: auto">
+      <tbody>
+      <tr>
+        <td valign="center"><strong>Name</strong></td>
+        <td>{{ name }}</td>
+      </tr>
+      <tr>
+        <td valign="center"><strong>Company</strong></td>
+        <td>{{ company }}</td>
+      </tr>
+      <tr>
+        <td valign="center"><strong>Phone</strong></td>
+        <td>{{ phone }}</td>
+      </tr>
+      <tr>
+        <td valign="center"><strong>Email</strong></td>
+        <td>{{ email }}</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 25px;">
+      <tbody>
+      <tr>
+        <td>{{ message | striptags(true) | escape | nl2br }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

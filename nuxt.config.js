@@ -1,5 +1,11 @@
-export default {
+module.exports = {
   mode: 'spa',
+
+  server: {
+    port: 8000,
+    timing: true
+  },
+
   /*
    ** Headers of the page
    */
@@ -30,7 +36,8 @@ export default {
   plugins: [
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     { src: '~/plugins/vue-unicons', ssr: false },
-    { src: '~/plugins/vue-tabs', ssr: false }
+    { src: '~/plugins/vue-tabs', ssr: false },
+    { src: '~/plugins/vuelidate', ssr: false }
   ],
 
   tailwindcss: {
