@@ -66,7 +66,10 @@
     <div
       class="bg-black text-base font-medium flex flex-col-reverse lg:flex-row justify-between lg:px-24 py-5 text-white items-center"
     >
-      <div>&#169;2020 VERSTILE CREDIT | Privacy Policy | Sitemap</div>
+      <div>
+        &#169;2020 VERSTILE CREDIT |
+        <nuxt-link :to="'/privacy'">privacy policy</nuxt-link> | sitemap
+      </div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
           class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center"
