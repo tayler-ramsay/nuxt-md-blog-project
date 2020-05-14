@@ -27,7 +27,7 @@
     >
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Seamless Experience</h3>
-        <p class="font-normal max-w-lg text-base pb-20">
+        <p class="font-normal max-w-lg text-base pb-20 pr-5">
           Versatile has a history of large scale integrations for high
           availability services with nearly 20 years of experience in portal
           development and 15+ years in consumer financing.
@@ -35,7 +35,7 @@
       </div>
       <div class="font-semibold text-white text-2xl max-w-lg">
         <h3 class="mb-5">Instant Decisions. Anywhere.</h3>
-        <p class="font-normal max-w-sm text-base pb-20">
+        <p class="font-normal max-w-sm text-base pb-20  pr-5">
           We leverage our subject matter expertise and help customize our
           deployments to work alongside retailers’ business processes so that
           credit utilization is optimized.
@@ -43,7 +43,7 @@
       </div>
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Customized and Branded</h3>
-        <p class="font-normal max-w-sm text-base pb-20">
+        <p class="font-normal max-w-sm text-base pb-20  pr-5">
           Retailers can customize the look, feel and experience to ensure a
           consistent brand is represented on a variety of devices and engagement
           points..
