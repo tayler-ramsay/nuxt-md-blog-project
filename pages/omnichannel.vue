@@ -73,7 +73,7 @@
         </div>
         <nuxt-link :to="'./partners'" class="flex stage  w-48 pt-5">
           <span class="text-green  inline-flex">Learn More</span>
-          <span class="text-green arrow bounce-3">🡒</span>
+          <span class="text-green arrow bounce-3 text-lg">🡒</span>
         </nuxt-link>
       </div>
     </div>
