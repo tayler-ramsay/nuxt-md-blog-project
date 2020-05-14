@@ -28,7 +28,7 @@
         :to="'/contact'"
         class="font-semibold bg-green p-4 rounded-sm ml-3 text-black"
       >
-        Contact
+        Contact Us
       </nuxt-link>
     </ul>
   </div>

@@ -12,7 +12,7 @@
             </div>
             <div class="excerpt">{{ item.excerpt }}[...]</div>
             <div class="author lg:absolute">
-              <p class="text-sm font-semibold text-green">
+              <p class="text-sm font-semibold text-blue-light">
                 <span class="text-slate">Posted by: </span>{{ item.author }}
               </p>
             </div>

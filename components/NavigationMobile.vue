@@ -49,7 +49,7 @@
           :to="'/contact'"
           class="text-base bg-green book-btn font-semibold text-slate text-center"
         >
-          <div @click="hideNavbar">Contact</div>
+          <div @click="hideNavbar">Contact Us</div>
         </nuxt-link>
       </div>
     </transition>
@@ -126,11 +126,11 @@ export default {
 .container {
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
-  min-height: 100vh;
+  /* width: 100%;
+  min-height: 100vh; */
   overflow: hidden;
   background-color: transparent;
-  z-index: 888;
+  z-index: 10;
 }
 
 .nav-icon {

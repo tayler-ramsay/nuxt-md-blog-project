@@ -11,7 +11,7 @@
       <p class="text-blue-light mb-10">
         <span class="text-white pr-2">*</span>required
       </p>
-      <Form class="flex flex-col space-y-3" @submit.prevent="onSubmit">
+      <Form class="flex flex-col space-y-6 " @submit.prevent="onSubmit">
         <FormGroup label="Full Name*" label-class="text-white">
           <TextField
             id="name"
@@ -30,24 +30,19 @@
           />
         </FormGroup>
 
-        <div class="flex flex-col lg:flex-row max-w-full">
-          <FormGroup label="Company" class="w-full" label-class="text-white">
-            <TextField
-              id="company"
-              v-model="company"
-              class="h-12 bg-slate flex-1 lg:mr-5"
-            />
-          </FormGroup>
-          <FormGroup label="Phone*" class="max-w-full" label-class="text-white">
-            <PhoneField
-              id="phone"
-              v-model="phone"
-              class="h-12 bg-slate"
-              required
-            />
-          </FormGroup>
-          <div />
-        </div>
+        <FormGroup label="Company" class="w-full" label-class="text-white">
+          <TextField id="company" v-model="company" class="h-12 bg-slate" />
+        </FormGroup>
+        <FormGroup label="Phone*" class="max-w-full" label-class="text-white">
+          <PhoneField
+            id="phone"
+            v-model="phone"
+            class="h-12 bg-slate"
+            required
+          />
+        </FormGroup>
+        <div />
+
         <FormGroup label="Message*" label-class="text-white">
           <TextArea
             id="message"
@@ -134,13 +129,13 @@ export default {
 
 <style lang="scss" scoped>
 input {
-  color: #b2d237;
+  color: #fff;
   padding: 1em;
 }
 
 textarea {
   display: block;
-  color: #b2d237;
+  color: #fff;
 }
 
 //  black: '#242B34',

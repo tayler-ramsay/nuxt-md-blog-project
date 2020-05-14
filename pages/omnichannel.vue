@@ -23,11 +23,11 @@
                 <li
                   v-for="n in card.list"
                   :key="n.id"
-                  class="text-xl font-semibold text-blue-light leading-8 flex"
+                  class="text-xl  font-normal text-blue-light leading-7 flex mb-6"
                 >
                   <unicon
                     name="check-circle"
-                    fill="#B2D237"
+                    fill="#014180"
                     class="pr-2 pt-1"
                     icon-style="monochrome"
                   ></unicon>
@@ -40,7 +40,7 @@
               <p
                 v-for="(p, e) in card.description.p"
                 :key="e"
-                class="lg:max-w-3xl text-lg leading-8 mb-5 flex-1"
+                class="lg:max-w-3xl text-lg leading-8 mb-5 flex-1 font-normal"
               >
                 {{ p }}
               </p>
@@ -71,7 +71,7 @@
           accomplish this by using our unrivaled network of industry leading
           providers.
         </div>
-        <nuxt-link :to="'./partners'" class="flex stage  w-48 pt-5">
+        <nuxt-link :to="'/partners'" class="flex stage  w-48 pt-5">
           <span class="text-green  inline-flex">Learn More</span>
           <span class="text-green arrow bounce-3 text-lg">🡒</span>
         </nuxt-link>
@@ -318,8 +318,8 @@ export default {
 }
 
 .tabs li.is-active a {
-  border-bottom-color: #b2d237;
-  color: #b2d237;
+  border-bottom-color: #009cda;
+  color: #009cda;
 }
 
 .tabs ul {
@@ -413,8 +413,8 @@ export default {
 }
 
 .tabs.is-toggle li.is-active a {
-  background-color: #b2d237;
-  border-color: #b2d237;
+  background-color: #009cda;
+  border-color: #009cda;
   color: white;
   z-index: 1;
 }

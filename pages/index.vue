@@ -3,13 +3,14 @@
     <Hero />
     <div class="bg-white px-5 pb-16">
       <div class="client-logos "></div>
+      <p
+        class="text-blue-light flex-grow text-3xl  flex-1 w-full text-center py-10"
+      >
+        How we do it
+      </p>
       <section
-        v-scroll-reveal
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
       >
-        <p class="text-blue-light flex-grow text-3xl w-full mt-10">
-          How we do it
-        </p>
         <client-only>
           <Card
             v-for="(card, index) in cards"
@@ -110,7 +111,7 @@ export default {
           ]
         },
         {
-          title: 'Consumer Engagement Points',
+          title: 'Consumer Engagement',
           description: {
             title: 'Available anywhere',
             p: [
@@ -302,8 +303,8 @@ export default {
 }
 
 .tabs li.is-active a {
-  border-bottom-color: #b2d237;
-  color: #b2d237;
+  border-bottom-color: #009cda;
+  color: #009cda;
 }
 
 .tabs ul {

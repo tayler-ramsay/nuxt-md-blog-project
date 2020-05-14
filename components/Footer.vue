@@ -11,7 +11,7 @@
           </h1>
           <p class="text-blue-light font-bold text-2xl flex items-center">
             <unicon class="pr-4" name="phone" fill="#009CDA"></unicon
-            ><a href="tel:18008511281">1-800-851-1281</a>
+            ><a href="tel:18008511281">1.800.851.1281</a>
           </p>
           <p class=" text-large flex">
             <unicon class="pr-4 h-5" name="map-marker-alt" fill="#fff"></unicon>
@@ -72,13 +72,12 @@
       </div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
-          class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center"
+          class="logo bg-slate p-8 w-8 h-8 rounded-full flex justify-center items-center mb-5 lg:mb-0"
         >
           <a href="https://www.linkedin.com/company/versatile-credit/">
             <unicon
-              class=""
+              class="social"
               name="linkedin"
-              fill="#242B34"
               width="40px"
               height="40px"
             ></unicon>
@@ -89,9 +88,8 @@
         >
           <a href="https://twitter.com/versatilecredit">
             <unicon
-              class=""
+              class="social"
               name="twitter"
-              fill="#242B34"
               width="40px"
               height="40px"
             ></unicon>
@@ -111,7 +109,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.social {
+  fill: #000;
+  &:hover {
+    fill: rgba(0, 156, 218, 1);
+  }
+}
 .learn {
   background: linear-gradient(
     45deg,

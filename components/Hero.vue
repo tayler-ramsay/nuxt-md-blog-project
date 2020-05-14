@@ -61,7 +61,7 @@
         >
       </div>
       <div
-        class="text-lg lg:text-2xl text-blue font-thin m-auto my-10 mt-16 lg:mt-16"
+        class="text-lg lg:text-2xl text-white font-thin m-auto my-10 mt-16 lg:mt-16"
       >
         <p>Anyone | Anywhere | On Any Device</p>
       </div>
