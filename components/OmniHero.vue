@@ -1,12 +1,11 @@
 <template>
   <div>
     <div
-      class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
+      class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32 px-8"
     >
       <div class="max-w-xl">
-        <div class="flex"></div>
         <h1
-          class="text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
+          class="text-5xl lg:text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
         >
           Versatile Omnichannel
         </h1>

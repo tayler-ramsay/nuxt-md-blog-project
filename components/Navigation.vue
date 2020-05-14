@@ -24,9 +24,12 @@
         >
         <nuxt-link :to="'/news'" class="font-medium m-3">News</nuxt-link>
       </li>
-      <button class="font-semibold bg-green p-4 rounded-sm ml-3 text-black">
+      <nuxt-link
+        :to="'/contact'"
+        class="font-semibold bg-green p-4 rounded-sm ml-3 text-black"
+      >
         Contact
-      </button>
+      </nuxt-link>
     </ul>
   </div>
 </template>

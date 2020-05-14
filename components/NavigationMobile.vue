@@ -45,9 +45,12 @@
             </div>
           </nuxt-link>
         </transition-group>
-        <button class="text-white  bg-green book-btn font-semibold text-slate">
+        <nuxt-link
+          :to="'/contact'"
+          class="text-base bg-green book-btn font-semibold text-slate text-center"
+        >
           Contact
-        </button>
+        </nuxt-link>
       </div>
     </transition>
   </div>
@@ -75,7 +78,7 @@ export default {
           route: 'lender'
         },
         {
-          title: 'Build Your Solution',
+          title: 'Build A Solution',
           icon: 'build',
           route: 'partners'
         },
@@ -99,12 +102,17 @@ export default {
   },
   methods: {
     showNavbar() {
+      document.body.style.overflowY = 'hidden'
       this.showNav = !this.showNav
       setTimeout(() => {
         this.showApps = true
       }, 600)
     },
     hideNavbar() {
+      const scrollY = document.body.style.top
+      document.body.style.position = ''
+      document.body.style.top = ''
+      window.scrollTo(0, parseInt(scrollY || '0') * -1)
       this.showNav = !this.showNav
       this.showApps = !this.showApps
     }
@@ -159,6 +167,7 @@ export default {
   background: inherit;
   z-index: 10;
   background-color: rgba(1, 65, 128, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .nav-container > .book-btn {
@@ -174,7 +183,7 @@ export default {
   grid-template-columns: repeat(2, minmax(120px, 1fr));
   width: 100%;
   margin-top: 2em;
-  gap: 1.5rem 1rem;
+  gap: 1.5rem 0rem;
 
   /* min-width: 720px; */
 }
@@ -185,7 +194,7 @@ export default {
   align-items: center;
   flex-direction: column;
   /* padding: 20px; */
-  z-index: 11;
+  z-index: 1100;
 }
 
 .app-container > .app-card {
@@ -195,18 +204,21 @@ export default {
   justify-content: center;
   align-items: center;
   background: #242b34;
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   border-radius: 1px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
   font-size: 3rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
+
 .app-container > .app-card > img {
-  width: 2em;
+  width: 1em;
   padding-bottom: 0.3em;
+  align-items: center;
 }
+
 .app-container > .app-card > i:hover {
   transform: scale(1.1);
 }
@@ -214,12 +226,26 @@ export default {
 .app-container > .app-card > .app-title {
   color: #fff;
   padding-top: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
   position: absolute;
   bottom: 0.8em;
+}
+
+@media (min-width: 400px) {
+  .app-container > .app-card {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .app-container > .app-card > img {
+    width: 1.5em;
+    padding-bottom: 0.3em;
+  }
+  .app-container > .app-card > .app-title {
+    font-size: 1rem;
+  }
 }
 
 .fade-enter-active,

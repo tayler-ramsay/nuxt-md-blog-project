@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-48 lg:pb-0">
+  <div class="pb-64 lg:pb-0 mb-6 lg:mb-0">
     <div
       id="main"
       class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-32 md:pt-32 max-h-full h-screen relative "
