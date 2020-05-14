@@ -48,9 +48,8 @@
         <nuxt-link
           :to="'/contact'"
           class="text-base bg-green book-btn font-semibold text-slate text-center"
-          @click="hideNavbar"
         >
-          Contact
+          <div @click="hideNavbar">Contact</div>
         </nuxt-link>
       </div>
     </transition>
