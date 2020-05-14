@@ -14,7 +14,7 @@
             v-for="(card, i) in cards"
             :key="i"
             :label="card.title"
-            class="flex flex-col lg:flex-row items-center"
+            class="flex flex-col lg:flex-row items-center m-auto"
           >
             <div>
               <h1 class="font-semibold text-blue text-4xl py-5">
