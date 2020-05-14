@@ -13,7 +13,10 @@ module.exports.contactSubmit = async function (req, res) {
 
   logger.info(`New contact form submission: ${JSON.stringify(variables)}`)
 
-  await emailClient.sendMail('contact.new', variables, [emailTo])
-
-  res.status(200).send()
+  try {
+    await emailClient.sendMail('contact.new', variables, emailTo)
+    res.status(200).send()
+  } catch (e) {
+    res.status(500).send()
+  }
 }
