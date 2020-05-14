@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-black">
     <div
-      class=" flex flex-col lg:flex-row justify-evenly items-center bg-local lg:py-32 py-24 pt-32 px-5"
+      class=" flex flex-col lg:flex-row justify-evenly items-center bg-local lg:py-48 py-24 pt-32 px-5"
     >
       <div class="max-w-sm">
         <div class="flex">
@@ -32,20 +32,18 @@
         </nuxt-link>
       </div>
     </div>
-    <div
-      class="flex px-5 lg:px-16 justify-evenly grad pt-20 flex-col lg:flex-row py-5"
-    >
-      <div class="font-semibold text-white text-3xl max-w-sm">
+    <div class="bg-slate flex flex-col md:flex-row justify-between py-20">
+      <div class="font-semibold text-white text-3xl m-auto mb-20">
         <h3 class="mb-5">30 Years of Experience</h3>
-        <p class="font-normal max-w-lg text-base pb-20">
+        <p class="font-normal  text-base max-w-sm">
           Versatile has a history of large scale integrations for high
           availability services with nearly 20 years of experience in portal
           development and 15+ years in consumer financing.
         </p>
       </div>
-      <div class="font-semibold text-white text-3xl max-w-sm">
+      <div class="font-semibold text-white text-3xl m-auto mb-20">
         <h3 class="mb-5">Subject Matter Expertise</h3>
-        <p class="font-normal max-w-sm text-base pb-20">
+        <p class="font-normal text-base  max-w-sm">
           We leverage our subject matter expertise and help customize our
           deployments to work alongside retailers’ business processes so that
           credit utilization is optimized.
