@@ -4,13 +4,13 @@
       <div
         class="flex  items-center lg:items-end justify-start flex-col lg:flex-row mb-10 px-5"
       >
-        <h1 class="font-semibold text-blue text-2xl mb-10">
+        <h1 class="font-semibold text-blue text-2xl mb-10 max-w-sm mr-8">
           {{ item.title }}
         </h1>
         <img
           :src="require(`~/static/icons/${item.img}.png`)"
           alt=""
-          class="lg:w-48 lg:-mx-8 "
+          class="lg:w-48"
         />
       </div>
 

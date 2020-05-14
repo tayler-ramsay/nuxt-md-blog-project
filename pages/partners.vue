@@ -1,16 +1,16 @@
 <template>
-  <div class=" bg-white ">
+  <div class=" bg-white">
     <PartnersHero />
-    <div class="grid flex-col py-15 max-w-3/4 m-auto">
+    <div class="flex-col">
       <h1 class="text-blue text-center p-10 text-3xl font-semibold">
         Prime Credit
       </h1>
       <div class="primes flex flex-wrap justify-center">
-        <ul class="lg:flex max-w-6xl m-auto justify-center">
+        <ul class="lg:flex m-auto justify-center">
           <li
             v-for="(lender, i) in lenders.prime"
             :key="i"
-            class=" w-64 m-5 p-4 flex items-center h-48 flex-1 min-w-1/4 max-w-xs"
+            class=" w-64 m-5  flex items-center h-48 flex-1"
           >
             <img
               :src="require(`~/static/lenders/prime/partner-${lender.img}.png`)"

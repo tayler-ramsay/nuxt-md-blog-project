@@ -57,7 +57,7 @@
         <a
           href=""
           class="rounded-sm text-white font-semibold p-3  hover:underline bg-green text-slate lg:text-white  lg:bg-transparent"
-          >Book a demo</a
+          >Contact Us</a
         >
       </div>
       <div

@@ -41,19 +41,19 @@
               <p
                 v-for="(p, e) in card.description.p"
                 :key="e"
-                class="lg:max-w-6xl text-lg leading-8 mb-5 flex-1 w-full"
+                class="lg:max-w-3xl text-lg leading-8 mb-5 flex-1"
               >
                 {{ p }}
               </p>
             </div>
-            <div class="flex-1 md:p-24 w-lg min-w-3/4 lg:min-w-1/2 text-center">
+            <!-- <div class="flex-1 md:p-24 w-lg min-w-3/4 lg:min-w-1/2 text-center">
               <img
                 :src="require(`~/static/icons/${card.img}.png`)"
                 alt=""
                 srcset=""
                 class=" inline-block"
               />
-            </div>
+            </div> -->
           </b-tab-item>
         </b-tabs>
       </client-only>

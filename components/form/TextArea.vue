@@ -1,15 +1,16 @@
 <template>
   <!-- NOTE: Can't use b-input because it interferes with masks -->
   <textarea
+    :id="id"
     :type="type"
+    class="p-3"
     :class="{ 'is-invalid': invalid }"
     v-bind="$attrs"
     :value="value"
+    :name="id"
     @change="update($event.target.value)"
     @focus="focus"
     @blur="blur"
-    :id="id"
-    :name="id"
   ></textarea>
 </template>
 
@@ -17,8 +18,8 @@
 import FieldMixin from './FieldMixin'
 
 export default {
-  inheritAttrs: false,
   mixins: [FieldMixin],
+  inheritAttrs: false,
 
   props: {
     autofocus: {

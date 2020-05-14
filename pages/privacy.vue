@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white p-5 lg:p-16">
+  <div class="text-white p-5 lg:p-16 max-w-6xl m-auto">
     <h1 class="text-white font-semibold text-lg mb-5">Privacy Policy</h1>
     <p class="mb-10">
       1. Overview This privacy policy applies to your use of products and

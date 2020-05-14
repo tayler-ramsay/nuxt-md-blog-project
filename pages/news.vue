@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white py-16">
-    <div class="wrapper">
+    <div class="wrapper max-w-6xl m-auto">
       <ul v-for="(item, index) in list" :key="index">
         <li class="flex flex-col lg:flex-row list-item relative">
           <div class="left flex-1 p-8 lg:p-24">
@@ -63,6 +63,6 @@ export default {
 }
 
 .author {
-  bottom: 6em;
+  bottom: 3em;
 }
 </style>
