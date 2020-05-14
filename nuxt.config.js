@@ -2,7 +2,7 @@ module.exports = {
   mode: 'spa',
 
   server: {
-    port: 8000,
+    port: 8080,
     timing: true
   },
 
