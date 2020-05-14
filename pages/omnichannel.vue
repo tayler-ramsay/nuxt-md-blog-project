@@ -1,8 +1,7 @@
 <template>
   <div class="bg-white">
-    <OmniHero class="mb-10" />
-    <section class="py-24">
-      <h1 class="text-3xl text-blue-light text-center">How we do it</h1>
+    <OmniHero class="mb-5" />
+    <section class="pb-24">
       <client-only>
         <b-tabs
           v-model="activeTab"
@@ -33,7 +32,7 @@
                     icon-style="monochrome"
                   ></unicon>
 
-                  <span class="mb-5 max-w-4xl">
+                  <span class="mb-5 max-w-3xl">
                     {{ n }}
                   </span>
                 </li>
