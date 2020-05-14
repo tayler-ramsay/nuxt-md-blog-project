@@ -48,6 +48,7 @@
         <nuxt-link
           :to="'/contact'"
           class="text-base bg-green book-btn font-semibold text-slate text-center"
+          @click="hideNavbar"
         >
           Contact
         </nuxt-link>
@@ -88,9 +89,9 @@ export default {
           route: 'about'
         },
         {
-          title: 'Contact',
+          title: 'News',
           icon: 'contact',
-          route: 'contact'
+          route: 'news'
         }
       ]
     }
@@ -102,17 +103,12 @@ export default {
   },
   methods: {
     showNavbar() {
-      document.body.style.overflowY = 'hidden'
       this.showNav = !this.showNav
       setTimeout(() => {
         this.showApps = true
       }, 600)
     },
     hideNavbar() {
-      const scrollY = document.body.style.top
-      document.body.style.position = ''
-      document.body.style.top = ''
-      window.scrollTo(0, parseInt(scrollY || '0') * -1)
       this.showNav = !this.showNav
       this.showApps = !this.showApps
     }
