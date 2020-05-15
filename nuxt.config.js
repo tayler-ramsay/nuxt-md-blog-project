@@ -63,6 +63,12 @@ module.exports = {
   optimizedImages: {
     optimizeImages: true
   },
+  pngquant: true,
+
+  webp: {
+    preset: 'default',
+    quality: 75
+  },
   /*
    ** Nuxt.js modules
    */
