@@ -23,15 +23,13 @@
             <a :href="item.link" target="_blank">
               <figure class="picture">
                 <source
-                  :data-srcset="
+                  :srcSet="
                     require(`~/static/blogHeros/post-${item.num}.png?webp`)
                   "
                   type="image/webp"
                 />
                 <source
-                  :data-srcset="
-                    require(`~/static/blogHeros/post-${item.num}.png`)
-                  "
+                  :srcSet="require(`~/static/blogHeros/post-${item.num}.png`)"
                   type="image/png"
                 />
                 <img
