@@ -9,7 +9,7 @@
             class=""
           />
         </div>
-        <div class="h-10">
+        <div class="h-10 mb-4">
           <h1 class="font-semibold text-blue text-2xl max-w-sm pb-4">
             {{ item.title }}
           </h1>
