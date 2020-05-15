@@ -6,6 +6,9 @@
     <nuxt-link class="brand-logo" :to="'./'">
       <img src="../static/logo-white.png" alt=""
     /></nuxt-link>
+    <nuxt-link class="brand-logo-small" :to="'./'">
+      <img src="../static/logo-ko.png" alt=""
+    /></nuxt-link>
 
     <ul class="flex justify-end  items-center">
       <li>
@@ -36,4 +39,23 @@
 
 <script></script>
 
-<style></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 1063px) {
+  .brand-logo {
+    display: none;
+  }
+  .brand-logo-small {
+    max-width: 5rem;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1063px) {
+  .brand-logo {
+    display: block;
+  }
+  .brand-logo-small {
+    display: none;
+  }
+}
+</style>
