@@ -107,8 +107,9 @@ export default {
           link: '',
           open: false,
           list: [
-            'Fast, secure, and seamless application experience.',
-            'Unparalleled selection of 25+ prime, near-prime and no credit required providers.'
+            'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum',
+            'Unparalleled network of 25+ prime, near-prime and no credit required providers.',
+            'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average'
           ]
         },
         {
