@@ -1,5 +1,5 @@
 <template>
-  <div class=" border-b border-blue-light">
+  <div class="">
     <div
       class="flex flex-col lg:flex-row flex-start lg:items-center lg:py-10 lg:max-w-1/2 m-auto"
     >
