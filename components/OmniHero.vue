@@ -21,41 +21,40 @@
         <hr class="w-20 mt-10 bg-blue-light" />
       </div>
     </div>
-    <div class="flex grad  flex-col lg:flex-row p-5 md:p-16">
-      <div
-        class="m-auto flex flex-col md:flex-row justify-evenly md:space-x-10 space-y-12 md:space-y-0"
-      >
-        <div class="font-semibold text-white text-2xl max-w-sm ">
-          <h3 class="mb-5">Seamless Experience</h3>
-          <p class="font-normal max-w-lg text-base  pr-5">
-            The cascade guides customers through a simplified financing
-            experience, enabling retailers to address customers throughout the
-            FICO spectrum while driving higher application and approval volumes.
-          </p>
-        </div>
-        <div class="font-semibold text-white text-2xl max-w-lg">
-          <h3 class="mb-5">Instant Decisions. Anywhere.</h3>
-          <p class="font-normal max-w-sm text-base  pr-5">
-            Customers receive an instant credit decision and are presented with
-            an opportunity to leave the store or website with the products and
-            services they want, quickly and easily.
-          </p>
-        </div>
-        <div class="font-semibold text-white text-2xl max-w-sm">
-          <h3 class="mb-5">Customized and Branded</h3>
-          <p class="font-normal max-w-sm text-base  pr-5">
-            Retailers can customize the look, feel and experience to ensure a
-            consistent brand is represented on a variety of devices and
-            engagement points.
-          </p>
-        </div>
-      </div>
-    </div>
+    <ColumnContent
+      v-for="(card, index) in cards"
+      :key="index"
+      :content="card"
+      class="grad"
+      :column-type="3"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import ColumnContent from '@/components/ColumnContent.vue'
+export default {
+  components: {
+    ColumnContent
+  },
+  data() {
+    return {
+      cards: [
+        {
+          titleA: 'Seamless Experience',
+          columnA:
+            ' The cascade guides customers through a simplified financing experience, enabling retailers to address customers throughout the FICO spectrum while driving higher application and approval volumes.',
+          titleB: 'Instant Decisions. Anywhere.',
+          columnB:
+            'Customers receive an instant credit decision and are presented with an opportunity to leave the store or website with the products and services they want, quickly and easily.',
+          titleC: 'Customized and Branded',
+          columnC:
+            ' Retailers can customize the look, feel and experience to ensure a consistent brand is represented on a variety of devices and engagement points.'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>

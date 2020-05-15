@@ -32,31 +32,37 @@
         </nuxt-link> -->
       </div>
     </div>
-    <div class="grad flex flex-col md:flex-row justify-between py-20">
-      <div class="font-semibold text-white text-3xl m-auto mb-20">
-        <h3 class="mb-5">30 Years of Experience</h3>
-        <p class="font-normal  text-base max-w-sm">
-          Versatile has a history of large scale integrations with high
-          availability, carrier grade, services and technologies, as well as
-          nearly 20 years of experience in portal development and 15+ years in
-          consumer financing.
-        </p>
-      </div>
-      <div class="font-semibold text-white text-3xl m-auto mb-20">
-        <h3 class="mb-5">Subject Matter Expertise</h3>
-        <p class="font-normal text-base  max-w-sm">
-          We leverage our subject matter expertise to customize our deployments
-          and work alongside retailers and lenders to deploy innovative and
-          successful financing experiences tailored to their brands, customers
-          and processes.
-        </p>
-      </div>
-    </div>
+    <ColumnContent
+      v-for="(card, index) in cards"
+      :key="index"
+      :content="card"
+      class="grad"
+      :column-type="2"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import ColumnContent from '@/components/ColumnContent.vue'
+export default {
+  components: {
+    ColumnContent
+  },
+  data() {
+    return {
+      cards: [
+        {
+          titleA: '30 Years of Experience',
+          columnA:
+            ' Versatile has a history of large scale integrations with high availability, carrier grade, services and technologies, as well as   nearly 20 years of experience in portal development and 15+ years in consumer financing.',
+          titleB: 'Subject Matter Expertise',
+          columnB:
+            ' We leverage our subject matter expertise to customize our deployments and work alongside retailers and lenders to deploy innovative and successful financing experiences tailored to their brands, customers and processes.'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>

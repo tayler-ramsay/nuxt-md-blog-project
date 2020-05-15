@@ -16,34 +16,13 @@
         </h1>
       </div>
     </div>
-    <div
-      class="flex px-16 justify-evenly bg-blue pt-20 flex-col lg:flex-row pt-24"
-    >
-      <div class="font-semibold text-white text-2xl max-w-sm">
-        <h3 class="mb-5">Driving Application Volume</h3>
-        <p class="font-normal max-w-lg text-base pb-20 pr-5">
-          A streamlined experience cascades customers from prime, near-prime and
-          no credit required providers while minimizing data collection —
-          leading to higher application volumes.
-        </p>
-      </div>
-      <div class="font-semibold text-white text-2xl max-w-lg">
-        <h3 class="mb-5">Driving Consistency</h3>
-        <p class="font-normal max-w-sm text-base pb-20  pr-5">
-          The cascade ensures lenders see all applications coming through the
-          waterfall, maximizing engagement opportunities and providing a
-          consistent application experience for all customers.
-        </p>
-      </div>
-      <div class="font-semibold text-white text-2xl max-w-sm">
-        <h3 class="mb-5">Driving Retailer Success</h3>
-        <p class="font-normal max-w-sm text-base pb-20  pr-5">
-          Versatile leverages our subject matter expertise and insight to assist
-          retailers in building successful financing experience tailored to
-          their brand and customers.
-        </p>
-      </div>
-    </div>
+    <ColumnContent
+      v-for="(card, index) in cards"
+      :key="index"
+      :content="card"
+      class="bg-blue"
+      :column-type="3"
+    />
     <div class="bg-white pt-20">
       <div
         class="flex  flex-col lg:flex-row flex-wrap max-w-5xl mx-auto px-20 lg:px-0"
@@ -90,11 +69,28 @@
 </template>
 
 <script>
+import ColumnContent from '@/components/ColumnContent.vue'
 import backgroundUrl from '~/static/shake.jpg'
 export default {
+  components: {
+    ColumnContent
+  },
   data() {
     return {
-      backgroundUrl
+      backgroundUrl,
+      cards: [
+        {
+          titleA: 'Driving Application Volume',
+          columnA:
+            ' A streamlined experience cascades customers from prime, near-prime and no credit required providers while minimizing data collection — leading to higher application volumes.',
+          titleB: 'Driving Consistency',
+          columnB:
+            'The cascade ensures lenders see all applications coming through the waterfall, maximizing engagement opportunities and providing a consistent application experience for all customers.',
+          titleC: 'Driving Retailer Success',
+          columnC:
+            'Versatile leverages our subject matter expertise and insight to assist retailers in building successful financing experience tailored to their brand and customers.'
+        }
+      ]
     }
   }
 }
