@@ -22,7 +22,7 @@
           <div class="right flex-1 lg:p-24">
             <a :href="item.link" target="_blank">
               <figure class="picture">
-                <source
+                <!-- <source
                   :srcSet="
                     require(`~/static/blogHeros/post-${item.num}.png?webp`)
                   "
@@ -31,7 +31,7 @@
                 <source
                   :srcSet="require(`~/static/blogHeros/post-${item.num}.png`)"
                   type="image/png"
-                />
+                /> -->
                 <img
                   :data-src="require(`~/static/blogHeros/post-${item.num}.png`)"
                   alt=""
