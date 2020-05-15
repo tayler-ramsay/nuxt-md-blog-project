@@ -21,10 +21,25 @@
           </div>
           <div class="right flex-1 lg:p-24">
             <a :href="item.link" target="_blank">
-              <img
-                :src="require(`~/static/blogHeros/post-${item.num}.png`)"
-                alt=""
-              />
+              <figure class="picture">
+                <source
+                  :data-srcset="
+                    require(`~/static/blogHeros/post-${item.num}.png?webp`)
+                  "
+                  type="image/webp"
+                />
+                <source
+                  :data-srcset="
+                    require(`~/static/blogHeros/post-${item.num}.png`)
+                  "
+                  type="image/png"
+                />
+                <img
+                  :data-src="require(`~/static/blogHeros/post-${item.num}.png`)"
+                  alt=""
+                  class="lazyload"
+                />
+              </figure>
             </a>
           </div>
         </li>

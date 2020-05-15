@@ -39,7 +39,8 @@ module.exports = {
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     { src: '~/plugins/vue-unicons', ssr: false },
     { src: '~/plugins/vue-tabs', ssr: false },
-    { src: '~/plugins/vuelidate', ssr: false }
+    { src: '~/plugins/vuelidate', ssr: false },
+    { src: '~/plugins/vue-lazysizes.client.js', ssr: false }
   ],
 
   tailwindcss: {
@@ -49,6 +50,7 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -58,6 +60,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss'
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
    ** Nuxt.js modules
    */
@@ -77,6 +82,13 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    extend(config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    },
+
     postcss: {
       preset: {
         autoprefixer: {
