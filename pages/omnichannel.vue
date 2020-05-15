@@ -37,13 +37,6 @@
                   </span>
                 </li>
               </ul>
-              <!-- <p
-                v-for="(p, e) in card.description.p"
-                :key="e"
-                class="lg:max-w-3xl text-lg leading-8 mb-5 flex-1 font-normal"
-              >
-                {{ p }}
-              </p> -->
             </div>
             <!-- <div class="flex-1 md:p-24 w-lg min-w-3/4 lg:min-w-1/2 text-center">
               <img
@@ -124,7 +117,7 @@ export default {
           img: 'ecomm',
 
           list: [
-            'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience',
+            'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience.',
             'A wide range of options are available, from simple copy and paste plugins to deep, API-level integrations.',
             'Turnkey solutions are available for popular eCommerce platforms, including Spotify. For information on other eCommerce platforms, contact us.'
           ]
@@ -144,7 +137,7 @@ export default {
 
           list: [
             'Harness the power of the consumer mobile device for self-service financing and checkout.',
-            'Snap Sign™ leverages secure, dynamic QR Codes that enable consumers to apply for financing on their mobile device while guaranteeing an in-store presence',
+            'Snap Sign™ leverages secure, dynamic QR Codes that enable consumers to apply for financing on their mobile device while guaranteeing an in-store presence.',
             'Snap Sign can embed into any existing digital platform, including kiosks, tablets, digital signage and point of sales computers. Dedicated hardware is also available.'
           ]
         },

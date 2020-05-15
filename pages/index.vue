@@ -4,6 +4,7 @@
     <div class="bg-white px-5 pb-16">
       <div class="client-logos "></div>
       <p
+        id="a"
         class="text-blue-light flex-grow text-3xl  flex-1 w-full text-center py-10"
       >
         How we do it
@@ -100,16 +101,16 @@ export default {
             p: [
               'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum',
               'Unparalleled network of 25+ prime, near-prime and no credit required providers.',
-              'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average'
+              'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average.'
             ]
           },
           img: 'cascade',
           link: '',
           open: false,
           list: [
-            'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum',
+            'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum.',
             'Unparalleled network of 25+ prime, near-prime and no credit required providers.',
-            'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average'
+            'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average.'
           ]
         },
         {

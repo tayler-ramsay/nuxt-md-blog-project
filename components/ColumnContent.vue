@@ -27,7 +27,7 @@
     <div v-if="columnType === 2">
       <div class="flex flex-col lg:flex-row p-6 lg:p-16">
         <div class="m-auto flex flex-col md:flex-row justify-between">
-          <div class="font-semibold text-white text-2xl p-6 flex-1 mr-20">
+          <div class="font-semibold text-white text-2xl p-6 flex-1 lg:mr-20">
             <h3 class="mb-5">{{ content.titleA }}</h3>
             <p class="font-normal text-base max-w-lg">
               {{ content.columnA }}

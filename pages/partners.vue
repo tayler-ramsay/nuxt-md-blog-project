@@ -90,14 +90,14 @@ export default {
           { img: 'gaf' },
           { img: 'genesis' },
           { img: 'paytomorrow' },
-          { img: 'rmc' },
-          { img: 'tidewater' }
+          { img: 'rmc' }
         ],
         noCredit: [
           { img: 'acima' },
           { img: 'aff' },
           { img: 'anow' },
           { img: 'flex' },
+          { img: 'katapult' },
           { img: 'kornstone' },
           { img: 'mp' },
           { img: 'okinus' },
@@ -105,8 +105,7 @@ export default {
           { img: 'smart' },
           { img: 'snap' },
           { img: 'tempoe' },
-          { img: 'westcreek' },
-          { img: 'zibby' }
+          { img: 'westcreek' }
         ]
       }
     }

@@ -73,12 +73,12 @@ export default {
           route: 'omnichannel'
         },
         {
-          title: 'For Lender',
+          title: 'For Lenders',
           icon: 'lender',
           route: 'lender'
         },
         {
-          title: 'Build A Solution',
+          title: 'Tailor-made',
           icon: 'build',
           route: 'partners'
         },
@@ -126,8 +126,8 @@ export default {
 .container {
   background-attachment: fixed;
   background-size: cover;
-  /* width: 100%;
-  min-height: 100vh; */
+  width: 100%;
+  min-height: 100vh;
   overflow: hidden;
   background-color: transparent;
   z-index: 10;

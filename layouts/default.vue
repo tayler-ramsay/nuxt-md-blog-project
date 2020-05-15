@@ -22,7 +22,7 @@ export default {
       mobileView: false
     }
   },
-  mounted() {
+  created() {
     this.handelView()
     // eslint-disable-next-line nuxt/no-globals-in-created
     window.addEventListener('resize', this.handelView)
@@ -40,6 +40,9 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -52,6 +55,10 @@ body {
     rgba(1, 65, 128, 1) 0%,
     rgba(0, 156, 218, 1) 100%
   );
+}
+
+button {
+  line-height: 0;
 }
 
 .grad {

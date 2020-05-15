@@ -55,7 +55,7 @@
 
         <button
           type="submit"
-          class="bg-black text-white font-semibold border-2 border-green w-24 py-1"
+          class="bg-black text-white font-semibold border-2 border-green w-24 py-5"
         >
           Submit
         </button>

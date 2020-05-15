@@ -1,8 +1,8 @@
 <template>
-  <div class="pb-64 lg:pb-0 mb-6 lg:mb-0">
+  <div class="lg:pb-0 mb-6 lg:mb-0">
     <div
       id="main"
-      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-32 md:pt-32 max-h-full h-screen relative "
+      class="flex flex-col text-white max-w-full px-4 lg:pl-32 pt-32 md:pt-32 max-h-full relative"
     >
       <img
         id="triangle-top"
@@ -33,38 +33,41 @@
         </h1>
       </div>
       <div
-        class="flex flex-col lg:flex-row justify-between max-w-2xl  my-10  mb-16 lg:mb-32  space-y-12 md:space-y-0 md:space-x-12"
+        class="flex flex-col lg:flex-row justify-between  my-10  mb-16 lg:mb-32  w-8/12 "
       >
-        <div>
+        <div class="pr-8">
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+20%</h2>
-          <p class="text-xl">Increase in Application Volume</p>
+          <p class="text-xl pb-10">Increase in Application Volume</p>
         </div>
-        <div>
+        <div class="pr-8">
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+30%</h2>
-          <p class="text-xl">Increase in Average Sales Ticket</p>
+          <p class="text-xl pb-10">Increase in Average Sales Ticket</p>
         </div>
         <div>
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+40%</h2>
-          <p class="text-xl">Improvement in Approval Rate</p>
+          <p class="text-xl pb-10">Improvement in Approval Rate</p>
         </div>
       </div>
-      <div class="flex justify-between md:justify-start">
-        <button
-          class="bg-white rounded-sm text-blue font-semibold py-2 px-8 lg:mr-32"
+      <div class="  z-50  flex justify-between lg:justify-start w-11/12">
+        <a
+          href="#a"
+          class="bg-white rounded-sm text-blue font-semibold py-5 px-8 lg:mr-32 flex items-center leading-none"
         >
           Learn More
-        </button>
-        <a
-          href=""
-          class="rounded-sm text-white font-semibold p-3  hover:underline bg-green text-slate lg:text-white  lg:bg-transparent"
-          >Contact Us</a
+        </a>
+        <nuxt-link
+          to="/contact"
+          class=" rounded-sm text-white font-semibold  py-5 px-8 hover:underline bg-green text-slate lg:text-white  lg:bg-transparent"
         >
+          Contact Us
+        </nuxt-link>
       </div>
-      <div
-        class="text-lg lg:text-2xl text-white font-thin m-auto my-10 mt-16 lg:mt-16"
-      >
-        <p>Anyone | Anywhere | On Any Device</p>
-      </div>
+    </div>
+
+    <div
+      class="text-lg lg:text-2xl text-white font-thin m-auto my-10 mt-16 lg:mt-16 text-center"
+    >
+      <p>Anyone | Anywhere | On Any Device</p>
     </div>
   </div>
 </template>

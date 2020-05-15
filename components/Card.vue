@@ -1,17 +1,19 @@
 <template>
   <div class="lg:px-16">
     <div class=" header">
-      <div
-        class="flex items-center lg:items-between justify-start  flex-col-reverse px-5"
-      >
-        <h1 class="font-semibold text-blue text-2xl max-w-sm pb-4">
-          {{ item.title }}
-        </h1>
-        <img
-          :src="require(`~/static/icons/${item.img}.png`)"
-          alt=""
-          class="w-16 pb-4"
-        />
+      <div class="flex  flex-col items-center">
+        <div class="wrapper w-20 h-20">
+          <img
+            :src="require(`~/static/icons/${item.img}.png`)"
+            alt=""
+            class=""
+          />
+        </div>
+        <div class="h-10">
+          <h1 class="font-semibold text-blue text-2xl max-w-sm pb-4">
+            {{ item.title }}
+          </h1>
+        </div>
       </div>
 
       <ul class=" leading-8 list-outside pb-10">

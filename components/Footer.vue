@@ -68,7 +68,7 @@
     >
       <div>
         &#169;2020 VERSTILE CREDIT |
-        <nuxt-link :to="'/privacy'">privacy policy</nuxt-link> | sitemap
+        <nuxt-link :to="'/privacy'">privacy policy</nuxt-link>
       </div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
