@@ -19,34 +19,36 @@
           Our approach is simple.
         </p>
         <p>
-          We develop innovative, state-of-the-art experiences and technologies.
-          Leaving our lending partners to build great financing programs and
-          services for consumers and retailers.
+          We develop innovative, state-of-the-art experiences and technologies
+          so our partners can focus on what they do best; sell fantastic
+          products and build great financing programs and services.
         </p>
         <hr class="w-20 mt-10 bg-blue-light" />
-        <nuxt-link :to="'/history'">
+        <!-- <nuxt-link :to="'/history'">
           <div class="flex stage  w-48 pt-5 z-50">
             <span class="text-green  inline-flex">Our History</span>
             <span class="text-green arrow bounce-3 text-lg">🡒</span>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
       </div>
     </div>
-    <div class="bg-slate flex flex-col md:flex-row justify-between py-20">
+    <div class="grad flex flex-col md:flex-row justify-between py-20">
       <div class="font-semibold text-white text-3xl m-auto mb-20">
         <h3 class="mb-5">30 Years of Experience</h3>
         <p class="font-normal  text-base max-w-sm">
-          Versatile has a history of large scale integrations for high
-          availability services with nearly 20 years of experience in portal
-          development and 15+ years in consumer financing.
+          Versatile has a history of large scale integrations with high
+          availability, carrier grade, services and technologies, as well as
+          nearly 20 years of experience in portal development and 15+ years in
+          consumer financing.
         </p>
       </div>
       <div class="font-semibold text-white text-3xl m-auto mb-20">
         <h3 class="mb-5">Subject Matter Expertise</h3>
         <p class="font-normal text-base  max-w-sm">
-          We leverage our subject matter expertise and help customize our
-          deployments to work alongside retailers’ business processes so that
-          credit utilization is optimized.
+          We leverage our subject matter expertise to customize our deployments
+          and work alongside retailers and lenders to deploy innovative and
+          successful financing experiences tailored to their brands, customers
+          and processes.
         </p>
       </div>
     </div>

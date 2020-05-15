@@ -28,17 +28,17 @@
         <div class="font-semibold text-white text-2xl max-w-sm ">
           <h3 class="mb-5">Seamless Experience</h3>
           <p class="font-normal max-w-lg text-base  pr-5">
-            Versatile has a history of large scale integrations for high
-            availability services with nearly 20 years of experience in portal
-            development and 15+ years in consumer financing.
+            The cascade guides customers through a simplified financing
+            experience, enabling retailers to address customers throughout the
+            FICO spectrum while driving higher application and approval volumes.
           </p>
         </div>
         <div class="font-semibold text-white text-2xl max-w-lg">
           <h3 class="mb-5">Instant Decisions. Anywhere.</h3>
           <p class="font-normal max-w-sm text-base  pr-5">
-            We leverage our subject matter expertise and help customize our
-            deployments to work alongside retailers’ business processes so that
-            credit utilization is optimized.
+            Customers receive an instant credit decision and are presented with
+            an opportunity to leave the store or website with the products and
+            services they want, quickly and easily.
           </p>
         </div>
         <div class="font-semibold text-white text-2xl max-w-sm">
@@ -46,7 +46,7 @@
           <p class="font-normal max-w-sm text-base  pr-5">
             Retailers can customize the look, feel and experience to ensure a
             consistent brand is represented on a variety of devices and
-            engagement points..
+            engagement points.
           </p>
         </div>
       </div>

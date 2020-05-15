@@ -95,7 +95,7 @@ export default {
         {
           title: 'In-Store',
           description: {
-            title: 'Use the right technology for the job',
+            title: 'Choosing technology that suits your business',
             p: [
               'Retailers can leverage existing tablets and point of sales systems to allow customers to apply in-store. Dedicated kiosks are available in standing and tabletop form factors with custom graphic and wrapping options. Engaging with customers throughout the consultation and check-out process can ensure customers are getting the best opportunities for financing.'
             ]
@@ -104,14 +104,15 @@ export default {
           link: '',
           open: false,
           list: [
-            'From free-standing kiosks to tablets and mobile phones, a wide array of options are available for in-store applications.',
-            'Leverage existing tablets and point of sales systems to enable financing throughout the shopping process.'
+            'Bring the financing experience to them and engage with customers throughout the shopping, sales and checkout process.',
+            'An array of options are available for in-store applications, including free-standing kiosks, tablets and contactless, transition-to-mobile technology.',
+            'Leverage existing hardware, including tablets and point of sales systems, to enable financing throughout the shopping process.'
           ]
         },
         {
           title: 'eCommerce',
           description: {
-            title: 'Turnkey & Custom Integrations Available',
+            title: 'Avoid abandoned carts and drive conversion',
             p: [
               'Swift Apply & Buy™ enables retailers to integrate consumer financing on their website with minimal effort. More highly integrated solutions are available, leveraging are rich set of APIs and SDKs to tightly integrate financing into the most sophisticated eCommerce sites.',
               'Turnkey solutions are available for popular eCommerce platforms, such as Spotify.   For more information on other eCommerce platforms, contact us.'
@@ -123,14 +124,15 @@ export default {
           img: 'ecomm',
 
           list: [
-            'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
-            'Detailed dashboards & reports enable retailers to benchmark performance, optimize their program, and react to problems immediately.'
+            'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience',
+            'A wide range of options are available, from simple copy and paste plugins to deep, API-level integrations.',
+            'Turnkey solutions are available for popular eCommerce platforms, including Spotify. For information on other eCommerce platforms, contact us.'
           ]
         },
         {
           title: 'Contactless Self-Service & Mobile',
           description: {
-            title: 'Snap Sign™ Anywhere',
+            title: 'Give customers more control over their shopping journey',
             p: [
               'There are higher rates of success when Versatile adapts the platform to work within a retailer’s existing sales processes, integrating with the tools and resources their customers and associates are already familiar with.  Retailers can represent their brand consistently throughout the application experience on a variety of devices and platforms, in-store and out-of-store.'
             ]
@@ -141,14 +143,15 @@ export default {
           img: 'mobile',
 
           list: [
-            'Safeguard concerns of personal health by using Versatile Contactless technology.',
-            'Harness the power of the consumer mobile device for self-service financing and checkout.'
+            'Harness the power of the consumer mobile device for self-service financing and checkout.',
+            'Snap Sign™ leverages secure, dynamic QR Codes that enable consumers to apply for financing on their mobile device while guaranteeing an in-store presence',
+            'Snap Sign can embed into any existing digital platform, including kiosks, tablets, digital signage and point of sales computers. Dedicated hardware is also available.'
           ]
         },
         {
           title: 'Remote and In-Home Sales',
           description: {
-            title: 'From the comfort of home',
+            title: 'Financing from the comfort of home',
             p: [
               'Versatile works retailers to create innovative tools that complement your remote and in-home sales processes.  Versatile uses a variety of technology to facilitate financing in the home, including secure links with anti-fraud measures, electronic signature technology, and document management.'
             ]
@@ -159,8 +162,9 @@ export default {
           img: 'home',
 
           list: [
-            'Take advantage of rapidly growing opportunities for financing remotely.  Great for out-of-store, consultative sales.',
-            'Send customers secure financing links to apply on any consumer-owned device.'
+            'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
+            'Send customers secure financing links to apply on any consumer-owned device.',
+            'Anti-fraud measures, electronic signature technology and document management help facilitate in-home financing.'
           ]
         }
       ]

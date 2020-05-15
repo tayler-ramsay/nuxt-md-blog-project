@@ -98,8 +98,9 @@ export default {
           description: {
             title: 'The Power of Second Look',
             p: [
-              'Adding a secondary lender eliminates up to 50% of credit application declines on average, leading to more sales and higher customer satisfaction and loyalty. ',
-              'Versatile partners with 25+ industry-leading prime, near-prime, and no credit required providers to enable retailers to address customers throughout the FICO spectrum. To learn more about the providers available on the platform, click here.'
+              'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum',
+              'Unparalleled network of 25+ prime, near-prime and no credit required providers.',
+              'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average'
             ]
           },
           img: 'cascade',
@@ -124,7 +125,8 @@ export default {
           img: 'consumer',
           list: [
             'Retailers can provide customers with comprehensive financing options whenever and whenever a buying decision is made.',
-            'Retailers can leverage in-store devices including kiosks, tablets, and point of sales systems to bring financing to the customer.'
+            'Leverage in-store devices and eCommerce integrations to provide consistent financing experiences across channels.',
+            'Any device with a browser can be leveraged to provide a seamless application experience.'
           ]
         },
 
@@ -140,8 +142,9 @@ export default {
           open: false,
           img: 'custom',
           list: [
-            'Customized and integrated with existing business systems.',
-            'Customizable the look, feel, and experience of the financing program.'
+            'Integrate with the existing business processes, tools and resources your customers and associates are familiar with.',
+            'Represent a consistent brand throughout the financing experience on an array of devices, in-store and out-of-store.',
+            'Once integrated into the Versatile platform retailers have flexibility and freedom to easily change providers and channels as needed.'
           ]
         },
         {
@@ -157,7 +160,8 @@ export default {
           img: 'data',
           list: [
             'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
-            'Detailed dashboards & reports enable retailers to benchmark performance, optimize their program, and react to problems immediately.'
+            'Detailed dashboards & reports enable retailers to benchmark performance and optimize the financing program.',
+            'View data at the store, region and corporate level, with tools to measure by lender, channel, region and even sales associate.'
           ]
         }
       ]

@@ -13,14 +13,14 @@
       </div>
       <div class="max-w-sm">
         <p class="font-semibold text-sm text-blue-light">
-          Empowering Our Customers.
+          Experience the power of choice
         </p>
         <p>
           Versatile empowers retailers to find the providers that are the best
           match for their business and customers, while providing the
-          flexibility, ease, and freedom to change providers as needed. We
-          accomplish this by using our unrivaled network of industry leading
-          providers.
+          simplicity, flexibility and freedom to change providers as needed. We
+          accomplish this with an unrivaled network of lending and providing
+          partners.
         </p>
         <hr class="w-20 mt-10 bg-blue-light" />
       </div>
@@ -31,24 +31,25 @@
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Unparalleled Selection</h3>
         <p class="font-normal max-w-lg text-base pb-20">
-          A selection of 25+ financing providers, including prime and near-prime
-          lenders, as well as no credit required providers.
+          A network of 25+ financing partners, including prime and near-prime
+          lenders, as well as no credit required providers enable retailers to
+          address the entire FICO spectrum.
         </p>
       </div>
       <div class="font-semibold text-white text-2xl max-w-lg">
         <h3 class="mb-5">Power of Waterfall</h3>
         <p class="font-normal max-w-sm text-base pb-20">
-          Adding secondary and no credit required options can significantly
-          increase the percentage of customers being approved for financing
-          throughout the FICO spectrum.
+          Near-prime lenders and no credit required providers can help to
+          significantly increase the percentage of customers being approved for
+          financing, leading to higher approval rates and sales.
         </p>
       </div>
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Informed Decisions</h3>
         <p class="font-normal max-w-sm text-base pb-20">
-          A comprehensive suite of dashboards and reports to benchmark the
-          performance of the financing program across stores, channels, and
-          financing partners.
+          A comprehensive suite of dashboards and reporting benchmark the
+          performance of the financing program across stores, channels,
+          financing partners and even sales associates.
         </p>
       </div>
     </div>

@@ -22,25 +22,25 @@
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Driving Application Volume</h3>
         <p class="font-normal max-w-lg text-base pb-20 pr-5">
-          A streamlined experience seamlessly cascades customers from prime,
-          near-prime, and no credit required providers while minimizing data
-          collection — leading to higher application volumes.
+          A streamlined experience cascades customers from prime, near-prime and
+          no credit required providers while minimizing data collection —
+          leading to higher application volumes.
         </p>
       </div>
       <div class="font-semibold text-white text-2xl max-w-lg">
         <h3 class="mb-5">Driving Consistency</h3>
         <p class="font-normal max-w-sm text-base pb-20  pr-5">
-          The cascade ensures that lenders see all applications coming through
-          the cascade, maximizing engagement opportunities and providing a
-          consistent application experience.
+          The cascade ensures lenders see all applications coming through the
+          waterfall, maximizing engagement opportunities and providing a
+          consistent application experience for all customers.
         </p>
       </div>
       <div class="font-semibold text-white text-2xl max-w-sm">
         <h3 class="mb-5">Driving Retailer Success</h3>
         <p class="font-normal max-w-sm text-base pb-20  pr-5">
-          Versatile provides our subject matter expertise and insight to assist
-          retailers in building successful finance programs tailored to their
-          brand and customers.
+          Versatile leverages our subject matter expertise and insight to assist
+          retailers in building successful financing experience tailored to
+          their brand and customers.
         </p>
       </div>
     </div>
@@ -49,39 +49,39 @@
         class="flex  flex-col lg:flex-row flex-wrap max-w-5xl mx-auto px-20 lg:px-0"
       >
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2 ">
-          <h3 class="mb-5">Turnkey Financing Channel</h3>
+          <h3 class="mb-5">Integrate once & deploy everywhere</h3>
           <p class="font-normal text-slate max-w-sm text-base pb-20">
-            Integrate once, deploy everywhere Once lenders are integrated into
-            Versatile platform there is no need to integrate directly with
-            retailers, reducing development costs and time to market.
+            Once lenders are integrated into Versatile platform there is no need
+            to integrate directly with retailers, reducing development costs and
+            time to market. Partners are immediately integrated with our
+            expansive lender network and technology ecosystem.
           </p>
         </div>
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2 lg:pl-20">
-          <h3 class="mb-5">Omnichannel Engagement</h3>
+          <h3 class="mb-5">Offer financing anywhere</h3>
           <p class="font-normal text-slate max-w-sm text-base pb-20">
-            Offer financing anywhere The flexibility of Versatile’s platform
-            empowers lenders to offer their programs wherever and whenever a
-            buying decision is made, including in-store kiosks and tablets,
-            point of sales integration, eCommerce, digital signage, and mobile
-            devices.
+            The flexibility of Versatile’s platform empowers lenders to offer
+            their programs wherever and whenever a buying decision is made,
+            including in-store kiosks and tablets, point of sales integration,
+            eCommerce, digital signage and consumer mobile devices.
           </p>
         </div>
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2">
-          <h3 class="mb-5">White-Labeled Experiences</h3>
+          <h3 class="mb-5">The technology behind the brand</h3>
           <p class="font-normal text-slate max-w-sm text-base pb-20">
-            The technology behind the brand Applications are built from the
-            ground up to meet the compliance and branding standards of all
-            banking partners, ensuring lenders all applications through the
-            Versatile platform are compliant.
+            Applications are built from the ground up to meet the compliance and
+            branding standards of all banking partners, ensuring lenders all
+            applications through the Versatile platform are compliant.
+            White-labeled solutions are available.
           </p>
         </div>
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2 lg:pl-20">
-          <h3 class="mb-5">Higher Application Volumes</h3>
+          <h3 class="mb-5">Your technology partner</h3>
           <p class="font-normal text-slate max-w-sm text-base pb-20">
-            Driving consistency through design The cascade ensures that lenders
-            see all applications coming through the cascade, maximizing
-            engagement opportunities and providing a consistent application
-            experience.
+            When Versatile focuses on building novel and innovative customer
+            experiences and financing solutions we enable our retail and lending
+            partners to focus on what they do best; selling fantastic products
+            and building great financing programs and services.
           </p>
         </div>
       </div>

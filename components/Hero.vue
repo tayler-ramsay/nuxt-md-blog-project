@@ -37,11 +37,11 @@
       >
         <div>
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+20%</h2>
-          <p class="text-xl">Increase in Application volume</p>
+          <p class="text-xl">Increase in Application Volume</p>
         </div>
         <div>
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+30%</h2>
-          <p class="text-xl">Increase in average Sales Ticket</p>
+          <p class="text-xl">Increase in Average Sales Ticket</p>
         </div>
         <div>
           <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+40%</h2>
