@@ -107,7 +107,17 @@ export default {
     }
 
     p {
-      color: #009cda;
+      color: #014180;
+    }
+    span {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      span {
+        display: block;
+        font-size: 6em;
+      }
     }
   }
 }
@@ -118,7 +128,19 @@ export default {
     }
 
     p {
-      color: #014180;
+      color: #009cda;
+    }
+
+    span {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      span {
+        display: block;
+        color: #009cda;
+        font-size: 6em;
+      }
     }
   }
 }
