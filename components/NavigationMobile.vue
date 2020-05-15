@@ -1,5 +1,5 @@
 <template>
-  <div class="container absolute">
+  <div class="wrapper-container absolute">
     <div class="relative">
       <div
         id="navigation"
@@ -123,14 +123,15 @@ export default {
   position: fixed;
   height: 2em;
 }
-.container {
+.wrapper-container {
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background-color: transparent;
-  z-index: 10;
+  z-index: 100000;
 }
 
 .nav-icon {
@@ -161,14 +162,14 @@ export default {
   min-height: 100vh;
   background: inherit;
   z-index: 10;
-  background-color: rgba(1, 65, 128, 0.6);
+  background-color: rgba(1, 65, 128, 0.4);
   backdrop-filter: blur(4px);
 }
 
 .nav-container > .book-btn {
   position: absolute;
   bottom: 3em;
-  z-index: 100;
+  z-index: 1000;
   padding: 1rem;
   width: 100vw;
 }
@@ -243,9 +244,12 @@ export default {
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
+.fade-enter-active {
   transition: all 0.8s ease-in-out;
+}
+
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
 }
 .fade-enter,
 .fade-leave-to {

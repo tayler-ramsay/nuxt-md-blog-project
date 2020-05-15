@@ -40,7 +40,7 @@
 <script></script>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 1063px) {
+@media screen and (max-width: 1061px) {
   .brand-logo {
     display: none;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 1063px) {
+@media screen and (min-width: 1061px) {
   .brand-logo {
     display: block;
   }

@@ -30,35 +30,45 @@
           <h3 class="font-semibold ">
             RECOMMENDED FROM OUR <span class="text-green">[BLOG]</span>
           </h3>
-          <article class=" space-y-1">
-            <h4 class="text-xl text-green">
-              The Benefit of “Contactless” Self-Service
-            </h4>
-            <p class="">
-              Many states throughout the country have issued “Stay at Home”
-              orders in response to the COVID-19 outbreak, and as the vast
-              majority of our fellow citizens comply, that has motivated forward
-              thinking retailers to re-evaluate their in-store experiences and
-              interactions between customers, employees, and their physical
-              storefronts.…
-            </p>
-          </article>
-          <article class=" space-y-1">
-            <h4 class="text-xl text-green">
-              Offer a Consistent, Omnichannel Financing Experience While
-              Ensuring Business Continuity
-            </h4>
-            <p>
-              Recent events have led to unexpected business interruptions for
-              many retailers. Consumers are staying at home, driving traffic
-              away from physical brick-and-mortar locations to eCommerce sites,
-              where growth rates are already rising by nearly 52% this year,
-              according to Quantum Metric. This has led retailers to explore
-              options to provide consumers with consistent shopping experiences
-              both in-store and online, as well as ways to ensure the business
-              continuity of their financing programs.…
-            </p>
-          </article>
+          <a
+            target="_blank"
+            href="https://www.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/"
+          >
+            <article class=" space-y-1">
+              <h4 class="text-xl text-green">
+                The Benefit of “Contactless” Self-Service
+              </h4>
+              <p class="pb-10">
+                Many states throughout the country have issued “Stay at Home”
+                orders in response to the COVID-19 outbreak, and as the vast
+                majority of our fellow citizens comply, that has motivated
+                forward thinking retailers to re-evaluate their in-store
+                experiences and interactions between customers, employees, and
+                their physical storefronts.…
+              </p>
+            </article>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/"
+          >
+            <article class=" space-y-1">
+              <h4 class="text-xl text-green">
+                Offer a Consistent, Omnichannel Financing Experience While
+                Ensuring Business Continuity
+              </h4>
+              <p>
+                Recent events have led to unexpected business interruptions for
+                many retailers. Consumers are staying at home, driving traffic
+                away from physical brick-and-mortar locations to eCommerce
+                sites, where growth rates are already rising by nearly 52% this
+                year, according to Quantum Metric. This has led retailers to
+                explore options to provide consumers with consistent shopping
+                experiences both in-store and online, as well as ways to ensure
+                the business continuity of their financing programs.…
+              </p>
+            </article>
+          </a>
         </div>
       </client-only>
     </div>

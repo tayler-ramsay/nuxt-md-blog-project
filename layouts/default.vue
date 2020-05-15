@@ -41,8 +41,8 @@ export default {
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
+  /* overflow-y: scroll;  has to be scroll, not auto */
+  /* -webkit-overflow-scrolling: touch; */
 }
 
 body {
@@ -69,15 +69,15 @@ button {
   );
 }
 
-.page-enter-active,
+/* .page-enter-active,
 .page-leave-active {
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 600ms;
+  transition-duration: 6ms;
 }
 
 .page-enter,
 .page-leave-to {
   opacity: 0;
-}
+} */
 </style>

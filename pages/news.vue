@@ -7,21 +7,25 @@
             <div class="date text-blue-light  text-xl font-semibold">
               {{ item.date }}
             </div>
-            <div class="title text-blue text-2xl">
-              {{ item.title }}
-            </div>
-            <div class="excerpt">{{ item.excerpt }}[...]</div>
-            <div class="author lg:absolute">
-              <p class="text-sm font-semibold text-blue-light">
-                <span class="text-slate">Posted by: </span>{{ item.author }}
-              </p>
-            </div>
+            <a :href="item.link" target="_blank">
+              <div class="title text-blue text-2xl">
+                {{ item.title }}
+              </div>
+              <div class="excerpt">{{ item.excerpt }}[...]</div>
+              <div class="author lg:absolute">
+                <p class="text-sm font-semibold text-blue-light">
+                  <span class="text-slate">Posted by: </span>{{ item.author }}
+                </p>
+              </div>
+            </a>
           </div>
           <div class="right flex-1 lg:p-24">
-            <img
-              :src="require(`~/static/blogHeros/post-${item.num}.png`)"
-              alt=""
-            />
+            <a :href="item.link" target="_blank">
+              <img
+                :src="require(`~/static/blogHeros/post-${item.num}.png`)"
+                alt=""
+              />
+            </a>
           </div>
         </li>
       </ul>
@@ -36,6 +40,8 @@ export default {
       list: [
         {
           date: 'May 5th 2020',
+          link:
+            'https://www.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/',
           title:
             'Offer a Consistent, Omnichannel Financing Experience While Ensuring Business Continuity',
           excerpt:
@@ -45,6 +51,8 @@ export default {
         },
         {
           date: 'May 13th 2020',
+          link:
+            'https://www.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/',
           title: 'The Benefit of “Contactless” Self-Service',
           excerpt:
             'Many states throughout the country have issued “Stay at Home” orders in response to the COVID-19 outbreak, and as the vast majority ',

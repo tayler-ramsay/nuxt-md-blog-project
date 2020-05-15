@@ -108,8 +108,8 @@ export default {
           link: '',
           open: false,
           list: [
-            'Fast, secure and seamless application experience facilitate opportunities for financing throughout the FICO spectrum.',
             'Unparalleled network of 25+ prime, near-prime and no credit required providers.',
+            'Fast, secure and seamless application experience facilitates opportunities for financing throughout the FICO spectrum.',
             'Introducing near-prime lenders and no credit needed providers can eliminate up to 50% of credit application declines on average.'
           ]
         },
@@ -126,7 +126,7 @@ export default {
           open: false,
           img: 'consumer',
           list: [
-            'Retailers can provide customers with comprehensive financing options whenever and whenever a buying decision is made.',
+            'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made.',
             'Leverage in-store devices and eCommerce integrations to provide consistent financing experiences across channels.',
             'Any device with a browser can be leveraged to provide a seamless application experience.'
           ]
