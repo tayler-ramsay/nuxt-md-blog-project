@@ -76,7 +76,8 @@ module.exports = {
     ['nuxt-buefy', { css: false }],
     'nuxt-webfontloader',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
   webfontloader: {
     google: {
@@ -84,6 +85,7 @@ module.exports = {
     }
   },
   axios: {},
+  sitemap: {},
   /*
    ** Build configuration
    */
