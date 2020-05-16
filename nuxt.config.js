@@ -85,7 +85,6 @@ module.exports = {
     }
   },
   axios: {},
-  sitemap: {},
   /*
    ** Build configuration
    */
