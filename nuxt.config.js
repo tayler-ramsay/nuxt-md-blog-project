@@ -85,6 +85,9 @@ module.exports = {
     }
   },
   axios: {},
+  sitemap: {
+    hostname: 'https://example.com'
+  },
   /*
    ** Build configuration
    */
