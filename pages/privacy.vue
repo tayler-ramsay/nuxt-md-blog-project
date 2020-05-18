@@ -51,14 +51,19 @@
         information that you transmit to Us from loss, misuse and unauthorized
         access, disclosure, alteration or destruction. We maintain physical,
         electronic and procedural safeguards to ensure that personal information
-        is treated responsibly. 4. Changes to this Privacy Policy We reserve the
-        right to change this Privacy Policy at any time by posting revisions on
-        Our website or within Our product and services and you agree to any such
-        changes upon your continued use of the website, products or services.
-        When changes are made, we will update the effective date of this Privacy
-        Policy. This Privacy Policy is not intended to and does not create any
-        contractual or other legal rights in or on behalf of any party.
-        Effective Date: February 10, 2020</span
+        is treated responsibly.
+      </span>
+    </p>
+    <p class="mb-10 flex-col flex">
+      <span class="font-semibold mb-5"> 4. Changes to this Privacy Policy</span>
+      <span>
+        We reserve the right to change this Privacy Policy at any time by
+        posting revisions on Our website or within Our product and services and
+        you agree to any such changes upon your continued use of the website,
+        products or services. When changes are made, we will update the
+        effective date of this Privacy Policy. This Privacy Policy is not
+        intended to and does not create any contractual or other legal rights in
+        or on behalf of any party. Effective Date: February 10, 2020</span
       >
     </p>
   </div>
