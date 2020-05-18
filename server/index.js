@@ -1,30 +1,14 @@
 require('dotenv').config()
+const logger = require('./util/logger').forFile(__filename)
 const express = require('express')
-const consola = require('consola')
-const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser')
 const requestLogger = require('./middleware/request-logger')
 const emailRoutes = require('./routes/email')
 const app = express()
 
-// Import and Set Nuxt.js options
-const config = require('../nuxt.config.js')
-config.dev = process.env.NODE_ENV !== 'production'
+const port = process.env.SERVER_PORT || 8080
 
-async function start() {
-  // Init Nuxt.js
-  const nuxt = new Nuxt(config)
-
-  const { host, port } = nuxt.options.server
-
-  // Build only in dev mode
-  if (config.dev) {
-    const builder = new Builder(nuxt)
-    await builder.build()
-  } else {
-    await nuxt.ready()
-  }
-
+async function start () {
   app.use(bodyParser.urlencoded({ extended: true }))
   app.use(bodyParser.json())
   app.use(requestLogger)
@@ -32,14 +16,10 @@ async function start() {
   // Express GET endpoint
   app.post('/api/contact', emailRoutes.contactSubmit)
 
-  // Give nuxt middleware to express
-  app.use(nuxt.render)
-
   // Listen the server
-  app.listen(port, host)
-  consola.ready({
-    message: `Server listening on http://${host}:${port}`,
-    badge: true
+  app.listen(port, () => {
+    logger.info(`server listening on port ${port}`)
   })
 }
+
 start()

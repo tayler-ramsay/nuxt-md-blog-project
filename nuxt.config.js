@@ -1,10 +1,7 @@
+console.log('NODE ENV', process.env.NODE_ENV)
+
 module.exports = {
   mode: 'spa',
-
-  server: {
-    port: 8080,
-    timing: true
-  },
 
   /*
    ** Headers of the page
@@ -86,10 +83,18 @@ module.exports = {
       families: ['Inter:100,300,600,700,800,900'] //
     }
   },
-  axios: {},
+
+  axios: {
+    proxy: true
+  },
   sitemap: {
     hostname: 'https://example.com'
   },
+
+  proxy: {
+    '/api': 'http://localhost:8080'
+  },
+
   /*
    ** Build configuration
    */

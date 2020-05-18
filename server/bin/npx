@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -o errexit  # Exit if any command returns a non-zero status
+set -o nounset  # Disallow referencing unset variables
+set -o pipefail # Fail if any command in a pipeline returns a non-zero status
+shopt -s nullglob
+shopt -s expand_aliases
+
+type node >/dev/null 2>&1 || { echo >&2 "Unable to find node in your path.  Is it installed?  Aborting."; exit 1; }
+type npx >/dev/null 2>&1 || { echo >&2 "Unable to find npx in your path.  Is it installed?  Aborting."; exit 1; }
+
+npx $@

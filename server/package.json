@@ -1,0 +1,28 @@
+{
+  "name": "versatile-website-server",
+  "version": "1.0.0",
+  "description": "Versatile Website Server",
+  "author": "Clint Martin",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "inliner": "^1.13.1",
+    "juice": "^6.0.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6",
+    "nunjucks": "^3.2.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "git-rev-sync": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-run": "^1.7.1"
+  }
+}

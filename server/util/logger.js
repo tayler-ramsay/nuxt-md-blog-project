@@ -1,7 +1,7 @@
 const path = require('path')
 const winston = require('winston')
 const { format, transports } = winston
-const { colorize, combine, timestamp, label, printf, metadata } = format
+const { combine, timestamp, label, printf, metadata } = format
 
 const customFormat = printf(({ level, message, label, timestamp, ...meta }) => {
   return `${timestamp} - ${level.toUpperCase()} --- [${label}] | ${message} | ${JSON.stringify(
@@ -29,7 +29,6 @@ function addLogger(name) {
   winston.loggers.add(name, {
     level: process.env.LOG_LEVEL || 'info',
     format: combine(
-      colorize(),
       label({ label: name }),
       timestamp(),
       customFormat,
