@@ -13,7 +13,7 @@
       </div>
       <div class="max-w-sm">
         <p class="font-semibold text-sm text-blue-light">
-          Build a Financing Program
+          Experience the power choice.
         </p>
         <p>
           Versatile empowers retailers to find the providers that are the best
