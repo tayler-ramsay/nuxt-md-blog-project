@@ -108,7 +108,7 @@ export default {
             title: 'Avoid abandoned carts and drive conversion',
             p: [
               'Swift Apply & Buy™ enables retailers to integrate consumer financing on their website with minimal effort. More highly integrated solutions are available, leveraging are rich set of APIs and SDKs to tightly integrate financing into the most sophisticated eCommerce sites.',
-              'Turnkey solutions are available for popular eCommerce platforms, including *Shopify*. For information on other eCommerce platforms, contact us.'
+              'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
             ]
           },
 

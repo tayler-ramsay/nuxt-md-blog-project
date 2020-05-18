@@ -13,7 +13,7 @@
       </div>
       <div class="max-w-sm">
         <p class="font-semibold text-sm text-blue-light">
-          Experience the power choice.
+          Experience the power choice
         </p>
         <p>
           Versatile empowers retailers to find the providers that are the best

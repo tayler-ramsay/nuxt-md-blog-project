@@ -44,7 +44,7 @@ export default {
           titleA: 'Seamless Experience',
           columnA:
             ' The cascade guides customers through a simplified financing experience, enabling retailers to address customers throughout the FICO spectrum while driving higher application and approval volumes.',
-          titleB: 'Instant Decisions. Anywhere.',
+          titleB: 'Instant Decisions Anywhere',
           columnB:
             'Customers receive an instant credit decision and are presented with an opportunity to leave the store or website with the products and services they want, quickly and easily.',
           titleC: 'Customized and Branded',
