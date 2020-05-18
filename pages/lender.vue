@@ -9,10 +9,10 @@
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2 ">
           <h3 class="mb-5">Integrate once & deploy everywhere</h3>
           <p class="font-normal text-slate max-w-sm text-base pb-20">
-            Once lenders are integrated into Versatile platform there is no need
-            to integrate directly with retailers, reducing development costs and
-            time to market. Partners are immediately integrated with our
-            expansive lender network and technology ecosystem.
+            Once lenders are integrated into the Versatile platform there is no
+            need to integrate directly with retailers, reducing development
+            costs and time to market. Partners are immediately integrated with
+            our expansive lender network and technology ecosystem.
           </p>
         </div>
         <div class="font-semibold text-blue text-2xl lg:min-w-1/2 lg:pl-20">

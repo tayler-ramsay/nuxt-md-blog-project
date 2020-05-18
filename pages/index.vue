@@ -127,7 +127,7 @@ export default {
           img: 'consumer',
           list: [
             'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made.',
-            'Leverage in-store devices and eCommerce integrations to provide consistent financing experiences across channels.',
+            'In-store devices and eCommerce integrations provide consistent financing experiences across *all* channels.',
             'Any device with a browser can be leveraged to provide a seamless application experience.'
           ]
         },

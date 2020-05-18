@@ -40,12 +40,14 @@ module.exports = {
     { src: '~/plugins/vue-unicons', ssr: false },
     { src: '~/plugins/vue-tabs', ssr: false },
     { src: '~/plugins/vuelidate', ssr: false },
-    { src: '~/plugins/vue-lazysizes.client.js', ssr: false }
+    { src: '~/plugins/vue-lazysizes.client.js', ssr: false },
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
 
   tailwindcss: {
     exposeConfig: true
   },
+
   /*
    ** Nuxt.js dev-modules
    */

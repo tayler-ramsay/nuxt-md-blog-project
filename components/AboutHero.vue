@@ -54,7 +54,7 @@ export default {
         {
           titleA: '30 Years of Experience',
           columnA:
-            ' Versatile has a history of large scale integrations with high availability, carrier grade, services and technologies, as well as   nearly 20 years of experience in portal development and 15+ years in consumer financing.',
+            'Versatile has a history of large scale integrations with high availability, carrier grade services and technologies, as well as nearly 20 years of experience in portal development and 15+ years in consumer financing.',
           titleB: 'Subject Matter Expertise',
           columnB:
             ' We leverage our subject matter expertise to customize our deployments and work alongside retailers and lenders to deploy innovative and successful financing experiences tailored to their brands, customers and processes.'

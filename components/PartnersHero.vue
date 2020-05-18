@@ -13,7 +13,7 @@
       </div>
       <div class="max-w-sm">
         <p class="font-semibold text-sm text-blue-light">
-          Experience the power of choice
+          Build a Financing Program
         </p>
         <p>
           Versatile empowers retailers to find the providers that are the best
@@ -47,13 +47,13 @@ export default {
         {
           titleA: 'Unparalleled Selection',
           columnA:
-            ' A network of 25+ financing partners, including prime and near-prime lenders, as well as no credit required providers enable retailers to address the entire FICO spectrum.',
+            'A network of 25+ financing partners, including prime, near-prime and no credit required providers enable retailers to address customers throughout the FICO spectrum.',
           titleB: 'Power of Waterfall',
           columnB:
-            'Near-prime lenders and no credit required providers can help to significantly increase the percentage of customers being approved for financing, leading to higher approval rates and sales.',
+            'Near-prime lenders and no credit required providers can help retailers significantly increase the percentage of customers being approved for financing, leading to higher approval rates and sales.',
           titleC: 'Informed Decisions',
           columnC:
-            ' A comprehensive suite of dashboards and reporting benchmark the performance of the financing program across stores, channels, financing partners and even sales associates.'
+            ' Comprehensive dashboards and reporting help to benchmarks the performance of the financing program across stores, channels, financing partners and even sales associates.'
         }
       ]
     }
