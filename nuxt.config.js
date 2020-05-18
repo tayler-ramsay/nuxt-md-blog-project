@@ -1,5 +1,18 @@
 console.log('NODE ENV', process.env.NODE_ENV)
+const path = require('path')
+const fs = require('fs')
+const Mode = require('frontmatter-markdown-loader/mode')
 
+function getPaths(lang, type) {
+  let initial = lang
+  if (lang === 'en') {
+    initial = ''
+  }
+  return fs
+    .readdirSync(path.resolve(__dirname, 'contents', `${lang}/${type}`))
+    .filter((filename) => path.extname(filename) === '.md')
+    .map((filename) => `${initial}/${type}/${path.parse(filename).name}`)
+}
 module.exports = {
   mode: 'spa',
 
@@ -33,11 +46,12 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '~/plugins/lazyload',
+    '~/plugins/globalComponents',
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     { src: '~/plugins/vue-unicons', ssr: false },
     { src: '~/plugins/vue-tabs', ssr: false },
     { src: '~/plugins/vuelidate', ssr: false },
-    { src: '~/plugins/vue-lazysizes.client.js', ssr: false },
     { src: '~plugins/ga.js', mode: 'client' }
   ],
 
@@ -49,7 +63,6 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -88,7 +101,7 @@ module.exports = {
     proxy: true
   },
   sitemap: {
-    hostname: 'https://example.com'
+    hostname: 'https://versatilecredit.com'
   },
 
   proxy: {
@@ -99,19 +112,48 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    extend(config, { isDev, isClient, loaders: { vue } }) {
-      if (isClient) {
-        vue.transformAssetUrls.img = ['data-src', 'src']
-        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
-      }
+    extend(config, ctx) {
+      // add frontmatter-markdown-loader
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          include: path.resolve(__dirname, 'content'),
+          loader: 'frontmatter-markdown-loader',
+          options: {
+            mode: [Mode.VUE_COMPONENT, Mode.META]
+          }
+        },
+        {
+          test: /\.(jpe?g|png)$/i,
+          loader: 'responsive-loader',
+          options: {
+            placeholder: true,
+            quality: 60,
+            size: 1400,
+            adapter: require('responsive-loader/sharp')
+          }
+        },
+        {
+          test: /\.(gif|svg)$/,
+          loader: 'url-loader',
+          query: {
+            limit: 1000,
+            name: 'img/[name].[hash:7].[ext]'
+          }
+        }
+      )
     },
-
     postcss: {
       preset: {
         autoprefixer: {
           grid: true
         }
       }
+    },
+    generate: {
+      routes: ['/es', '404']
+        .concat(getPaths('es', 'blog'))
+        .concat(getPaths('en', 'blog'))
     }
   }
 }
