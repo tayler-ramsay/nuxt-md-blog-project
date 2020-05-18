@@ -4,7 +4,7 @@ BUILD_DATE := $(shell date -u +'%Y-%m-%dT%H:%M:%SZ')
 GIT_REV := $(shell git rev-parse HEAD)
 GIT_REV_SHORT := $(shell git rev-parse --short=12 HEAD)
 RELEASE_VERSION := $(shell ./bin/current-version.sh)
-ARTIFACT_NAME := "shopify-checkout-$(RELEASE_VERSION).tgz"
+ARTIFACT_NAME := "-$(RELEASE_VERSION).tgz"
 
 LOG = @echo $$(tput setaf 6)[web/$@]$$(tput sgr0) $(1)
 
