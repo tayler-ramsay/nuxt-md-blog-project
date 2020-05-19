@@ -53,7 +53,7 @@ export default {
             'Near-prime lenders and no credit required providers can help retailers significantly increase the percentage of customers being approved for financing, leading to higher approval rates and sales.',
           titleC: 'Informed Decisions',
           columnC:
-            ' Comprehensive dashboards and reporting help to benchmarks the performance of the financing program across stores, channels, financing partners and even sales associates.'
+            ' Comprehensive dashboards and reporting help to benchmark the performance of the financing program across stores, channels, financing partners and even sales associates.'
         }
       ]
     }
