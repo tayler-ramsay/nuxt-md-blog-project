@@ -77,7 +77,7 @@
       class="bg-black text-base font-medium flex flex-col-reverse lg:flex-row justify-between lg:px-24 py-5 text-white items-center"
     >
       <div>
-        &#169;2020 VERSTILE CREDIT |
+        &#169;2020 VERSATILE CREDIT |
         <nuxt-link :to="'/privacy'">privacy policy</nuxt-link>
         <!-- <nuxt-link :to="'/sitemap.xml'">sitemap</nuxt-link> -->
       </div>
