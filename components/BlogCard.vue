@@ -1,33 +1,35 @@
 <template>
   <div>
     <li class="flex flex-col lg:flex-row list-item relative blog">
-      <div class="left flex-1 p-8 lg:p-24">
-        <div class="date text-blue-light  text-xl font-semibold">
-          {{ blog }}
+      <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.name } }">
+        <div class="left flex-1 p-8 lg:p-24">
+          <div class="date text-blue-light  text-xl font-semibold">
+            {{ blog.title }}
+          </div>
+          <a :href="blog" target="_blank">
+            <div class="title text-blue text-2xl">
+              {{ blog.year }}
+            </div>
+            <div class="excerpt">{{ blog.description }}[...]</div>
+            <div class="author lg:absolute">
+              <p class="text-sm font-semibold text-blue-light">
+                <span class="text-slate">Posted by: </span>{{ blog.id }}
+              </p>
+            </div>
+          </a>
         </div>
-        <a :href="blog" target="_blank">
-          <div class="title text-blue text-2xl">
-            {{ blog }}
-          </div>
-          <div class="excerpt">{{ blog }}[...]</div>
-          <div class="author lg:absolute">
-            <p class="text-sm font-semibold text-blue-light">
-              <span class="text-slate">Posted by: </span>{{ blog }}
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="right flex-1 lg:p-24">
-        <a target="_blank">
-          <ImageResponsive
-            :image-u-r-l="`blog/${blog.id}/_thumbnail.jpg`"
-            :classes="'cardThumbnail'"
-            :width="'952'"
-            :height="'509'"
-            :alt="blog.cardAlt"
-          />
-        </a>
-      </div>
+        <div class="right flex-1 lg:p-24">
+          <a target="_blank">
+            <ImageResponsive
+              :image-u-r-l="`blog/${blog.id}/_thumbnail.jpg`"
+              :classes="'cardThumbnail'"
+              :width="'300'"
+              :height="'300'"
+              :alt="blog.cardAlt"
+            />
+          </a>
+        </div>
+      </nuxt-link>
     </li>
   </div>
 </template>

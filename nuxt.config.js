@@ -1,7 +1,10 @@
 console.log('NODE ENV', process.env.NODE_ENV)
 const path = require('path')
 const fs = require('fs')
+const MarkdownIt = require('markdown-it')
 const Mode = require('frontmatter-markdown-loader/mode')
+
+const builtAt = new Date().toISOString()
 
 function getPaths(lang, type) {
   let initial = lang
@@ -13,8 +16,21 @@ function getPaths(lang, type) {
     .filter((filename) => path.extname(filename) === '.md')
     .map((filename) => `${initial}/${type}/${path.parse(filename).name}`)
 }
+
+const md = new MarkdownIt({
+  html: true,
+  typographer: true
+})
+
 module.exports = {
   mode: 'spa',
+
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
 
   /*
    ** Headers of the page
@@ -89,7 +105,8 @@ module.exports = {
     'nuxt-webfontloader',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-responsive-loader'
   ],
   webfontloader: {
     google: {
@@ -117,10 +134,16 @@ module.exports = {
       config.module.rules.push(
         {
           test: /\.md$/,
-          include: path.resolve(__dirname, 'content'),
           loader: 'frontmatter-markdown-loader',
+          include: path.resolve(__dirname, 'contents'),
           options: {
-            mode: [Mode.VUE_COMPONENT, Mode.META]
+            mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
+            vue: {
+              root: 'dynamicMarkdown'
+            },
+            markdown(body) {
+              return md.render(body)
+            }
           }
         },
         {
@@ -151,9 +174,7 @@ module.exports = {
       }
     },
     generate: {
-      routes: ['/es', '404']
-        .concat(getPaths('es', 'blog'))
-        .concat(getPaths('en', 'blog'))
+      routes: ['/en', '404'].concat(getPaths('en', 'blog'))
     }
   }
 }
