@@ -93,8 +93,8 @@ export default {
           { img: 'rmc' }
         ],
         noCredit: [
-          { img: 'acima' },
           { img: 'anow' },
+          { img: 'acima' },
           { img: 'aff' },
           { img: 'flex' },
           { img: 'katapult' },
