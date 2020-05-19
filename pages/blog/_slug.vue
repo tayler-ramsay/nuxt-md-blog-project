@@ -1,9 +1,9 @@
 <template>
-  <div class="blogSelected">
-    <div class="intro">
-      <div class="elevate-cover">
-        <div class="elevate-cover__textOffset">
-          <div class="elevate-cover__left">
+  <div class="bg-white">
+    <div class="">
+      <div class="">
+        <div class="">
+          <div class="">
             <nuxt-link to="/news">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -16,22 +16,20 @@
                   points="0 2.33 4.72 2.33 3.53 3.53 4 4 6 2 4 0 3.53 0.47 4.72 1.67 0 1.67 0 2.33"
                 />
               </svg>
-              {{ 'comeBack' }}
+              comeBack
             </nuxt-link>
           </div>
-          <div class="elevate-cover__left">
-            <span class="blogSelected-year">{{ year }}</span>
-            <h1 class="elevate-cover__title">
+          <div class="text-center">
+            <h1 class="text-5xl font-semibold text-blue">
               {{ title }}
             </h1>
-            <p class="elevate-cover__description">{{ description }}</p>
+            <span class="text-blue-light font-semibold">{{ year }}</span>
           </div>
         </div>
         <ImageResponsive
           v-if="!noMainImage"
           :image-u-r-l="'blog/' + id + '/_main.jpg'"
-          width="100%"
-          class="elevate-cover__img"
+          class="w-10/12 m-auto py-10"
           :alt="'Blog picture'"
         />
         <component
@@ -64,6 +62,7 @@ export default {
       return {
         name: params.slug,
         title: attr.title,
+        author: attr.author,
         trans: attr.trans,
         year: attr.year,
         id: attr.id,
@@ -89,6 +88,47 @@ export default {
         return null
       }
       return () => import(`~/components/blog/${this.extraComponent}.vue`)
+    },
+    ogImage() {
+      return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`
+    },
+    pageTitle() {
+      return this.title + ' – ' + this.author
+    },
+    hreflang() {
+      if (!this.trans) {
+        return ''
+      }
+      return {
+        hid: 'alternate-hreflang-' + this.showLocales[0].iso,
+        rel: 'alternate',
+        href: `${process.env.baseUrl +
+          (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
+        hreflang: this.showLocales[0].code
+      }
+    }
+  },
+
+  head() {
+    return {
+      title: this.pageTitle,
+      htmlAttrs: {
+        lang: 'en'
+      },
+      meta: [
+        { name: 'author', content: this.author },
+        {
+          name: 'description',
+          property: 'og:description',
+          content: this.description,
+          hid: 'description'
+        },
+        { property: 'og:title', content: this.pageTitle },
+        { property: 'og:image', content: this.ogImage },
+        { name: 'twitter:description', content: this.description },
+        { name: 'twitter:image', content: this.ogImage }
+      ],
+      link: [this.hreflang]
     }
   }
 }

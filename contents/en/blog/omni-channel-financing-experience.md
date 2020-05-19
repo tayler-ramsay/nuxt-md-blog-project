@@ -1,9 +1,9 @@
 ---
 name: 'omni-channel-financing-experience'
 title: Offer a Consistent, Omni-channel Financing Experience While Ensuring Business Continuity
-year: 1 May 2020
+year: Mar 20, 2020
 color: '#8e7964'
-id: 'offer-consistent'
+id: 'omni-channel-financing-experience'
 author: 'Vicki Turjan'
 description: |
   Recent events have led to unexpected business interruptions for many retailers. Consumers are staying at home, driving traffic away from physical brick-and-mortar locations to eCommerce sites, where growth rates are already rising by nearly
@@ -111,7 +111,7 @@ While writing in Medium **you don't have control over your blog** such as CSS, S
 Thanks to Google's tool [Lighthouse](https://developers.google.com/web/fundamentals/performance/audit/) we can analyze and compare Medium with my website.
 
 <image-responsive
-    imageURL="blog/vue-nuxt-blog/performance.jpg"
+    imageURL="blog/omni-channel-financing-experience/performance.jpg"
     :width="'952'"
     :height="'509'"
     alt="performance" />

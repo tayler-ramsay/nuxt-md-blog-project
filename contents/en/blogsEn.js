@@ -1,5 +1,5 @@
 export default [
-  'omni-channel-financing-experience',
   'the-benefit-of-contactless-self-service',
+  'omni-channel-financing-experience',
   'bacon-ipsum'
 ]

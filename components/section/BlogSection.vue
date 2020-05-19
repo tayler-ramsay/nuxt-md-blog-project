@@ -1,5 +1,6 @@
 <template>
   <section>
+    <div class="blogs__top"></div>
     <ul>
       <blog-card v-for="blog in blogs" :key="blog.name" :blog="blog" />
     </ul>
@@ -21,19 +22,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.blogs {
-  margin: 0;
-
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-  display: grid;
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 4rem;
-  }
-}
-</style>
+<style lang="scss"></style>

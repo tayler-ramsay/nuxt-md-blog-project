@@ -22,14 +22,15 @@ const md = new MarkdownIt({
   typographer: true
 })
 
+const baseUrl = 'https://versatilecredit.com'
+const productionUrl = 'https://versatilecredit.com'
+
 module.exports = {
   mode: 'spa',
 
-  vue: {
-    config: {
-      productionTip: false,
-      devtools: true
-    }
+  env: {
+    baseUrl,
+    productionUrl
   },
 
   /*
@@ -57,7 +58,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/sprite-mixin.scss'],
   /*
    ** Plugins to load before mounting the App
    */

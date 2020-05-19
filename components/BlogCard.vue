@@ -9,7 +9,7 @@
           <div class="text-blue-light text-xl font-semibold">
             {{ blog.year }}
           </div>
-          <div class="text-blue text-lg py-4">
+          <div class="text-blue text-2xl py-4">
             {{ blog.title }}
           </div>
           <div class="excerpt">{{ blog.description }}[...]</div>
