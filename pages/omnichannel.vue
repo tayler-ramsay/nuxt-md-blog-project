@@ -119,7 +119,7 @@ export default {
           list: [
             'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience.',
             'A wide range of options are available, from simple copy and paste plugins to deep, API-level integrations.',
-            'Turnkey solutions are available for popular eCommerce platforms, including Spotify. For information on other eCommerce platforms, contact us.'
+            'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
           ]
         },
         {
