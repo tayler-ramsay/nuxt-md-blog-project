@@ -1,10 +1,5 @@
 <template>
   <section>
-    <div class="blogs__top">
-      <div>
-        <h2>{{ 'posts' }}</h2>
-      </div>
-    </div>
     <ul>
       <blog-card v-for="blog in blogs" :key="blog.name" :blog="blog" />
     </ul>

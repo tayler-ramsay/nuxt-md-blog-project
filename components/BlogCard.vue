@@ -1,33 +1,30 @@
 <template>
   <div>
-    <li class="flex flex-col lg:flex-row list-item relative blog">
-      <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.name } }">
-        <div class="left flex-1 p-8 lg:p-24">
-          <div class="date text-blue-light  text-xl font-semibold">
+    <li class=" lg:w-10/12  m-auto lg:mb-32 lg:pb-32 ">
+      <nuxt-link
+        :to="{ name: 'blog-slug', params: { slug: blog.name } }"
+        class="flex flex-col lg:flex-row list-item relative blog justify-between"
+      >
+        <div class="lg:w-5/12 py-5 m-auto w-10/12">
+          <div class="text-blue-light text-xl font-semibold">
+            {{ blog.year }}
+          </div>
+          <div class="text-blue text-lg py-4">
             {{ blog.title }}
           </div>
-          <a :href="blog" target="_blank">
-            <div class="title text-blue text-2xl">
-              {{ blog.year }}
-            </div>
-            <div class="excerpt">{{ blog.description }}[...]</div>
-            <div class="author lg:absolute">
-              <p class="text-sm font-semibold text-blue-light">
-                <span class="text-slate">Posted by: </span>{{ blog.id }}
-              </p>
-            </div>
-          </a>
+          <div class="excerpt">{{ blog.description }}[...]</div>
+          <div class="">
+            <p class="text-sm font-semibold text-blue-light mt-10">
+              <span class="text-slate">Posted by: </span>{{ blog.author }}
+            </p>
+          </div>
         </div>
-        <div class="right flex-1 lg:p-24">
-          <a target="_blank">
-            <ImageResponsive
-              :image-u-r-l="`blog/${blog.id}/_thumbnail.jpg`"
-              :classes="'cardThumbnail'"
-              :width="'300'"
-              :height="'300'"
-              :alt="blog.cardAlt"
-            />
-          </a>
+        <div class="lg:w-6/12 py-5 w-full">
+          <ImageResponsive
+            :image-u-r-l="`blog/${blog.id}/_thumbnail.jpg`"
+            :classes="'cardThumbnail'"
+            :alt="blog.cardAlt"
+          />
         </div>
       </nuxt-link>
     </li>
@@ -51,32 +48,6 @@ export default {
   opacity: 0.7;
   &[lazy='loaded'] {
     opacity: 1;
-  }
-}
-.blog {
-  padding-bottom: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    .blog__title {
-      color: blue;
-    }
-  }
-
-  &__title {
-    font-family: 'Tiempos Headline', Arial, sans-serif;
-    color: #000;
-    padding-top: 1rem;
-    font-size: 2.5rem;
-    transition: color 0.3s;
-  }
-
-  &__description {
-    margin: 0;
-    color: grey;
   }
 }
 </style>

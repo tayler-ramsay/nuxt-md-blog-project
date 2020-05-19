@@ -1,6 +1,5 @@
 export default [
-  'blog-using-vue-nuxt-markdown',
-  'vuex-what-is-when-use-it',
-  'design-and-code-skeletons-screens',
+  'omni-channel-financing-experience',
+  'the-benefit-of-contactless-self-service',
   'bacon-ipsum'
 ]
