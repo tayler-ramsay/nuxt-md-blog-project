@@ -7,7 +7,7 @@
       Go Back
     </nuxt-link>
     <div class="max-w-6xl m-auto">
-      <div class="p-5">
+      <div class="p-5 lg:p-0">
         <h1 class="text-2xl lg:text-4xl font-semibold text-blue max-w-4xl mb-5">
           {{ title }}
         </h1>
@@ -26,7 +26,7 @@
         v-else
         class="elevate-cover__img markdown"
       />
-      <div class="p-5">
+      <div class="p-5 lg:p-0">
         <div class="lg:flex-row justify-between m-auto flex flex-col-reverse">
           <client-only>
             <DynamicMarkdown
