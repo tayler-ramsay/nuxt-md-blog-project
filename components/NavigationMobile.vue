@@ -5,8 +5,8 @@
         id="navigation"
         class="bg-black flex justify-between items-center text-white py-6 px-3 "
       >
-        <nuxt-link class="brand-logo" :to="'./'">
-          <img src="../static/logo-white.png" alt=""
+        <nuxt-link class="brand-logo w-64" :to="'./'">
+          <img src="../static/logo-white.png" alt="versatile logo"
         /></nuxt-link>
         <div class="nav-icon">
           <i
