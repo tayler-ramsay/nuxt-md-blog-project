@@ -63,8 +63,9 @@
         products or services. When changes are made, we will update the
         effective date of this Privacy Policy. This Privacy Policy is not
         intended to and does not create any contractual or other legal rights in
-        or on behalf of any party. Effective Date: February 10, 2020</span
-      >
+        or on behalf of any party.
+      </span>
+      <span class="my-8 font-mono">Effective Date: February 10, 2020</span>
     </p>
   </div>
 </template>

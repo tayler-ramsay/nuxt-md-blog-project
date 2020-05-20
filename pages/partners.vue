@@ -87,15 +87,15 @@ export default {
         secondary: [
           { img: 'easypay' },
           { img: 'fortiva' },
-          { img: 'gaf' },
           { img: 'genesis' },
+          { img: 'great' },
           { img: 'paytomorrow' },
           { img: 'rmc' }
         ],
         noCredit: [
+          { img: 'anow' },
           { img: 'acima' },
           { img: 'aff' },
-          { img: 'anow' },
           { img: 'flex' },
           { img: 'katapult' },
           { img: 'kornstone' },

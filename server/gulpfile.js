@@ -32,6 +32,7 @@ function version () {
   }
 }
 
+// unused for time being because of trouble getting it to work in bamboo build
 function gitInfo () {
   console.log('Generating build info.')
 
@@ -58,7 +59,7 @@ function installingDependencies () {
   return run('npm install').exec()
 }
 
-const build = gulp.series(copyFiles, version, gitInfo, copyPackageJson, installingDependencies)
+const build = gulp.series(copyFiles, version, copyPackageJson, installingDependencies)
 
 exports.build = build
 exports.clean = clean

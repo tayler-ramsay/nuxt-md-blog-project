@@ -11,12 +11,12 @@
         <h1
           class="text-6xl font-semibold text-blue-light max-w-sm leading-12 mb-10"
         >
-          Relentless Innovation.
+          Relentless Innovation
         </h1>
       </div>
       <div class="max-w-sm lg:pl-10">
         <p class="font-semibold text-sm text-blue-light">
-          Our approach is simple.
+          Our approach is simple
         </p>
         <p>
           We develop innovative, state-of-the-art experiences and technologies

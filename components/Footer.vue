@@ -32,7 +32,7 @@
           </h3>
           <a
             target="_blank"
-            href="https://www.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/"
+            href="https://ww1.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/"
           >
             <article class=" space-y-1">
               <h4 class="text-xl text-green">
@@ -77,9 +77,9 @@
       class="bg-black text-base font-medium flex flex-col-reverse lg:flex-row justify-between lg:px-24 py-5 text-white items-center"
     >
       <div>
-        &#169;2020 VERSTILE CREDIT |
-        <nuxt-link :to="'/privacy'">privacy policy</nuxt-link> |
-        <nuxt-link :to="'/sitemap.xml'">sitemap</nuxt-link>
+        &#169;2020 VERSATILE CREDIT |
+        <nuxt-link :to="'/privacy'">privacy policy</nuxt-link>
+        <!-- <nuxt-link :to="'/sitemap.xml'">sitemap</nuxt-link> -->
       </div>
       <div class="flex justify-between space-x-6 py-8 md:py-1">
         <div
@@ -123,6 +123,7 @@ export default {
 <style lang="scss">
 .social {
   fill: #000;
+  transform: translateY(3px);
   &:hover {
     fill: rgba(0, 156, 218, 1);
   }

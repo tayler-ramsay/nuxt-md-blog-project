@@ -66,7 +66,6 @@
         </div>
         <nuxt-link :to="'/partners'" class="flex stage  w-48 pt-5">
           <span class="text-green  inline-flex">Learn More</span>
-          <span class="text-green arrow bounce-3 text-lg">🡒</span>
         </nuxt-link>
       </div>
     </div>
@@ -108,7 +107,7 @@ export default {
             title: 'Avoid abandoned carts and drive conversion',
             p: [
               'Swift Apply & Buy™ enables retailers to integrate consumer financing on their website with minimal effort. More highly integrated solutions are available, leveraging are rich set of APIs and SDKs to tightly integrate financing into the most sophisticated eCommerce sites.',
-              'Turnkey solutions are available for popular eCommerce platforms, including *Shopify*. For information on other eCommerce platforms, contact us.'
+              'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
             ]
           },
 
@@ -119,7 +118,7 @@ export default {
           list: [
             'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience.',
             'A wide range of options are available, from simple copy and paste plugins to deep, API-level integrations.',
-            'Turnkey solutions are available for popular eCommerce platforms, including Spotify. For information on other eCommerce platforms, contact us.'
+            'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
           ]
         },
         {

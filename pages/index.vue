@@ -127,7 +127,7 @@ export default {
           img: 'consumer',
           list: [
             'Retailers can provide customers with comprehensive financing options wherever and whenever a buying decision is made.',
-            'In-store devices and eCommerce integrations provide consistent financing experiences across *all* channels.',
+            'In-store devices and eCommerce integrations provide consistent financing experiences across all channels.',
             'Any device with a browser can be leveraged to provide a seamless application experience.'
           ]
         },
@@ -161,8 +161,8 @@ export default {
           open: false,
           img: 'data',
           list: [
-            'Comprehensive data & analytics empower retailers to leverage actionable data for informed decision making.',
-            'Detailed dashboards & reports enable retailers to benchmark performance and optimize the financing program.',
+            'Comprehensive data and analytics empower retailers to leverage actionable data for informed decision making.',
+            'Detailed dashboards and reports enable retailers to benchmark performance and optimize the financing program.',
             'View data at the store, region and corporate level, with tools to measure by lender, channel, region and even sales associate.'
           ]
         }

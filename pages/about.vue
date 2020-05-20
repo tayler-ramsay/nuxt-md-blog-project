@@ -74,6 +74,11 @@ export default {
             'Introduced web credit cascade, allowing Versatile to be on any device with a browser'
         },
         {
+          date: 2017,
+          title:
+            'Integrated eCommerce to allow retailers to reach online shoppers with financing'
+        },
+        {
           date: 2018,
           title:
             'Launched targeted, vertical-specific financing solution for home improvement contracting'

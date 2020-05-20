@@ -13,7 +13,7 @@
       </div>
       <div class="max-w-sm">
         <p class="font-semibold text-sm text-blue-light">
-          Experience the power choice.
+          Experience the power choice
         </p>
         <p>
           Versatile empowers retailers to find the providers that are the best
@@ -53,7 +53,7 @@ export default {
             'Near-prime lenders and no credit required providers can help retailers significantly increase the percentage of customers being approved for financing, leading to higher approval rates and sales.',
           titleC: 'Informed Decisions',
           columnC:
-            ' Comprehensive dashboards and reporting help to benchmarks the performance of the financing program across stores, channels, financing partners and even sales associates.'
+            ' Comprehensive dashboards and reporting help to benchmark the performance of the financing program across stores, channels, financing partners and even sales associates.'
         }
       ]
     }

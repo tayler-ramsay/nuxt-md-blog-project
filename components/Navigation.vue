@@ -3,11 +3,11 @@
     id="navigation"
     class="bg-black flex justify-between items-center text-white py-6 px-10"
   >
-    <nuxt-link class="brand-logo" :to="'./'">
-      <img src="../static/logo-white.png" alt=""
+    <nuxt-link class="brand-logo w-64" :to="'./'">
+      <img src="../static/logo-white.png" alt="versatile credit logo"
     /></nuxt-link>
     <nuxt-link class="brand-logo-small" :to="'./'">
-      <img src="../static/logo-ko.png" alt=""
+      <img src="../static/logo-ko.png" alt="versatile credit logo"
     /></nuxt-link>
 
     <ul class="flex justify-end  items-center">
