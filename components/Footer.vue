@@ -123,6 +123,7 @@ export default {
 <style lang="scss">
 .social {
   fill: #000;
+  transform: translateY(3px);
   &:hover {
     fill: rgba(0, 156, 218, 1);
   }
