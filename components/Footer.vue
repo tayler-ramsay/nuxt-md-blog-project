@@ -32,7 +32,7 @@
           </h3>
           <a
             target="_blank"
-            href="https://www.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/"
+            href="https://ww1.versatilecredit.com/blogs/offer-a-consistent-omni-channel-financing-experience-while-ensuring-business-continuity/"
           >
             <article class=" space-y-1">
               <h4 class="text-xl text-green">
@@ -50,7 +50,7 @@
           </a>
           <a
             target="_blank"
-            href="https://www.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/"
+            href="https://ww1.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/"
           >
             <article class=" space-y-1">
               <h4 class="text-xl text-green">
