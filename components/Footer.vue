@@ -50,7 +50,7 @@
           </a>
           <a
             target="_blank"
-            href="https://www.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/"
+            href="https://ww1.versatilecredit.com/blogs/the-benefit-of-contactless-self-service/"
           >
             <article class=" space-y-1">
               <h4 class="text-xl text-green">

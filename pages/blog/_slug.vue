@@ -1,51 +1,46 @@
 <template>
-  <div class="bg-white pb-10">
-    <div class="">
-      <div class="">
-        <div class="px-5">
-          <div class="">
-            <nuxt-link to="/news">
-              <span class="text-blue-light arrow bounce-3 text-lg">
-                🡐 Go Back</span
-              >
-            </nuxt-link>
-          </div>
-          <div class="lg:text-center">
-            <h1
-              class="text-2xl lg:text-4xl font-semibold text-blue max-w-4xl m-auto  py-10"
-            >
-              {{ title }}
-            </h1>
-            <span class="text-blue-light font-semibold m-auto">{{ year }}</span>
-          </div>
-        </div>
-        <ImageResponsive
-          v-if="!noMainImage"
-          :image-u-r-l="'blog/' + id + '/_main.jpg'"
-          class="lg:w-10/12 m-auto pt-5"
-          :alt="'Blog picture'"
-        />
-        <component
-          :is="extraComponentLoader"
-          v-else
-          class="elevate-cover__img markdown"
-        />
+  <div class="bg-white py-10">
+    <nuxt-link to="/news" class="flex items-center text-blue-light">
+      <div class="arrow bounce-3 text-lg p-5">
+        <span>🡐</span>
       </div>
-    </div>
-    <div
-      class="lg:flex-row justify-between lg:w-10/12 m-auto flex flex-col-reverse p-5"
-    >
-      <client-only>
-        <DynamicMarkdown
-          class="markdown"
-          :render-func="renderFunc"
-          :static-render-funcs="staticRenderFuncs"
-          :extra-component="extraComponent"
-        />
-      </client-only>
-      <figure class="mb-5">
-        posted by: <span class="text-blue-light">{{ author }}</span>
-      </figure>
+      Go Back
+    </nuxt-link>
+    <div class="max-w-6xl m-auto">
+      <div class="p-5">
+        <h1 class="text-2xl lg:text-4xl font-semibold text-blue max-w-4xl mb-5">
+          {{ title }}
+        </h1>
+
+        <div class="text-blue-light font-semibold m-auto mb-5">{{ year }}</div>
+      </div>
+
+      <ImageResponsive
+        v-if="!noMainImage"
+        :image-u-r-l="'blog/' + id + '/_main.jpg'"
+        class="lg:mb-10 mb-4"
+        :alt="'Blog picture'"
+      />
+      <component
+        :is="extraComponentLoader"
+        v-else
+        class="elevate-cover__img markdown"
+      />
+      <div class="p-5">
+        <div class="lg:flex-row justify-between m-auto flex flex-col-reverse">
+          <client-only>
+            <DynamicMarkdown
+              class="markdown"
+              :render-func="renderFunc"
+              :static-render-funcs="staticRenderFuncs"
+              :extra-component="extraComponent"
+            />
+          </client-only>
+          <figure class="mb-5">
+            posted by: <span class="text-blue-light">{{ author }}</span>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -166,11 +161,11 @@ export default {
 }
 
 .markdown h1 {
-  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-snug text-4xl font-semibold mb-5;
 }
 
 .markdown h2 {
-  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-snug text-2xl font-semibold mb-5;
 }
 
 .markdown h3 {
@@ -182,11 +177,11 @@ export default {
 }
 
 .markdown h5 {
-  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+  @apply leading-snug text-sm font-semibold mb-4 mt-6;
 }
 
 .markdown h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply leading-snug text-sm font-semibold text-gray-600 mb-4 mt-6;
 }
 
 .markdown blockquote {
