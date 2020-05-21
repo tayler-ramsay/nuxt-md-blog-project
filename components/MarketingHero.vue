@@ -3,7 +3,7 @@
     <div
       class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32 px-8"
     >
-      <div class="max-w-xl w-3/12">
+      <div class="max-w-xl lg:w-3/12">
         <h1
           class="text-5xl lg:text-6xl font-semibold text-blue-light leading-12 mb-10"
         >
@@ -39,6 +39,7 @@ export default {
   },
   data() {
     return {
+      videoId: 421179000,
       cards: [
         {
           titleB: 'The New Retail',

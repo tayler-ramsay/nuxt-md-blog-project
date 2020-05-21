@@ -2,10 +2,11 @@
   <div>
     <nuxt-link to="/covid">
       <div
-        class="bg-white p-2 text-center uppercase text-blue-light font-semibold border-blue-light border-b-2"
+        class="bg-white p-2 text-center uppercase text-blue-light font-semibold border-blue-light border-b-2 text-sm"
       >
-        See our COVID-19 Dashboard for real-time updates and support for your
-        business. COVID-19
+        COVID-19 is changing the face of retail. Click here to learn about how
+        Versatile’s technology and services can help you address concerns facing
+        shoppers and employees
       </div>
     </nuxt-link>
   </div>
