@@ -7,6 +7,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: ['./**/*.vue'],
   corePlugins: {
     container: false
   },

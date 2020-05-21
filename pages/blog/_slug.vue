@@ -2,7 +2,7 @@
   <div class="bg-white py-10">
     <nuxt-link to="/news" class="flex items-center text-blue-light">
       <div class="arrow bounce-3 text-lg p-5">
-        <span>🡐</span>
+        <BaseArrowL class="right rotate-180" />
       </div>
       Go Back
     </nuxt-link>
@@ -36,21 +36,44 @@
               :extra-component="extraComponent"
             />
           </client-only>
-          <figure class="mb-5">
-            posted by: <span class="text-blue-light">{{ author }}</span>
-          </figure>
+          <div class="sidebar m-w-sm">
+            <figure class="mb-5">
+              posted by: <span class="text-blue-light">{{ author }}</span>
+            </figure>
+            <div class="flex justify-between w-16 mt-5 mb-10">
+              <ShareNetwork
+                network="twitter"
+                :url="url"
+                :title="title"
+                :hashtags="hashtags"
+                :description="description"
+                twitter-user="tayler_ramsay"
+              >
+                <TwitterLogo />
+              </ShareNetwork>
+              <ShareNetwork
+                network="LinkedIn"
+                :url="url"
+                :title="title"
+                :description="description"
+              >
+                <LinkedInLogo />
+              </ShareNetwork>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import TwitterLogo from '~/components/svg/TwitterLogo.vue'
+import LinkedInLogo from '~/components/svg/LinkedInLogo.vue'
 import DynamicMarkdown from '~/components/Markdown/DynamicMarkdown.vue'
 export default {
-  components: { DynamicMarkdown },
+  components: { DynamicMarkdown, TwitterLogo, LinkedInLogo },
   async asyncData({ params }) {
     try {
-      console.info(params.slug + 'THE LOVE')
       const fileContent = await import(`~/contents/en/blog/${params.slug}.md`)
       const attr = fileContent.attributes
       return {
@@ -62,7 +85,9 @@ export default {
         cardAlt: attr.cardAlt,
         noMainImage: attr.noMainImage,
         description: attr.description,
+        hashtags: attr.hashtags,
         extraComponent: attr.extraComponent,
+        url: `https://www.versatilecredit.com/blog/${attr.id}`,
         renderFunc: `(${fileContent.vue.render})`,
         staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
         image: {
@@ -75,6 +100,7 @@ export default {
       return false
     }
   },
+
   computed: {
     extraComponentLoader() {
       if (!this.extraComponent) {

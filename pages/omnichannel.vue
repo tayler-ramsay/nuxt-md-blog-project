@@ -66,6 +66,7 @@
         </div>
         <nuxt-link :to="'/partners'" class="flex stage  w-48 pt-5">
           <span class="text-green  inline-flex">Learn More</span>
+          <BaseArrowR color="#B2D237" class="bounce-3 ml-2 arrow" />
         </nuxt-link>
       </div>
     </div>

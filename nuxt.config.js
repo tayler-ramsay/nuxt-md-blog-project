@@ -193,6 +193,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    'vue-social-sharing/nuxt',
     'nuxt-responsive-loader'
   ],
   webfontloader: {

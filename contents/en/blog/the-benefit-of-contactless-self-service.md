@@ -6,6 +6,7 @@ color: '#edece7'
 isTextColorDark: true
 noMainImage: false
 author: Vicki Turjan
+hashtags: 'self_service'
 id: 'the-benefit-of-contactless-self-service'
 description: |
   Many states throughout the country have issued “Stay at Home” orders in response to the COVID-19 outbreak, and as the vast majority of our fellow citizens comply, that has motivated forward thinking
