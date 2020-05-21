@@ -33,6 +33,8 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '~/plugins/lazyload',
+    '~/plugins/globalComponents',
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     { src: '~/plugins/vue-unicons', ssr: false },
     { src: '~/plugins/vue-tabs', ssr: false },

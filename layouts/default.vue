@@ -2,6 +2,7 @@
   <div>
     <Navigation v-if="!mobileView" />
     <NavigationMobile v-if="mobileView" />
+    <CovidBanner />
     <Nuxt />
     <Footer />
   </div>
@@ -9,11 +10,13 @@
 
 <script>
 import Navigation from '@/components/Navigation.vue'
+import CovidBanner from '@/components/CovidBanner.vue'
 import NavigationMobile from '@/components/NavigationMobile.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   components: {
     Navigation,
+    CovidBanner,
     NavigationMobile,
     Footer
   },
