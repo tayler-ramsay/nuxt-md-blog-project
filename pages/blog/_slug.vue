@@ -1,8 +1,8 @@
 <template>
   <div class="bg-white py-10">
     <nuxt-link to="/news" class="flex items-center text-blue-light">
-      <div class="arrow bounce-3 text-lg p-5">
-        <BaseArrowL class="right rotate-180" />
+      <div class=" arrow text-lg p-5">
+        <BaseArrowL class="bounce-3" />
       </div>
       Go Back
     </nuxt-link>
@@ -253,29 +253,5 @@ export default {
 /* Override pygments style background color. */
 .markdown .highlight pre {
   @apply bg-gray-100 !important;
-}
-
-.arrow {
-  align-self: flex-end;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bounce-3 {
-  animation-name: bounce-3;
-  animation-timing-function: cubic-bezier(0.08, 0.04, 0.82, 1);
-}
-@keyframes bounce-3 {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(20px);
-  }
-  50% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }
 </style>

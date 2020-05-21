@@ -171,29 +171,6 @@ export default {
   position: absolute;
   right: 0;
 }
-.arrow {
-  align-self: flex-end;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bounce-3 {
-  animation-name: bounce-3;
-  animation-timing-function: cubic-bezier(0.08, 0.04, 0.82, 1);
-}
-@keyframes bounce-3 {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(20px);
-  }
-  50% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 
 .b-tabs > .tab-content > .tab-item {
   padding: 2rem;

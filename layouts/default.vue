@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 html {
@@ -79,5 +79,33 @@ button {
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+
+.arrow > .bounce-3 {
+  &:hover {
+    animation-iteration-count: 0;
+  }
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.08, 0.04, 0.82, 1);
+}
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 </style>
