@@ -99,7 +99,7 @@ export default {
 
           list: [
             'Provide customers with comprehensive financing options online, consistent with the brick-and-mortar experience, no matter where they decide to shop.',
-            'Reduce abandoned carts by providing financing for consumers throughout the FICO spectrum and providing the customer the opportunity to purchase the products they want online.',
+            'Reduce abandoned carts by delivering financing to shoppers throughout the FICO spectrum, enabling them to leave your site with the products they want.',
             'A wide range of integration options are available, from simple copy and paste code, eCommerce platform plugins (including Shopify), and API-level integrations.'
           ]
         }
