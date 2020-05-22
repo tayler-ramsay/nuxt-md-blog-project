@@ -50,10 +50,7 @@ export default {
         {
           title: 'Introducing Snap Sign',
           description: {
-            title: 'Introducing Snap Sign',
-            p: [
-              'Retailers can leverage existing tablets and point of sales systems to allow customers to apply in-store. Dedicated kiosks are available in standing and tabletop form factors with custom graphic and wrapping options. Engaging with customers throughout the consultation and check-out process can ensure customers are getting the best opportunities for financing.'
-            ]
+            title: 'Introducing Snap Sign'
           },
 
           link: '',
@@ -68,12 +65,7 @@ export default {
         {
           title: 'Remote & In-Home Sales',
           description: {
-            title: 'Bring Financing Home',
-            p: [
-              'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
-              'Versatile can work hand-in-hand with your business to create financing tools that work with your remote and in-home sales processes.',
-              'Send customers secure financing links to apply on any consumer-owned device'
-            ]
+            title: 'Bring Financing Home'
           },
 
           link: '',
@@ -88,12 +80,8 @@ export default {
         {
           title: 'eCommerce',
           description: {
-            title: 'Offer customers the same great financing everywhere',
-            p: [
-              'There are higher rates of success when Versatile adapts the platform to work within a retailer’s existing sales processes, integrating with the tools and resources their customers and associates are already familiar with.  Retailers can represent their brand consistently throughout the application experience on a variety of devices and platforms, in-store and out-of-store.'
-            ]
+            title: 'Offer customers the same great financing everywhere'
           },
-
           link: '',
           open: false,
 
