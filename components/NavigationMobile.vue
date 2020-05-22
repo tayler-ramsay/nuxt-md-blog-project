@@ -22,6 +22,13 @@
         </div>
       </div>
     </div>
+    <nuxt-link to="/covid">
+      <div
+        class="bg-white text-blue-light w-full p-16 pb-3 text-sm text-center"
+      >
+        COVID-19 is changing the face of retail. Click here to learn more
+      </div></nuxt-link
+    >
 
     <transition name="fade">
       <div v-if="showNav" class="nav-container">

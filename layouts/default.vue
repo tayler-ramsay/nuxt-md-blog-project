@@ -2,7 +2,7 @@
   <div>
     <Navigation v-if="!mobileView" />
     <NavigationMobile v-if="mobileView" />
-    <CovidBanner />
+    <CovidBanner v-if="!mobileView" />
     <Nuxt />
     <Footer />
   </div>
@@ -62,6 +62,10 @@ body {
 
 button {
   line-height: 0;
+}
+
+.banner {
+  z-index: 2000000;
 }
 
 .grad {
