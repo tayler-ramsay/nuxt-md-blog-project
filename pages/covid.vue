@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <MarketingHero class="flex-1" />
+  <div class="bg-white">
     <div class="bg-slate relative flex-1 wrapper flex justify-center">
       <video
         id="myVideo"
@@ -14,30 +13,47 @@
         Your browser does not support the video tag.
       </video>
     </div>
+    <MarketingHero class="flex-1" />
+    <ImageResponsive
+      :image-u-r-l="'marketing/poster.png'"
+      :classes="'cardThumbnail w-9/12 lg:w-6/12 m-auto'"
+    />
+    <div class="flex flex-wrap p-5 max-w-4xl m-auto">
+      <client-only>
+        <Card
+          v-for="(card, index) in cards"
+          :key="index"
+          :item="card"
+          :list="card.list"
+          :paragraph="card.description.p"
+          class=""
+        ></Card>
+      </client-only>
+    </div>
   </div>
 </template>
 
 <script>
 import MarketingHero from '@/components/MarketingHero.vue'
-// import Card from '@/components/Card.vue'
+import Card from '@/components/Card.vue'
 export default {
   components: {
-    MarketingHero
-    // Card
+    MarketingHero,
+    Card
   },
   data: () => {
     return {
       activeTab: 0,
       cards: [
         {
-          title: 'Contactless Self-Service',
+          title: 'Introducing Snap Sign',
           description: {
             title: 'Introducing Snap Sign',
             p: [
               'Retailers can leverage existing tablets and point of sales systems to allow customers to apply in-store. Dedicated kiosks are available in standing and tabletop form factors with custom graphic and wrapping options. Engaging with customers throughout the consultation and check-out process can ensure customers are getting the best opportunities for financing.'
             ]
           },
-          img: 'store',
+
           link: '',
           open: false,
           list: [
@@ -60,7 +76,6 @@ export default {
 
           link: '',
           open: false,
-          img: 'ecomm',
 
           list: [
             'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
@@ -79,7 +94,6 @@ export default {
 
           link: '',
           open: false,
-          img: 'mobile',
 
           list: [
             'Provide customers with comprehensive financing options online, consistent with the brick-and-mortar experience, no matter where they decide to shop.',

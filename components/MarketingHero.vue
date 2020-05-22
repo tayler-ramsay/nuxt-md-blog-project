@@ -5,7 +5,7 @@
     >
       <div class="max-w-xl lg:w-3/12">
         <h1
-          class="text-5xl lg:text-6xl font-semibold text-blue-light leading-12 mb-10"
+          class="text-3xl lg:text-5xl font-semibold text-blue-light leading-12 mb-10"
         >
           We’re here to help
         </h1>
