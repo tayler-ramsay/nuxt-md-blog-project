@@ -82,7 +82,7 @@ export default {
           list: [
             'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
             'Versatile can work hand-in-hand with your business to create financing tools that work with your remote and in-home sales processes.',
-            'Send customers secure financing links to apply on any consumer-owned device while ensuring that their data and information is secure.'
+            'Send customers secure financing links to apply on any consumer-owned device.'
           ]
         },
         {
