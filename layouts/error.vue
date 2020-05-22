@@ -14,7 +14,15 @@
       </p>
     </div>
     <div v-else>
-      <h1>An error as occured {{ error.statusCode }}</h1>
+      <h1 class="font-bold text-green mb-5 text-7xl heading">Oh No!</h1>
+      <p
+        class="text-blue-light font-semibold text-2xl lg:text-3xl max-w-md mb-5"
+      >
+        Something went wrong. Please try agian
+      </p>
+      <p class="font-semibold text-green mb-5">
+        Error code: {{ error.statusCode }}
+      </p>
     </div>
     <nuxt-link to="/" class="text-white flex"
       ><BaseArrowL color="#fff" class="mr-3" />Home page</nuxt-link
