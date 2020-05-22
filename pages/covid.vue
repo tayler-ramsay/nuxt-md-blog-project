@@ -59,7 +59,7 @@ export default {
           link: '',
           open: false,
           list: [
-            'Snap Sign is easy.  Customer simple point their smartphone camera at the Snap Sign signage and they are instantly taken to a financing application on their phone.',
+            'Snap Sign is easy. Customers simply point their smartphone camera at the Snap Sign signage and they are instantly taken to a financing application on their phone.',
             'Snap Sign can integrate into any system with a web browser. Retailers can leverage existing technology, including in-store kiosks, tablets, or any device — at no extra cost.  Dedicated hardware is also available.',
             'Give your customers more control over their shopping journey and let them choose how to manage their own social distancing.',
             'The World Health Organization advises the use of contactless payments to reduce the risk of transmission when possible.'
@@ -72,7 +72,7 @@ export default {
             p: [
               'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
               'Versatile can work hand-in-hand with your business to create financing tools that work with your remote and in-home sales processes.',
-              'Send customers secure financing links to apply on any consumer-owned device while ensuring that their data and information is secure.'
+              'Send customers secure financing links to apply on any consumer-owned device'
             ]
           },
 
