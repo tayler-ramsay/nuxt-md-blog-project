@@ -42,6 +42,18 @@
         </div>
       </div>
     </div>
+    <div v-else>
+      <div class="flex flex-col lg:flex-row p-6 lg:p-16">
+        <div class="m-auto flex flex-col md:flex-row justify-between">
+          <div class="font-semibold text-white text-2xl p-6 flex-1">
+            <h3 class="mb-5">{{ content.titleB }}</h3>
+            <p class="font-normal text-base max-w-4xl">
+              {{ content.columnB }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

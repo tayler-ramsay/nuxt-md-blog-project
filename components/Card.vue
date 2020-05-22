@@ -3,7 +3,9 @@
     <div class=" header">
       <div class="flex  flex-col items-center">
         <div class="wrapper w-20 h-20">
+          <img v-if="!item.img" alt="" class="" />
           <img
+            v-else
             :src="require(`~/static/icons/${item.img}.png`)"
             alt=""
             class=""

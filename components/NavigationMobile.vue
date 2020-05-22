@@ -22,6 +22,13 @@
         </div>
       </div>
     </div>
+    <nuxt-link to="/covid">
+      <div
+        class="bg-white text-blue-light w-full p-16 pb-3 text-sm text-center absolute"
+      >
+        COVID-19 is changing the face of retail. Click here to learn more
+      </div></nuxt-link
+    >
 
     <transition name="fade">
       <div v-if="showNav" class="nav-container">
@@ -122,13 +129,12 @@ export default {
   right: 0;
   position: fixed;
   height: 2em;
+  z-index: 1000;
 }
 .wrapper-container {
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
   /* overflow: hidden; */
   background-color: transparent;
   z-index: 100000;
