@@ -2,7 +2,7 @@
   <div>
     <AboutHero />
     <Timeline
-      v-for="(time, index) in timeline.reverse()"
+      v-for="(time, index) in timeline"
       :key="index"
       :timeline="time"
       class="p-5 bg-white"
