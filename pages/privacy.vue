@@ -23,7 +23,7 @@
         our Privacy Policy, please do not submit information to Us.</span
       >
     </p>
-    <p class="mb-10 flex-col flex">
+    <p class="mb-10 flex-col flex p-0">
       <span class="font-semibold mb-5"> 2. Information You Submit</span>
       <span>
         As a user of Our products and services, you can be assured that at no
