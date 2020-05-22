@@ -96,7 +96,7 @@ export default {
         }
       }
     } catch (err) {
-      console.debug(err)
+      console.debug(err + 'error')
       return false
     }
   },
