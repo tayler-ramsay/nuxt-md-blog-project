@@ -2,7 +2,7 @@
   <div>
     <AboutHero />
     <Timeline
-      v-for="(time, index) in timeline"
+      v-for="(time, index) in reverseTimeline"
       :key="index"
       :timeline="time"
       class="p-5 bg-white"
@@ -99,6 +99,9 @@ export default {
   computed: {
     numInArr() {
       return 2
+    },
+    reverseTimeline() {
+      return this.timeline.slice().reverse()
     }
   }
 }
