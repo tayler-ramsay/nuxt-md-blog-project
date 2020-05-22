@@ -1,6 +1,8 @@
 <template>
   <div class="bg-white">
-    <div class="bg-slate relative flex-1 wrapper flex justify-center">
+    <div
+      class="bg-slate relative flex-1 wrapper flex justify-center pt-32 lg:pt-0"
+    >
       <video
         id="myVideo"
         autoplay
