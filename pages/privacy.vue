@@ -1,7 +1,7 @@
 <template>
   <div class="text-white p-5 lg:p-16 max-w-6xl m-auto">
     <h1 class="text-white font-semibold text-lg mb-5">Privacy Policy</h1>
-    <p class="mb-10 flex-col flex">
+    <p class="mb-10 flex-col flex p-0">
       <span class="font-semibold mb-5"> 1. Overview </span>
       <span>
         This privacy policy applies to your use of products and services offered
