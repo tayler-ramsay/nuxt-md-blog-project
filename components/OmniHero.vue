@@ -1,26 +1,6 @@
 <template>
   <div>
-    <div
-      class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32 px-8"
-    >
-      <div class="max-w-xl">
-        <h1
-          class="text-5xl lg:text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
-        >
-          Versatile Omnichannel
-        </h1>
-      </div>
-      <div class="max-w-sm">
-        <p class="font-semibold text-sm text-blue-light">
-          What is the Omnichannel?
-        </p>
-        <p>
-          Omnichannel technology provides customers with the same comprehensive
-          financing options wherever and whenever a buying decision is made.
-        </p>
-        <hr class="w-20 mt-10 bg-blue-light" />
-      </div>
-    </div>
+    <BaseHero :headline="headline" :tagline="tagline" :paragraph="paragraph" />
     <ColumnContent
       v-for="(card, index) in cards"
       :key="index"
@@ -39,6 +19,10 @@ export default {
   },
   data() {
     return {
+      headline: 'Versatile Omnichannel',
+      tagline: 'What is the Omnichannel?',
+      paragraph:
+        'Omnichannel technology provides customers with the same comprehensive financing options wherever and whenever a buying decision is made.',
       cards: [
         {
           titleA: 'Seamless Experience',

@@ -1,30 +1,6 @@
 <template>
   <div>
-    <div
-      class="bg-white flex flex-col lg:flex-row justify-evenly p-16 items-center py-32"
-    >
-      <div class="max-w-xl">
-        <div class="flex"></div>
-        <h1
-          class="text-6xl font-semibold text-blue-light max-w-6xl leading-12 mb-10"
-        >
-          Build a financing program on your terms.
-        </h1>
-      </div>
-      <div class="max-w-sm">
-        <p class="font-semibold text-sm text-blue-light">
-          Experience the power choice
-        </p>
-        <p>
-          Versatile empowers retailers to find the providers that are the best
-          match for their business and customers, while providing the
-          simplicity, flexibility and freedom to change providers as needed. We
-          accomplish this with an unrivaled network of lending and providing
-          partners.
-        </p>
-        <hr class="w-20 mt-10 bg-blue-light" />
-      </div>
-    </div>
+    <BaseHero :headline="headline" :tagline="tagline" :paragraph="paragraph" />
     <ColumnContent
       v-for="(card, index) in cards"
       :key="index"
@@ -43,6 +19,10 @@ export default {
   },
   data() {
     return {
+      headline: 'Build a financing program on your terms.',
+      tagline: 'Experience the power choice',
+      paragraph:
+        'Versatile empowers retailers to find the providers that are the best match for their business and customers, while providing the simplicity, flexibility and freedom to change providers as needed. We accomplish this with an unrivaled network of lending and providing partners.',
       cards: [
         {
           titleA: 'Unparalleled Selection',

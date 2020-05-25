@@ -10,18 +10,18 @@
           class=" font-semibold text-blue"
         >
           <b-tab-item
-            v-for="(card, i) in cards"
+            v-for="(tab, i) in tabs"
             :key="i"
-            :label="card.title"
+            :label="tab.title"
             class="flex flex-col lg:flex-row items-center m-auto"
           >
             <div>
               <h1 class="font-semibold text-blue text-4xl py-5">
-                {{ card.description.title }}
+                {{ tab.description.title }}
               </h1>
               <ul>
                 <li
-                  v-for="n in card.list"
+                  v-for="n in tab.list"
                   :key="n.id"
                   class="text-xl  font-normal text-blue-light leading-7 flex mb-6"
                 >
@@ -38,14 +38,6 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="flex-1 md:p-24 w-lg min-w-3/4 lg:min-w-1/2 text-center">
-              <img
-                :src="require(`~/static/icons/${card.img}.png`)"
-                alt=""
-                srcset=""
-                class=" inline-block"
-              />
-            </div> -->
           </b-tab-item>
         </b-tabs>
       </client-only>
@@ -84,7 +76,7 @@ export default {
   data: () => {
     return {
       activeTab: 0,
-      cards: [
+      tabs: [
         {
           title: 'In-Store',
           description: {

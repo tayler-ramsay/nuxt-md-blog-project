@@ -1,21 +1,14 @@
 <template>
-  <div class="bg-local bg-contain lg:pt-24">
-    <div
-      class="flex flex-col lg:flex-row justify-evenly px-10 items-center pt-32 lg:pb-32"
-    >
-      <div class="max-w-6xl">
-        <div class="flex">
-          <img class="h-5" src="../static/icons/logo-ko.png" alt="" />
-          <p class="text-white text-lg">Partner with Us</p>
-        </div>
-        <h1
-          class="text-2xl lg:text-4xl font-semibold text-white max-w-6xl leading-8 lg:leading-10 mb-10"
-        >
-          Making your financing solutions available to consumers wherever and
-          whenever a buying decision is made.
-        </h1>
-      </div>
-    </div>
+  <div class="bg-local bg-contain">
+    <BaseHero
+      :headline="headline"
+      :background="false"
+      :callout="callout"
+      color="text-white"
+      font-size="text-3xl"
+      leading="leading-10"
+    />
+
     <ColumnContent
       v-for="(card, index) in cards"
       :key="index"
@@ -36,6 +29,10 @@ export default {
   data() {
     return {
       backgroundUrl,
+      callout: 'Partner With Us',
+      headline:
+        'Making your financing solutions available to consumers wherever and whenever a buying decision is made.',
+
       cards: [
         {
           titleA: 'Driving Application Volume',
@@ -64,10 +61,10 @@ hr {
   );
 }
 .bg-local {
-  background-image: linear-gradient(
-      100deg,
-      rgba(1, 65, 128, 1) 0%,
-      rgba(0, 156, 218, 0.7) 100%
+  background-image: radial-gradient(
+      circle at 50%,
+      rgba(0, 156, 218, 0.7) 0%,
+      rgba(1, 65, 128, 1) 100%
     ),
     url('../static/shake.jpg');
   background-size: cover;
