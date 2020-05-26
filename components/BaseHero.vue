@@ -26,11 +26,22 @@
         <hr class="w-20 mt-10 bg-blue-light h-1" />
       </div>
     </div>
+    <ColumnContent
+      v-for="(card, index) in data.cards"
+      :key="index"
+      :content="card"
+      class="grad"
+      :column-type="column"
+    />
   </div>
 </template>
 
 <script>
+import ColumnContent from '@/components/ColumnContent.vue'
 export default {
+  components: {
+    ColumnContent
+  },
   props: {
     headline: {
       type: String,
@@ -63,6 +74,14 @@ export default {
     leading: {
       type: String,
       default: 'leading-12'
+    },
+    data: {
+      type: Object,
+      required: true
+    },
+    column: {
+      type: Number,
+      default: 3
     }
   }
 }

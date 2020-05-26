@@ -1,6 +1,15 @@
 <template>
   <div>
-    <LenderHero class="" />
+    <BaseHero
+      :headline="data.headline"
+      :background="false"
+      :callout="data.callout"
+      color="text-white"
+      font-size="text-3xl"
+      leading="leading-10"
+      :data="data"
+      class="bg-local"
+    />
 
     <div class="bg-white pt-16">
       <div
@@ -48,12 +57,27 @@
 </template>
 
 <script>
-import LenderHero from '@/components/LenderHero.vue'
+import data from '@/content/forLender/data.json'
 export default {
-  components: {
-    LenderHero
+  data() {
+    return {
+      data
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bg-local {
+  background-image: radial-gradient(
+      circle at 50%,
+      rgba(0, 156, 218, 0.7) 0%,
+      rgba(1, 65, 128, 1) 100%
+    ),
+    url('../static/shake.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -300px;
+  color: white;
+}
+</style>

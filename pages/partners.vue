@@ -1,6 +1,11 @@
 <template>
   <div class=" bg-white">
-    <PartnersHero />
+    <BaseHero
+      :headline="data.headline"
+      :tagline="data.tagline"
+      :paragraph="data.paragraph"
+      :data="data"
+    />
     <div class="flex-col mt-24">
       <h1 class="text-blue text-center p-4 text-4xl">
         Prime Credit
@@ -8,7 +13,7 @@
       <div class="primes flex flex-wrap justify-center">
         <ul class="lg:flex m-auto justify-center mb-24">
           <li
-            v-for="(lender, i) in lenders.prime"
+            v-for="(lender, i) in data.lenders.prime"
             :key="i"
             class=" w-64 mx-5 mb-16 flex items-center  flex-1"
           >
@@ -28,7 +33,7 @@
       <div class="primes flex flex-wrap justify-center">
         <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between mb-24">
           <li
-            v-for="(lender, n) in lenders.secondary"
+            v-for="(lender, n) in data.lenders.secondary"
             :key="n"
             class="  w-64 mx-5 p-4 mb-16 flex items-center  flex-1 min-w-1/4 max-w-xs"
           >
@@ -50,7 +55,7 @@
       <div class="primes flex flex-wrap justify-center">
         <ul class="lg:flex lg:flex-wrap max-w-6xl m-auto justify-between">
           <li
-            v-for="(lender, n) in lenders.noCredit"
+            v-for="(lender, n) in data.lenders.noCredit"
             :key="n"
             class="  w-64 mx-5 p-4 mb-16 flex items-center  flex-1 min-w-1/4 max-w-xs"
           >
@@ -70,44 +75,11 @@
 </template>
 
 <script>
-import PartnersHero from '@/components/PartnersHero.vue'
+import data from '@/content/tailorMade/data.json'
 export default {
-  components: {
-    PartnersHero
-  },
   data() {
     return {
-      lenders: {
-        prime: [
-          { img: 'ads' },
-          { img: 'synchrony' },
-          { img: 'tdbank' },
-          { img: 'wells' }
-        ],
-        secondary: [
-          { img: 'easypay' },
-          { img: 'fortiva' },
-          { img: 'genesis' },
-          { img: 'great' },
-          { img: 'paytomorrow' },
-          { img: 'rmc' }
-        ],
-        noCredit: [
-          { img: 'anow' },
-          { img: 'acima' },
-          { img: 'aff' },
-          { img: 'flex' },
-          { img: 'katapult' },
-          { img: 'kornstone' },
-          { img: 'mp' },
-          { img: 'okinus' },
-          { img: 'progressive' },
-          { img: 'smart' },
-          { img: 'snap' },
-          { img: 'tempoe' },
-          { img: 'westcreek' }
-        ]
-      }
+      data
     }
   }
 }

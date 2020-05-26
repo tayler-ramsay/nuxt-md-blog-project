@@ -1,16 +1,21 @@
 <template>
   <div class="bg-white">
-    <OmniHero class="mb-5" />
+    <BaseHero
+      :headline="data.headline"
+      :tagline="data.tagline"
+      :paragraph="data.paragraph"
+      :data="data"
+    />
     <section class="pb-24">
       <client-only>
         <b-tabs
-          v-model="activeTab"
+          v-model="data.activeTab"
           size="is-large"
           position="is-centered"
           class=" font-semibold text-blue"
         >
           <b-tab-item
-            v-for="(tab, i) in tabs"
+            v-for="(tab, i) in data.tabs"
             :key="i"
             :label="tab.title"
             class="flex flex-col lg:flex-row items-center m-auto"
@@ -66,91 +71,12 @@
 </template>
 
 <script>
-import OmniHero from '@/components/OmniHero.vue'
+import data from '@/content/technology/data.json'
+
 export default {
-  components: {
-    OmniHero
-  },
   data: () => {
     return {
-      activeTab: 0,
-      tabs: [
-        {
-          title: 'In-Store',
-          description: {
-            title: 'Choosing technology that suits your business',
-            p: [
-              'Retailers can leverage existing tablets and point of sales systems to allow customers to apply in-store. Dedicated kiosks are available in standing and tabletop form factors with custom graphic and wrapping options. Engaging with customers throughout the consultation and check-out process can ensure customers are getting the best opportunities for financing.'
-            ]
-          },
-          img: 'store',
-          link: '',
-          open: false,
-          list: [
-            'Engage with customers throughout the sales and consultation process and bring the financing experience to them.',
-            'An array of options are available for in-store applications, including free-standing kiosks, tablets and contactless, transition-to-mobile technology.',
-            'Leverage existing hardware, including tablets and point of sales systems, to enable financing throughout the shopping process.'
-          ]
-        },
-        {
-          title: 'eCommerce',
-          description: {
-            title: 'Avoid abandoned carts and drive conversion',
-            p: [
-              'Swift Apply & Buy™ enables retailers to integrate consumer financing on their website with minimal effort. More highly integrated solutions are available, leveraging are rich set of APIs and SDKs to tightly integrate financing into the most sophisticated eCommerce sites.',
-              'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
-            ]
-          },
-
-          link: '',
-          open: false,
-          img: 'ecomm',
-
-          list: [
-            'Provide consumers with comprehensive financing options online, consistent with the brick-and-mortar experience.',
-            'A wide range of options are available, from simple copy and paste plugins to deep, API-level integrations.',
-            'Turnkey solutions are available for popular eCommerce platforms, including Shopify. For information on other eCommerce platforms, contact us.'
-          ]
-        },
-        {
-          title: 'Contactless Self-Service & Mobile',
-          description: {
-            title: 'Give customers more control over their shopping journey',
-            p: [
-              'There are higher rates of success when Versatile adapts the platform to work within a retailer’s existing sales processes, integrating with the tools and resources their customers and associates are already familiar with.  Retailers can represent their brand consistently throughout the application experience on a variety of devices and platforms, in-store and out-of-store.'
-            ]
-          },
-
-          link: '',
-          open: false,
-          img: 'mobile',
-
-          list: [
-            'Harness the power of the consumer mobile device for self-service financing and checkout.',
-            'Snap Sign™ leverages secure, dynamic QR Codes that enable consumers to apply for financing on their mobile device while guaranteeing an in-store presence.',
-            'Snap Sign can embed into any existing digital platform, including kiosks, tablets, digital signage and point of sales computers. Dedicated hardware is also available.'
-          ]
-        },
-        {
-          title: 'Remote and In-Home Sales',
-          description: {
-            title: 'Financing from the comfort of home',
-            p: [
-              'Versatile works retailers to create innovative tools that complement your remote and in-home sales processes.  Versatile uses a variety of technology to facilitate financing in the home, including secure links with anti-fraud measures, electronic signature technology, and document management.'
-            ]
-          },
-
-          link: '',
-          open: false,
-          img: 'home',
-
-          list: [
-            'Take advantage of rapidly growing opportunities for financing remotely. Great for out-of-store, consultative sales.',
-            'Send customers secure financing links to apply on any consumer-owned device.',
-            'Anti-fraud measures, electronic signature technology and document management help facilitate in-home financing.'
-          ]
-        }
-      ]
+      data
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "backgroundUrl": "backgroundUrl",
+  "callout": "Partner With Us",
+  "headline": "Making your financing solutions available to consumers wherever and whenever a buying decision is made.",
+
+  "cards": [
+    {
+      "titleA": "Driving Application Volume",
+      "columnA": " A streamlined experience cascades customers from prime, near-prime and no credit required providers while minimizing data collection — leading to higher application volumes.",
+      "titleB": "Driving Consistency",
+      "columnB": "The cascade ensures lenders see all applications coming through the waterfall, maximizing engagement opportunities and providing a consistent application experience for all customers.",
+      "titleC": "Driving Retailer Success",
+      "columnC": "Versatile leverages our subject matter expertise and insight to assist retailers in building successful financing experience tailored to their brand and customers."
+    }
+  ]
+}

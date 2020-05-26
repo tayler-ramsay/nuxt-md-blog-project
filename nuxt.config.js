@@ -22,7 +22,7 @@ const md = new MarkdownIt({
   typographer: true
 })
 
-const baseUrl = 'https://versatilecredit.com'
+const baseUrl = 'https://localhost:3000'
 const productionUrl = 'https://versatilecredit.com'
 
 module.exports = {
@@ -196,7 +196,8 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     'vue-social-sharing/nuxt',
-    'nuxt-responsive-loader'
+    'nuxt-responsive-loader',
+    '@nuxt/content'
   ],
   webfontloader: {
     google: {
