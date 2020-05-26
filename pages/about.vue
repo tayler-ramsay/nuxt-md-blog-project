@@ -10,7 +10,7 @@
       :column="2"
     />
     <Timeline
-      v-for="(time, index) in data.reverseTimeline"
+      v-for="(time, index) in reverseTimeline"
       :key="index"
       :timeline="time"
       class="p-5 bg-white"
@@ -33,7 +33,7 @@ export default {
       return 2
     },
     reverseTimeline() {
-      return this.timeline.slice().reverse()
+      return this.data.timeline.slice().reverse()
     }
   }
 }
