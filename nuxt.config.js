@@ -173,7 +173,9 @@ module.exports = {
     // Simple usage
     '@teamnovu/nuxt-breaky',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // TODO: Remove when upgrading to nuxt 2.13+
+    '@nuxt/components'
   ],
   optimizedImages: {
     optimizeImages: true

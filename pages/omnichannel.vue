@@ -67,11 +67,9 @@
 
 <script>
 import OmniHero from '@/components/OmniHero.vue'
-// import Card from '@/components/Card.vue'
 export default {
   components: {
     OmniHero
-    // Card
   },
   data: () => {
     return {

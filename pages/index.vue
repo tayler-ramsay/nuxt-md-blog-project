@@ -83,12 +83,10 @@
 </template>
 <script>
 import Card from '@/components/Card.vue'
-import Hero from '@/components/Hero.vue'
 
 export default {
   components: {
-    Card,
-    Hero
+    Card
   },
   data: () => {
     return {
