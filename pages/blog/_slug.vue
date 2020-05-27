@@ -80,6 +80,7 @@ export default {
       const fileContent = await $content('blog', params.slug).fetch()
       const posts = await $content('blog')
         .limit(3)
+        .skip(1)
         .fetch()
 
       return {
