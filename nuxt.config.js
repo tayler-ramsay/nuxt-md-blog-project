@@ -6,17 +6,6 @@ const Mode = require('frontmatter-markdown-loader/mode')
 
 const builtAt = new Date().toISOString()
 
-function getPaths(lang, type) {
-  let initial = lang
-  if (lang === 'en') {
-    initial = ''
-  }
-  return fs
-    .readdirSync(path.resolve(__dirname, 'contents', `${lang}/${type}`))
-    .filter((filename) => path.extname(filename) === '.md')
-    .map((filename) => `${initial}/${type}/${path.parse(filename).name}`)
-}
-
 const md = new MarkdownIt({
   html: true,
   typographer: true
@@ -203,6 +192,16 @@ module.exports = {
     google: {
       families: ['Inter:100,300,600,700,800,900'] //
     }
+  },
+  content: {
+    fullTextSearchFields: [
+      'title',
+      'description',
+      'slug',
+      'text',
+      'tags',
+      'author'
+    ]
   },
 
   axios: {

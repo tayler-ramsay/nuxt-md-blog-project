@@ -24,7 +24,7 @@
       <div class="p-5 lg:p-0">
         <div class="lg:flex-row justify-between m-auto flex flex-col-reverse">
           <nuxt-content :document="fileContent" class="w-8/12" />
-          <div class="sidebar m-w-sm">
+          <div class="sidebar m-w-sm w-3/12">
             <figure class="mb-5">
               posted by: <span class="text-blue-light">{{ author }}</span>
             </figure>
@@ -48,6 +48,25 @@
                 <LinkedInLogo />
               </ShareNetwork>
             </div>
+
+            <h3 class="text-xl text-blue font-semibold mb-5">
+              Recent Post
+            </h3>
+            <div v-for="post in posts" :key="post.id">
+              <nuxt-link
+                :to="{ name: 'blog-slug', params: { slug: post.name } }"
+              >
+                <h4 class="text-blue-light text-lg font-light mb-3">
+                  {{ post.title }}
+                </h4>
+
+                <ImageResponsive
+                  :image-u-r-l="'blog/' + post.id + '/_thumbnail.jpg'"
+                  :alt="'Blog picture'"
+                  class="mb-12"
+                />
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -59,8 +78,12 @@ export default {
   async asyncData({ $content, params }) {
     try {
       const fileContent = await $content('blog', params.slug).fetch()
+      const posts = await $content('blog')
+        .limit(3)
+        .fetch()
 
       return {
+        posts,
         fileContent,
         name: params.slug,
         title: fileContent.title,

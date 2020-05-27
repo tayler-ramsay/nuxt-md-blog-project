@@ -10,7 +10,9 @@
 export default {
   async asyncData({ $content, params }) {
     try {
-      const blogs = await $content('blog').fetch()
+      const blogs = await $content('blog')
+        .sortBy('year')
+        .fetch()
 
       return {
         blogs
