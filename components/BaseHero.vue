@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex flex-col lg:flex-row justify-evenly items-center py-32 px-8"
+      class="flex flex-col lg:flex-row lg:justify-evenly lg:items-center py-32 px-12"
       :class="background ? 'bg-local' : ''"
     >
       <div class="max-w-xl">
@@ -9,10 +9,7 @@
           <img class="h-10" src="~/static/icons/logo-ko.png" alt="" />
           <p class="text-white text-2xl">{{ callout }}</p>
         </div>
-        <h1
-          class="font-semibold max-w-6xl mb-10"
-          :class="[color, fontSize, leading]"
-        >
+        <h1 class="font-semibold mb-10" :class="[color, fontSize, leading]">
           {{ headline }}
         </h1>
       </div>

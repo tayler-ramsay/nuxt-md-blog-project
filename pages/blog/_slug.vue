@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-10">
+  <div class="bg-white py-32">
     <nuxt-link to="/news" class="flex items-center text-blue-light">
       <div class=" arrow text-lg p-5">
         <BaseArrowL class="bounce-3" />
@@ -22,9 +22,9 @@
         :alt="'Blog picture'"
       />
       <div class="p-5 lg:p-0">
-        <div class="lg:flex-row justify-between m-auto flex flex-col-reverse">
-          <nuxt-content :document="fileContent" class="w-8/12" />
-          <div class="sidebar m-w-sm w-3/12">
+        <div class="lg:flex-row justify-between m-auto flex flex-col">
+          <nuxt-content :document="fileContent" class="lg:w-8/12" />
+          <aside class="lg:w-3/12">
             <figure class="mb-5">
               posted by: <span class="text-blue-light">{{ author }}</span>
             </figure>
@@ -52,22 +52,23 @@
             <h3 class="text-xl text-blue font-semibold mb-5">
               Recent Post
             </h3>
-            <div v-for="post in posts" :key="post.id">
+
+            <div v-for="post in posts" :key="post.id" class="">
               <nuxt-link
                 :to="{ name: 'blog-slug', params: { slug: post.name } }"
               >
-                <h4 class="text-blue-light text-lg font-light mb-3">
-                  {{ post.title }}
+                <h4 class="text-blue-light text-sm font-light mb-3 w-8/12">
+                  {{ truncate(post.title, 5) }} [...]
                 </h4>
 
                 <ImageResponsive
                   :image-u-r-l="'blog/' + post.id + '/_thumbnail.jpg'"
                   :alt="'Blog picture'"
-                  class="mb-12"
+                  class="mb-12 lg:w-8/12"
                 />
               </nuxt-link>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -125,6 +126,14 @@ export default {
           (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
         hreflang: this.showLocales[0].code
       }
+    }
+  },
+  methods: {
+    truncate(str, noWords) {
+      return str
+        .split(' ')
+        .splice(0, noWords)
+        .join(' ')
     }
   },
 

@@ -1,5 +1,5 @@
 ---
-name: 'The Best Site Ever'
+name: 'the-best-site-ever'
 title: Tayler Rocks
 year: 28 May, 2020
 author: Tayler Ramsay
