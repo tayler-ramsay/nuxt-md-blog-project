@@ -7,26 +7,20 @@
 </template>
 
 <script>
-import BlogSection from '@/components/section/BlogSection.vue'
-import blogsEn from '~/contents/en/blogsEn.js'
-
 export default {
-  components: {
-    BlogSection
-  },
-  // eslint-disable-next-line require-await
-  async asyncData({ app }) {
-    const blogs = blogsEn
-    async function asyncImport(blogName) {
-      const wholeMD = await import(`~/contents/en/blog/${blogName}.md`)
-      return wholeMD.attributes
-    }
-    return Promise.all(blogs.map((blog) => asyncImport(blog))).then((res) => {
+  async asyncData({ $content, params }) {
+    try {
+      const blogs = await $content('blog').fetch()
+
       return {
-        blogs: res
+        blogs
       }
-    })
+    } catch (err) {
+      console.debug(err + 'error')
+      return false
+    }
   }
+
   // data() {
   //   return {
   //     blogs: [

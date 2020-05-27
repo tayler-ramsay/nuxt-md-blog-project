@@ -21,21 +21,9 @@
         class="lg:mb-10 mb-4"
         :alt="'Blog picture'"
       />
-      <component
-        :is="extraComponentLoader"
-        v-else
-        class="elevate-cover__img markdown"
-      />
       <div class="p-5 lg:p-0">
         <div class="lg:flex-row justify-between m-auto flex flex-col-reverse">
-          <client-only>
-            <DynamicMarkdown
-              class="markdown"
-              :render-func="renderFunc"
-              :static-render-funcs="staticRenderFuncs"
-              :extra-component="extraComponent"
-            />
-          </client-only>
+          <nuxt-content :document="fileContent" class="w-8/12" />
           <div class="sidebar m-w-sm">
             <figure class="mb-5">
               posted by: <span class="text-blue-light">{{ author }}</span>
@@ -67,32 +55,26 @@
   </div>
 </template>
 <script>
-import TwitterLogo from '~/components/svg/TwitterLogo.vue'
-import LinkedInLogo from '~/components/svg/LinkedInLogo.vue'
-import DynamicMarkdown from '~/components/Markdown/DynamicMarkdown.vue'
 export default {
-  components: { DynamicMarkdown, TwitterLogo, LinkedInLogo },
-  async asyncData({ params }) {
+  async asyncData({ $content, params }) {
     try {
-      const fileContent = await import(`~/contents/en/blog/${params.slug}.md`)
-      const attr = fileContent.attributes
+      const fileContent = await $content('blog', params.slug).fetch()
+
       return {
+        fileContent,
         name: params.slug,
-        title: attr.title,
-        author: attr.author,
-        year: attr.year,
-        id: attr.id,
-        cardAlt: attr.cardAlt,
-        noMainImage: attr.noMainImage,
-        description: attr.description,
-        hashtags: attr.hashtags,
-        extraComponent: attr.extraComponent,
-        url: `https://www.versatilecredit.com/blog/${attr.id}`,
-        renderFunc: `(${fileContent.vue.render})`,
-        staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
+        title: fileContent.title,
+        author: fileContent.author,
+        year: fileContent.year,
+        id: fileContent.id,
+        cardAlt: fileContent.cardAlt,
+        noMainImage: fileContent.noMainImage,
+        description: fileContent.description,
+        hashtags: fileContent.hashtags,
+        url: `https://www.versatilecredit.com/blog/${fileContent.id}`,
         image: {
-          main: attr.image && attr.image.main,
-          og: attr.image && attr.image.og
+          main: fileContent.image && fileContent.image.main,
+          og: fileContent.image && fileContent.image.og
         }
       }
     } catch (err) {
@@ -102,12 +84,6 @@ export default {
   },
 
   computed: {
-    extraComponentLoader() {
-      if (!this.extraComponent) {
-        return null
-      }
-      return () => import(`~/components/blog/${this.extraComponent}.vue`)
-    },
     ogImage() {
       return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`
     },
@@ -154,104 +130,107 @@ export default {
 </script>
 
 <style lang="postcss">
-.markdown {
-  @apply max-w-3xl;
+.dark-mode .nuxt-content {
+  & h2,
+  & h3,
+  & blockquote {
+    @apply border-gray-800;
+  }
+  & > code,
+  & li > code,
+  & p > code,
+  & h3 > code {
+    @apply bg-gray-800;
+  }
 }
-
-.markdown > p {
-  @apply mb-10;
+.nuxt-content h2 {
+  @apply text-3xl font-black mb-4 pb-1 border-b -mt-16 pt-24;
+  & > a {
+    @apply ml-6;
+    &::before {
+      content: '#';
+      @apply text-green font-normal -ml-6 pr-1 absolute opacity-100;
+    }
+  }
+  &:hover {
+    & > a::before {
+      @apply opacity-100;
+    }
+  }
 }
-
-.markdown > * + * {
-  margin-bottom: 3rem;
+.nuxt-content h3 {
+  @apply text-2xl font-extrabold mb-2 pb-1 border-b -mt-16 pt-20;
+  & > a {
+    @apply ml-6;
+    &::before {
+      content: '#';
+      @apply text-green font-normal -ml-5 pr-1 absolute opacity-100;
+    }
+  }
+  &:hover {
+    & > a::before {
+      @apply opacity-100;
+    }
+  }
 }
-
-.markdown li + li {
-  @apply mt-1;
+@screen lg {
+  .nuxt-content h2 a,
+  .nuxt-content h3 a {
+    @apply ml-0;
+    &::before {
+      @apply opacity-0;
+    }
+  }
 }
-
-.markdown li > p + p {
-  @apply mt-6;
+.nuxt-content ul,
+.nuxt-content ol {
+  @apply list-disc list-inside mb-4;
+  & > li {
+    @apply leading-7;
+    & > ul {
+      @apply pl-4;
+    }
+  }
 }
-
-.markdown strong {
-  @apply font-semibold;
+.nuxt-content ol {
+  @apply list-decimal;
 }
-
-.markdown a {
-  @apply text-blue font-semibold;
+.nuxt-content {
+  & a {
+    @apply underline;
+  }
+  & p {
+    @apply mb-4 leading-7;
+  }
+  & > blockquote {
+    @apply py-2 pl-4 mb-4 border-l-4;
+    & p:last-child {
+      @apply mb-0;
+    }
+  }
+  & > code,
+  & li > code,
+  & p > code {
+    @apply bg-gray-100 p-1 text-sm shadow-xs rounded;
+  }
+  & h3 > code {
+    @apply bg-gray-100 p-1 text-lg shadow-xs rounded;
+  }
+  & pre[class*='language-'] {
+    @apply rounded mt-0 mb-4 bg-gray-800 text-sm relative;
+    > code {
+      @apply bg-gray-800 relative;
+      text-shadow: none;
+    }
+  }
+  & video {
+    @apply w-full border rounded shadow-md;
+  }
 }
-
-.markdown strong a {
-  @apply font-bold;
-}
-
-.markdown h1 {
-  @apply leading-snug text-4xl font-semibold mb-5;
-}
-
-.markdown h2 {
-  @apply leading-snug text-2xl font-semibold mb-5;
-}
-
-.markdown h3 {
-  @apply leading-snug text-lg font-semibold mb-4 mt-6;
-}
-
-.markdown h4 {
-  @apply leading-none text-base font-semibold mb-4 mt-6;
-}
-
-.markdown h5 {
-  @apply leading-snug text-sm font-semibold mb-4 mt-6;
-}
-
-.markdown h6 {
-  @apply leading-snug text-sm font-semibold text-gray-600 mb-4 mt-6;
-}
-
-.markdown blockquote {
-  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
-}
-
-.markdown code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-5;
-}
-
-.markdown pre {
-  @apply bg-gray-100 rounded p-4;
-}
-
-.markdown pre code {
-  @apply block bg-transparent p-0 overflow-visible rounded-none;
-}
-
-.markdown ul {
-  @apply text-base pl-8 list-disc;
-}
-
-.markdown ol {
-  @apply text-base pl-8 list-decimal;
-}
-
-.markdown kbd {
-  @apply text-xs inline-block rounded border px-1 py-5 align-middle font-normal font-mono shadow;
-}
-
-.markdown table {
-  @apply text-base border-gray-600;
-}
-
-.markdown th {
-  @apply border py-1 px-3;
-}
-
-.markdown td {
-  @apply border py-1 px-3;
-}
-
-/* Override pygments style background color. */
-.markdown .highlight pre {
-  @apply bg-gray-100 !important;
+.nuxt-content-highlight {
+  @apply relative;
+  & > .filename {
+    @apply absolute right-0 text-gray-600 font-light z-10 mr-2 mt-1 text-sm;
+  }
 }
 </style>
