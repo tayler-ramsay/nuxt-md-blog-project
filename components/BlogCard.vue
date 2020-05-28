@@ -12,12 +12,14 @@
             <div class="text-blue text-2xl py-4">
               {{ blog.title }}
             </div>
+
             <div class="excerpt">{{ blog.description }}[...]</div>
           </nuxt-link>
           <div class="">
             <p class="text-sm font-semibold text-blue-light mt-10">
               <span class="text-slate">Posted by: </span>{{ blog.author }}
             </p>
+            <aside class="my-4 text-slate">Category: {{ blog.category }}</aside>
           </div>
         </div>
         <div class="lg:w-6/12 py-5 w-full">

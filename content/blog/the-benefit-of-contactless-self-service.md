@@ -4,6 +4,7 @@ title: The Benefit of "Contactless" Self-Service
 year: Apr 6, 2020
 color: '#edece7'
 isTextColorDark: true
+category: Fintec | Covid | eCommerce
 noMainImage: false
 author: Vicki Turjan
 hashtags: 'self_service'

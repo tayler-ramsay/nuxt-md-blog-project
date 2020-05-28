@@ -11,7 +11,14 @@ export default {
   async asyncData({ $content, params }) {
     try {
       const blogs = await $content('blog')
-        .sortBy('year')
+        .sortBy('year', 'desc')
+        // .sortBy(key, direction) asc desc
+        // .only(keys)
+        // .limit(n)
+        // .skip(n)
+        // .search('category', 'Business')
+        // .surround(slug, options)
+        // .where({ category: 'Covid' }) $eq, $ne, $gt, $gte, $lt, $lte, $in...
         .fetch()
 
       return {

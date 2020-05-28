@@ -140,6 +140,7 @@ module.exports = {
   plugins: [
     '~/plugins/lazyload',
     '~/plugins/globalComponents',
+    '~/plugins/vue-placeholders.js',
     { src: '~/plugins/vue-scroll-reveal', ssr: false },
     { src: '~/plugins/vue-unicons', ssr: false },
     { src: '~/plugins/vue-tabs', ssr: false },
@@ -199,7 +200,7 @@ module.exports = {
       'description',
       'slug',
       'text',
-      'tags',
+      'category',
       'author'
     ]
   },

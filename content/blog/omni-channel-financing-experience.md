@@ -3,6 +3,7 @@ name: 'omni-channel-financing-experience'
 title: Offer a Consistent, Omni-channel Financing Experience While Ensuring Business Continuity
 year: Mar 20, 2020
 color: '#8e7964'
+category: Fintec | Business | eCommerce
 id: 'omni-channel-financing-experience'
 author: 'Vicki Turjan'
 description: |

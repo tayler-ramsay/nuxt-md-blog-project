@@ -17,7 +17,7 @@
           >Technology</nuxt-link
         >
         <nuxt-link :to="'/partners'" class="font-medium m-3"
-          >Tailor-made
+          >For Patrons
         </nuxt-link>
         <nuxt-link :to="'/lender'" class="font-medium m-3"
           >For Lenders</nuxt-link
