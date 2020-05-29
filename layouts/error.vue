@@ -3,11 +3,11 @@
     class="bg-slate wrapper border-8 border-black flex flex-col lg:pl-20 p-3 pt-40"
   >
     <div v-if="error.statusCode === 404">
-      <h1 class="font-bold text-green mb-5 text-7xl heading">Opps!</h1>
+      <h1 class="font-bold text-green mb-5 text-7xl heading">Oops!</h1>
       <p
         class="text-blue-light font-semibold text-2xl lg:text-3xl max-w-lg mb-5"
       >
-        We can't seem to find the page you are looking for
+        We can't seem to find the page you are looking for.
       </p>
       <p class="font-semibold text-green mb-5">
         Error code: {{ error.statusCode }}
