@@ -7,7 +7,7 @@
         id="a"
         class="text-blue-light flex-grow text-3xl  flex-1 w-full text-center py-10"
       >
-        How we do it.
+        How we do it
       </p>
       <section
         class="flex flex-col md:flex-row md:flex-wrap m-auto max-w-screen-xl"
