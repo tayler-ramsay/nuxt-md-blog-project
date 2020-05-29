@@ -23,61 +23,6 @@
           ></Card>
         </client-only>
       </section>
-      <!-- <section class="py-24">
-        <h1 class="text-3xl text-blue-light text-center">How we do it</h1>
-        <b-tabs
-          v-model="activeTab"
-          size="is-large"
-          position="is-centered"
-          class=" font-semibold text-blue"
-        >
-          <b-tab-item
-            v-for="(card, i) in cards"
-            :key="i"
-            :label="card.title"
-            class="flex flex-col lg:flex-row items-center"
-          >
-            <div>
-              <ul>
-                <li
-                  v-for="n in card.list"
-                  :key="n.id"
-                  class="text-xl font-semibold text-blue-light leading-8 flex"
-                >
-                  <unicon
-                    name="check-circle"
-                    fill="#B2D237"
-                    class="pr-2 pt-1"
-                    icon-style="monochrome"
-                  ></unicon>
-
-                  <span class="mb-5 max-w-4xl">
-                    {{ n }}
-                  </span>
-                </li>
-              </ul>
-              <h1 class="font-semibold text-blue text-4xl py-5">
-                {{ card.description.title }}
-              </h1>
-              <p
-                v-for="(p, e) in card.description.p"
-                :key="e"
-                class="lg:max-w-6xl text-lg leading-8 mb-5 flex-1 w-full"
-              >
-                {{ p }}
-              </p>
-            </div>
-            <div class="flex-1 md:p-24 w-lg min-w-3/4 lg:min-w-1/2 text-center">
-              <img
-                :src="require(`~/static/icons/${card.img}.png`)"
-                alt=""
-                srcset=""
-                class=" inline-block"
-              />
-            </div>
-          </b-tab-item>
-        </b-tabs>
-      </section> -->
     </div>
   </div>
 </template>
