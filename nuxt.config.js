@@ -2,14 +2,13 @@ console.log('NODE ENV', process.env.NODE_ENV)
 
 const builtAt = new Date().toISOString()
 
-const baseUrl = 'https://localhost:3000'
 const productionUrl = 'https://versatilecredit.com'
 
 module.exports = {
   mode: 'spa',
 
   env: {
-    baseUrl,
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     productionUrl
   },
 
