@@ -1,15 +1,6 @@
 console.log('NODE ENV', process.env.NODE_ENV)
-const path = require('path')
-const fs = require('fs')
-const MarkdownIt = require('markdown-it')
-const Mode = require('frontmatter-markdown-loader/mode')
 
 const builtAt = new Date().toISOString()
-
-const md = new MarkdownIt({
-  html: true,
-  typographer: true
-})
 
 const baseUrl = 'https://localhost:3000'
 const productionUrl = 'https://versatilecredit.com'
@@ -124,7 +115,6 @@ module.exports = {
         color: '#c1c1c1'
       }
     ]
-    // script: [{ src: 'http://localhost:8098' }]
   },
   /*
    ** Customize the progress-bar color
@@ -133,7 +123,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/sprite-mixin.scss'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
@@ -167,15 +157,6 @@ module.exports = {
     // TODO: Remove when upgrading to nuxt 2.13+
     '@nuxt/components'
   ],
-  optimizedImages: {
-    optimizeImages: true
-  },
-  pngquant: true,
-
-  webp: {
-    preset: 'default',
-    quality: 75
-  },
   /*
    ** Nuxt.js modules
    */
@@ -221,22 +202,7 @@ module.exports = {
    */
   build: {
     extend(config, ctx) {
-      // add frontmatter-markdown-loader
       config.module.rules.push(
-        {
-          test: /\.md$/,
-          loader: 'frontmatter-markdown-loader',
-          include: path.resolve(__dirname, 'contents'),
-          options: {
-            mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
-            vue: {
-              root: 'dynamicMarkdown'
-            },
-            markdown(body) {
-              return md.render(body)
-            }
-          }
-        },
         {
           test: /\.(jpe?g|png)$/i,
           loader: 'responsive-loader',

@@ -85,8 +85,8 @@ export default {
           route: 'lender'
         },
         {
-          title: 'For Patrons',
-          icon: 'build',
+          title: 'Our Partners',
+          icon: 'partners',
           route: 'partners'
         },
         {

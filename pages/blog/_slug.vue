@@ -57,7 +57,7 @@
               <nuxt-link
                 :to="{ name: 'blog-slug', params: { slug: post.name } }"
               >
-                <h4 class="text-blue-light text-sm font-light mb-3 w-8/12">
+                <h4 class="text-blue-light text-sm font-light mb-3 w-9/12">
                   {{ truncate(post.title, 5) }} [...]
                 </h4>
 
@@ -80,8 +80,14 @@ export default {
     try {
       const fileContent = await $content('blog', params.slug).fetch()
       const posts = await $content('blog')
+        // .sortBy(key, direction) asc desc
+        // .only(keys)
+        // .limit(n)
+        // .skip(n)
+        // .search('category', 'Business')
+        // .surround(slug, options)
+        .where({ id: { $ne: fileContent.id } }) // $eq, $ne, $gt, $gte, $lt, $lte, $in...
         .limit(3)
-        .skip(1)
         .fetch()
 
       return {
