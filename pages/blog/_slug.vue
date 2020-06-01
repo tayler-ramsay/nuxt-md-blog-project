@@ -57,7 +57,7 @@
               <nuxt-link
                 :to="{ name: 'blog-slug', params: { slug: post.name } }"
               >
-                <h4 class="text-blue-light text-sm font-light mb-3 w-9/12">
+                <h4 class="text-blue-light text-sm font-light mb-3 w-8/12">
                   {{ truncate(post.title, 5) }} [...]
                 </h4>
 
@@ -116,7 +116,7 @@ export default {
 
   computed: {
     ogImage() {
-      return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`
+      return `${process.env.productionUrl}/images/blog/${this.id}/_thumbnail.jpg`
     },
     pageTitle() {
       return this.title + ' – ' + this.author
