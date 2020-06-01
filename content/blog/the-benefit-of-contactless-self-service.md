@@ -1,7 +1,8 @@
 ---
 name: 'the-benefit-of-contactless-self-service'
 title: The Benefit of "Contactless" Self-Service
-year: Apr 6, 2020
+date: Apr 6, 2020
+year: 04/06/2020
 color: '#edece7'
 isTextColorDark: true
 category: Fintec | Covid | eCommerce

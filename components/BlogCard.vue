@@ -7,7 +7,7 @@
         <div class="lg:w-5/12 py-5 m-auto w-10/12">
           <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.name } }">
             <div class="text-blue-light text-xl font-semibold">
-              {{ blog.year }}
+              {{ blog.date }}
             </div>
             <div class="text-blue text-2xl py-4">
               {{ blog.title }}

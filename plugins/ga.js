@@ -4,10 +4,10 @@ export default ({ app }) => {
   /*
    ** Only run on client-side and only in production mode
    */
-  if (process.env.NODE_ENV !== 'production') return
-  /*
-   ** Include Google Analytics Script
-   */
+  if (process.env.NODE_ENV !== 'production')
+    return /*
+     ** Include Google Analytics Script
+     */
   ;(function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r
     ;(i[r] =
@@ -30,7 +30,7 @@ export default ({ app }) => {
   /*
    ** Set the current page
    */
-  ga('create', 'UA-XXXXXXXX-X', 'auto')
+  ga('create', 'UA-63357694-2', 'auto')
   /*
    ** Every time the route changes (fired on initialization too)
    */
