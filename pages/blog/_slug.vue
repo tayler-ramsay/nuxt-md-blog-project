@@ -116,7 +116,7 @@ export default {
 
   computed: {
     ogImage() {
-      return `${process.env.productionUrl}/images/blog/${this.id}/_thumbnail.jpg`
+      return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`
     },
     pageTitle() {
       return this.title + ' – ' + this.author
@@ -128,7 +128,7 @@ export default {
       return {
         hid: 'alternate-hreflang-' + this.showLocales[0].iso,
         rel: 'alternate',
-        href: `${process.env.productionUrl +
+        href: `${process.env.baseUrl +
           (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
         hreflang: this.showLocales[0].code
       }
