@@ -36,15 +36,24 @@
         class="flex flex-col lg:flex-row justify-between  my-10  mb-16 lg:mb-32  w-8/12 "
       >
         <div class="pr-8">
-          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+20%</h2>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">
+            +<span>{{ num1.tweenedNumber.toFixed(0) }}</span
+            >%
+          </h2>
           <p class="text-xl pb-10">Increase in Application Volume</p>
         </div>
         <div class="pr-8">
-          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+30%</h2>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">
+            +<span>{{ num2.tweenedNumber.toFixed(0) }}</span
+            >%
+          </h2>
           <p class="text-xl pb-10">Increase in Average Sales Ticket</p>
         </div>
         <div>
-          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">+40%</h2>
+          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">
+            +<span>{{ num3.tweenedNumber.toFixed(0) }}</span
+            >%
+          </h2>
           <p class="text-xl pb-10">Improvement in Approval Rate</p>
         </div>
       </div>
@@ -73,7 +82,50 @@
 </template>
 
 <script>
-export default {}
+import gsap from 'gsap'
+export default {
+  data() {
+    return {
+      number: 0,
+      num1: {
+        tweenedNumber: 0,
+        total: 20
+      },
+      num2: {
+        tweenedNumber: 0,
+        total: 30
+      },
+      num3: {
+        tweenedNumber: 0,
+        total: 40
+      }
+    }
+  },
+
+  mounted() {
+    gsap.to(this.num1, {
+      duration: 5,
+      ease: 'circ.out',
+      tweenedNumber: this.num1.total
+    })
+    gsap.to(this.num2, {
+      duration: 3,
+      ease: 'circ.out',
+      tweenedNumber: this.num2.total
+    })
+    gsap.to(this.num3, {
+      duration: 6,
+      ease: 'circ.out',
+      tweenedNumber: this.num3.total
+    })
+  },
+  methods: {
+    totalTally() {
+      console.log('total')
+      this.num1.total = 20
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -22,9 +22,11 @@ export default {
   },
   data() {
     return {
-      mobileView: false
+      mobileView: false,
+      name: ''
     }
   },
+
   created() {
     this.handelView()
     // eslint-disable-next-line nuxt/no-globals-in-created

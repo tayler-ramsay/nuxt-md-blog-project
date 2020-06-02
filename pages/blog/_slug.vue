@@ -102,11 +102,7 @@ export default {
         noMainImage: fileContent.noMainImage,
         description: fileContent.description,
         hashtags: fileContent.hashtags,
-        url: `https://www.versatilecredit.com/blog/${fileContent.id}`,
-        image: {
-          main: fileContent.image && fileContent.image.main,
-          og: fileContent.image && fileContent.image.og
-        }
+        url: `https://www.versatilecredit.com/blog/${fileContent.id}`
       }
     } catch (err) {
       console.debug(err + 'error')
@@ -119,19 +115,7 @@ export default {
       return `${process.env.productionUrl}/assets/images/blog/${this.id}/_thumbnail.jpg`
     },
     pageTitle() {
-      return this.title + ' – ' + this.author
-    },
-    hreflang() {
-      if (!this.trans) {
-        return ''
-      }
-      return {
-        hid: 'alternate-hreflang-' + this.showLocales[0].iso,
-        rel: 'alternate',
-        href: `${process.env.baseUrl +
-          (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
-        hreflang: this.showLocales[0].code
-      }
+      return this.title + ' - ' + this.author
     }
   },
   methods: {
@@ -155,14 +139,13 @@ export default {
           name: 'description',
           property: 'og:description',
           content: this.description,
-          hid: 'description'
+          hid: this.id
         },
         { property: 'og:title', content: this.pageTitle },
         { property: 'og:image', content: this.ogImage },
         { name: 'twitter:description', content: this.description },
         { name: 'twitter:image', content: this.ogImage }
-      ],
-      link: [this.hreflang]
+      ]
     }
   }
 }

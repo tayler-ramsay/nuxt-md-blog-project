@@ -125,6 +125,7 @@ module.exports = {
    */
   css: [],
   /*
+
    ** Plugins to load before mounting the App
    */
   plugins: [
