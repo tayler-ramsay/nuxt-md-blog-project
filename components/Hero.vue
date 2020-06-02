@@ -50,10 +50,15 @@
           <p class="text-xl pb-10">Increase in Average Sales Ticket</p>
         </div>
         <div>
-          <h2 class="font-base lg:font-thin text-5xl md:text-7xl">
-            +<span>{{ num3.tweenedNumber.toFixed(0) }}</span
-            >%
-          </h2>
+          <div class="flex items-start">
+            <h2 class="font-base lg:font-thin text-5xl md:text-7xl">
+              +<span>{{ num3.tweenedNumber.toFixed(0) }}</span
+              >%
+            </h2>
+            <div class=" arrow text-xl">
+              <BaseArrowL class="bounce-3" color="#fff" />
+            </div>
+          </div>
           <p class="text-xl pb-10">Improvement in Approval Rate</p>
         </div>
       </div>
@@ -186,5 +191,9 @@ export default {
   bottom: 0;
   right: 0;
   z-index: -100;
+}
+
+.arrow {
+  transform: rotate(90deg);
 }
 </style>
