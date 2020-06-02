@@ -116,7 +116,7 @@ export default {
 
   computed: {
     ogImage() {
-      return `${process.env.productionUrl}/images/blog/${this.id}/_thumbnail.jpg`
+      return `${process.env.productionUrl}/assets/images/blog/${this.id}/_thumbnail.jpg`
     },
     pageTitle() {
       return this.title + ' – ' + this.author
